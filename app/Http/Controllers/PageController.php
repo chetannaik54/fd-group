@@ -332,11 +332,11 @@ class PageController extends Controller
     }
 
     public function erp_application_development_services(){
-        return view('pages.erp-application-development-serviecs');
+        return view('pages.erp-application-development-services');
     }
 
     public function application_management(){
-        return view('pages,application-management');
+        return view('pages.application-management');
     }
 
     public function application_validation(){
@@ -364,11 +364,11 @@ class PageController extends Controller
     }
 
     public function contingent_staffing(){
-        return view('pages.contigent-staffing');
+        return view('pages.contingent-staffing');
     }
 
     public function msp_parternship(){
-        return view('pages.msp-partnership');
+        return view('pages.msp-parternship');
     }
 
     public function short_term_engagement(){
