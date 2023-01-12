@@ -113,31 +113,25 @@
                 <div class="overflow-hidden relative inset-0" style="height: 750px;">
                     <div class="flex items-center justify-center transition-all duration-700 ease-in-out"
                         data-carousel-item="active">
-                        <div
-                            class="image-wrap absolute inset-0 -top-[350px] -bottom-[350px] -left-[100px] -right-[100px] min-w-full w-auto min-h-full h-auto overflow-hidden m-auto z-1 bg-[url('../../assets/images/business/bg01.jpg')] bg-top bg-no-repeat">
+                        <div class="image-wrap absolute inset-0 -top-[350px] -bottom-[350px] -left-[100px] -right-[100px] min-w-full w-auto min-h-full h-auto overflow-hidden m-auto z-1 bg-[url('../../assets/images/business/bg01.jpg')] bg-top bg-no-repeat">
+                            <video autoplay muted loop inline src="{{ asset('videos/video.mp4') }}" class="w-[100%]"></video>
                         </div>
                         <div
                             class="absolute inset-0 md:bg-gradient-to-r md:from-black md:via-black/80 md:bg-black/20 bg-black/70 z-2">
-                            <img src="http://www.jqueryscript.net/demo/Mouse-aware-Parallax-Effect-with-jQuery-and-TweenMax-Mouse-Parallax/images/1.png"
-                                alt="Clouds" class="cloud cloud1 w-[690px]">
+                            <img src="http://www.jqueryscript.net/demo/Mouse-aware-Parallax-Effect-with-jQuery-and-TweenMax-Mouse-Parallax/images/1.png" alt="Clouds" class="cloud cloud1 w-[690px]">
                         </div>
                         <div class="container z-[1030]">
                             <div class="grid grid-cols-1 mt-10">
                                 <div class="md:text-left text-center">
-                                    <h1
-                                        class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">
+                                    <h1 class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">
                                         Uncomplicating
-                                        <a href="" class="typewrite" data-period="2000"
-                                            data-type='[ "Global Solutions.", "Cloud computing.", "Micro services.", "Staffing solutions." ]'><span
-                                                class="wrap"></span></a>
+                                        <a href="" class="typewrite" data-period="2000"    data-type='[ "Global Solutions.", "Cloud computing.", "Micro services.", "Staffing solutions." ]'><span class="wrap"></span></a>
                                     </h1>
                                     <p class="text-white/70 text-lg max-w-xl">Augmenting Business Processes Across
                                         Industries</p>
 
                                     <div class="mt-8">
-                                        <a href=""
-                                            class="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-blue-600 group-active:text-opacity-75 bg-white">Learn
-                                            more about us</a>
+                                        <a href="{{ route('about-us') }}" class="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-blue-600 group-active:text-opacity-75 bg-white">Learn more about us</a>
                                     </div>
                                 </div>
                             </div>
@@ -146,13 +140,10 @@
                         <!--end container-->
                     </div>
 
-                    <div class="flex items-center justify-center transition-all duration-700 ease-in-out"
-                        data-carousel-item="">
-                        <div
-                            class="absolute inset-0 image-wrap z-1 bg-[url('../../assets/images/business/bg02.jpg')] bg-top bg-no-repeat">
+                    <div class="flex items-center justify-center transition-all duration-700 ease-in-out" data-carousel-item="">
+                        <div class="absolute inset-0 image-wrap z-1 bg-[url('../../assets/images/business/bg02.jpg')] bg-top bg-no-repeat">
                         </div>
-                        <div
-                            class="absolute inset-0 md:bg-gradient-to-b md:from-transparent md:to-black md:bg-black/20 bg-black/70 z-2">
+                        <div class="absolute inset-0 md:bg-gradient-to-b md:from-transparent md:to-black md:bg-black/20 bg-black/70 z-2">
 
                         </div>
                         <div class="container z-[1030]">
@@ -166,9 +157,7 @@
                                         Workforce</p>
 
                                     <div class="mt-8">
-                                        <a href=""
-                                            class="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-blue-600 group-active:text-opacity-75 bg-white">View
-                                            Open positons</a>
+                                        <a href="{{ route('careers') }}" class="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-blue-600 group-active:text-opacity-75 bg-white">View Open positons</a>
                                     </div>
                                 </div>
                             </div>
@@ -295,8 +284,7 @@
                             <p class="text-2xl font-bold text-white">The Fidelis Advantage</p>
 
                             <div class="mt-64">
-                                <div
-                                    class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                                <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                                     <p class="text-sm text-white">
                                         Read more
                                     </p>
@@ -356,7 +344,7 @@
                 <div class="max-w-screen px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
                     <dl class="grid gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
 
-                        <a href="#" class="relative block rounded-sm border-t-4 border-orange-600 p-8 pb-24 shadow-xl bg-white">
+                        <a class="relative block rounded-sm border-t-4 border-orange-600 p-8 pb-24 shadow-xl bg-white">
                             <h3 class="text-4xl font-bold" id="yearsinbusiness">15</h3>
                             <p class="mt-4 text-lg font-medium text-gray-500">
                                 Years in business
@@ -370,7 +358,7 @@
                             </span>
                         </a>
 
-                        <a href="#" class="relative block rounded-sm border-t-4 border-orange-600 p-8 pb-24 shadow-xl bg-white">
+                        <a class="relative block rounded-sm border-t-4 border-orange-600 p-8 pb-24 shadow-xl bg-white">
                             <h3 class="text-4xl font-bold" id="happycustomer">2500</h3>
                             <p class="mt-4 text-lg font-medium text-gray-500">
                                 Happy Customers
@@ -384,7 +372,7 @@
                             </span>
                         </a>
 
-                        <a href="#" class="relative block rounded-sm border-t-4 border-orange-600 p-8 pb-24 shadow-xl bg-white">
+                        <a class="relative block rounded-sm border-t-4 border-orange-600 p-8 pb-24 shadow-xl bg-white">
                             <h3 class="text-4xl font-bold" id="presentincountries">12</h3>
                             <p class="mt-4 text-lg font-medium text-gray-500">
                                 Present in countries
@@ -466,18 +454,14 @@
                     <div class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                         <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Core Services</h3>
 
-                        <p class="text-slate-400 max-w-xl mx-auto">working with Fidelis CSS that can provide everything
-                            you need to generate awareness, drive traffic, connect.</p>
+                        <p class="text-slate-400 max-w-xl mx-auto">working with Fidelis CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
                     </div>
                     <!--end grid-->
 
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px] mt-8">
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
-                            data-wow-delay=".1s">
-                            <div
-                                class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-                                <div
-                                    class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                            <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
+                                <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
                                     <i data-feather="monitor" class="h-5 w-5 rotate-45"></i>
                                 </div>
                                 <div class="flex-1">
