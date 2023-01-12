@@ -287,15 +287,6 @@
 
         <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
 
-        <a target="_blank" href="tel:+918041502234" class="bottom-0 left-0 sticky">
-            <lord-icon
-                src="https://cdn.lordicon.com/avkeowsl.json"
-                trigger="loop"
-                delay="2000"
-                style="width:150px;height:150px">
-            </lord-icon>
-        </a>
-
         <!--Left Side Buttons Start-->	
         <div class="sticky-left-container">
             <ul class="sticky-left">

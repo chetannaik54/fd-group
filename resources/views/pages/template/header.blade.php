@@ -34,7 +34,7 @@
         <div class="hidden items-center gap-4 lg:flex">
             <ul>
                 <li class="nav-item dropdown">
-                    <a id="languagedropdownNavbarLink" data-dropdown-toggle="languagedropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                    <a id="languagedropdownNavbarLink" data-dropdown-toggle="languagedropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
                         <span class="flag-icon flag-icon-{{Config::get('languages')[App::getLocale()]['flag-icon']}}"></span> {{ Config::get('languages')[App::getLocale()]['display'] }} <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
                     </a>
 
@@ -44,7 +44,7 @@
                             @foreach (Config::get('languages') as $lang => $language)
                                 @if ($lang != App::getLocale())
                                     <li>
-                                        <a class="dropdown-item block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" href="{{ route('lang.switch', $lang) }}"><span class="flag-icon flag-icon-{{$language['flag-icon']}}"></span> {{$language['display']}}</a>
+                                        <a class="dropdown-item block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white" href="{{ route('lang.switch', $lang) }}"><span class="flag-icon flag-icon-{{$language['flag-icon']}}"></span> {{$language['display']}}</a>
                                     </li>
                                 @endif
                             @endforeach
@@ -77,7 +77,7 @@
                 </a>
             </div>
 
-            <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
+            <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
             </button>
@@ -90,27 +90,27 @@
                         </li>
 
                         <li>
-                            <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Industries <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+                            <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Industries <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
                             <!-- Dropdown menu -->
                             <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                                   <li>
-                                    <a href="{{ route('banking') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Banking</a>
+                                    <a href="{{ route('banking') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Banking</a>
                                   </li>
                                   <li>
-                                    <a href="{{ route('fintech') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Fintech</a>
+                                    <a href="{{ route('fintech') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fintech</a>
                                   </li>
                                   <li>
-                                    <a href="{{ route('healthcare') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Healthcare</a>
+                                    <a href="{{ route('healthcare') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Healthcare</a>
                                   </li>
                                   <li>
-                                    <a href="{{ route('manufacturing') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Manufacturing</a>
+                                    <a href="{{ route('manufacturing') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Manufacturing</a>
                                   </li>
                                   <li>
-                                    <a href="{{ route('enterprise-technology') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Enterprise Technology</a>
+                                    <a href="{{ route('enterprise-technology') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Enterprise Technology</a>
                                   </li>
                                   <li>
-                                    <a href="{{ route('retail-&-ecommerce') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Retail & E-commerce</a>
+                                    <a href="{{ route('retail-&-ecommerce') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Retail & E-commerce</a>
                                   </li>
                                 </ul>
                             </div>
@@ -123,33 +123,33 @@
                         </li>
 
                         <li>
-                            <a id="productsdropdownNavbarLink" data-dropdown-toggle="productsdropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Products <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+                            <a id="productsdropdownNavbarLink" data-dropdown-toggle="productsdropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Products <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
                             <!-- Dropdown menu -->
                             <div id="productsdropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                                   <li>
-                                    <a href="{{ route('fidelis-noc') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">NOC - Fidelis</a>
+                                    <a href="{{ route('fidelis-noc') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">NOC - Fidelis</a>
                                   </li>
                                   <li>
-                                    <a href="{{ route('fidelis-soc') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">SOC - Fidelis</a>
+                                    <a href="{{ route('fidelis-soc') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">SOC - Fidelis</a>
                                   </li>
                                 </ul>
                             </div>
                         </li>
 
                         <li>
-                            <a id="careerdropdownNavbarLink" data-dropdown-toggle="careerdropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Careers <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+                            <a id="careerdropdownNavbarLink" data-dropdown-toggle="careerdropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Careers <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
                             <!-- Dropdown menu -->
                             <div id="careerdropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                                 <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                                   <li>
-                                    <a href="{{ route('life-fidelis') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Culture</a>
+                                    <a href="{{ route('life-fidelis') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Culture</a>
                                   </li>
                                   <li>
-                                    <a href="{{ route('careers') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Jobs at Fidelis</a>
+                                    <a href="{{ route('careers') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Jobs at Fidelis</a>
                                   </li>
                                   <li>
-                                    <a href="{{ route('refer-candidate') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Refer a candidate</a>
+                                    <a href="{{ route('refer-candidate') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Refer a candidate</a>
                                   </li>
                                 </ul>
                             </div>
@@ -199,18 +199,18 @@
 {{-- Mega Menu --}}
 <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
     <div id="mega-menu-full-dropdown" class="mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600 hidden">
-        <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-3 md:grid-cols-4 md:px-6">
+        <div class="grid px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-3 md:grid-cols-6 md:px-6">
 
             <ul aria-labelledby="mega-menu-full-dropdown-button">
-                <li class="font-extrabold underline">Business Process</li>
+                <li class="font-extrabold underline px-3">Business Process</li>
                 <li>
-                    <a href="" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('robotic-process-automation') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Robotic Process Automation</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">With businesses today adopting more automation to accelerate their productivity</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('business-process-management-automation') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Business Process Management And Automation</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">With businesses today digitally transforming internal and external processes in order to accelerate their productivity</span>
                     </a>
@@ -218,15 +218,15 @@
             </ul>
 
             <ul aria-labelledby="mega-menu-full-dropdown-button">
-                <li class="font-extrabold underline">Information Management</li>
+                <li class="font-extrabold underline px-3">Information Management</li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('business-intelligence-analytical-services') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Business Intelligence And Analytical Services</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Business intelligence and insights for customers, boost revenue, enhance margins and gain momentum</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('database-storage-admin') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Database And Storage Admin</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Business performance and efficiency with complex data portfolios and business intelligence led decision making</span>
                     </a>
@@ -234,21 +234,21 @@
             </ul>
 
             <ul class="hidden md:block">
-                <li class="font-extrabold underline">Platform And Infrastructure</li>
+                <li class="font-extrabold underline px-3">Platform And Infrastructure</li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('cloud-computing') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Cloud Computing</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('it-&-infra-management') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">IT And Infra Management</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('data-center-enablement') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Data Center Enablement</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
@@ -256,51 +256,33 @@
             </ul>
 
             <ul class="hidden md:block">
+                <li class="font-extrabold underline px-3">Staffing solutions</li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Managed Services</div>
-                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Learning Academy</div>
-                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="hidden md:block">
-                <li class="font-extrabold underline">Staffing solutions</li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('contingent-staffing')  }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Contigent Staffing</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('msp-parternship') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">MSP Partnerships</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('short-term-engagement') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Short term engagement</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
                 </li>
-            </ul>
-
-            <ul>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('talent-kloud') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Talent Kloud</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('compliance') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Compliance</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
@@ -308,42 +290,53 @@
             </ul>
 
             <ul>
-                <li class="font-extrabold underline">Applications</li>
+                <li class="font-extrabold underline px-3">Applications</li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('application-development') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Application Development</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Staying on top of the line, state of the art architecture and leveraging next generation technologies.</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('erp-application-development-services') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">ERP Application Management Services</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Making a shift towards digital ecosystems & progressive partnerships, solutions.</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('application-management') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Application Management</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Shift towards digital ecosystems & progressive partnerships, solutions.</span>
                     </a>
                 </li>
-            </ul>
-
-            <ul>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('application-QA-&-validation') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Applications QA And Validation</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Cost arbitrage and value proposition solutions.</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('devops-advisory') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Devops Advisory</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Structured to help clients streamline business processes, development and operation teams</span>
                     </a>
                 </li>
             </ul>
 
+            <ul class="hidden md:block">
+                <li>
+                    <a href="{{ route('managed-services') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold">Managed Services</div>
+                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('learning-academy') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold">Learning Academy</div>
+                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

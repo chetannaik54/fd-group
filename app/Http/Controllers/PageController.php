@@ -386,5 +386,4 @@ class PageController extends Controller
     public function learning_academy(){
         return view('pages.learning-academy');
     }
-
 }
