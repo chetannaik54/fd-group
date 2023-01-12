@@ -34,10 +34,6 @@
 </section>
 <!-- Section: Design Block -->
 
-<a target="_blank" href="tel:+918041502234" class="bottom-0 left-0 sticky">
-    <lord-icon src="https://cdn.lordicon.com/avkeowsl.json" trigger="loop" delay="2000" style="width:100px;height:100px"></lord-icon>
-</a>
-
 <footer aria-label="Site Footer" class="footer text-white">
     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="lg:flex lg:items-start lg:gap-8">

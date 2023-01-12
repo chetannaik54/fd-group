@@ -77,6 +77,7 @@
         .tagcloud--item:hover {
             color: #ff4500
         }
+        .sticky-left-container{padding:0;margin:0;position:fixed;left:-158px;top:40%;width:200px;z-index:2}.sticky-left li{list-style-type:none;background-color:none;color:#efefef;height:43px;padding:0;margin:0 0 1px;-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out;cursor:pointer}.sticky-left li:hover{margin-right:-150px;background:#333;border-radius:25px 25px 25px 0}.sticky-left li img{float:right;border-radius:50%;margin:5px 5px 5px 10px}.sticky-left li p{padding:0;float:right;margin:0;text-transform:uppercase;line-height:43px}
     </style>
 </head>
 
@@ -127,8 +128,7 @@
                                         Uncomplicating
                                         <a href="" class="typewrite" data-period="2000"    data-type='[ "Global Solutions.", "Cloud computing.", "Micro services.", "Staffing solutions." ]'><span class="wrap"></span></a>
                                     </h1>
-                                    <p class="text-white/70 text-lg max-w-xl">Augmenting Business Processes Across
-                                        Industries</p>
+                                    <p class="text-white/70 text-lg max-w-xl">Augmenting Business Processes Across   Industries</p>
 
                                     <div class="mt-8">
                                         <a href="{{ route('about-us') }}" class="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-blue-600 group-active:text-opacity-75 bg-white">Learn more about us</a>
@@ -454,7 +454,7 @@
                     <div class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                         <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Core Services</h3>
 
-                        <p class="text-slate-400 max-w-xl mx-auto">working with Fidelis CSS that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        <p class="text-slate-400 max-w-xl mx-auto">working with Fidelis will provide everything you need to generate awareness, drive traffic, connect.</p>
                     </div>
                     <!--end grid-->
 
@@ -470,7 +470,7 @@
                             </div>
                         </div>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay=".3s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -479,11 +479,11 @@
                                     <i data-feather="heart" class="h-5 w-5 rotate-45"></i>
                                 </div>
                                 <div class="flex-1">
-                                    <h4 class="mb-0 text-lg font-medium">Business Process Management And Automation
+                                    <h4 class="mb-0 text-lg font-medium">Business Process Management & Automation
                                     </h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                         <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay=".5s">
@@ -1712,7 +1712,30 @@
         });
         $("#pagecontent").removeClass("hidden invisible");
     </script>
-
+        <!--Left Side Buttons Start-->	
+        <div class="sticky-left-container">
+            <ul class="sticky-left">
+                <li>
+                    <a target="_blank" href="tel:+918041502234">
+                        <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1yz1jMRdqLQWBx10eFLSWTMGWmKrL9sM6"/>
+                        <p>Phone</p>    
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/+918041502234?text=� Hi, i wanted to know more about NOC. SOC software">
+                        <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1ha6UAQlGBFXnExIXUMgs2l1QwUNgE09K" />
+                        <p>Whatsapp</p>    
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:info@fidelisgroup.in">
+                        <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1Jthmdc-CZpBoymeHEW06x9OTj8_lW7gM" />
+                        <p>Email</p>    
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <!--Left Side Buttons End-->
 </body>
 
 </html>
