@@ -24,12 +24,7 @@
                     </a>
             </div>
             <div class="grid grid-rows-2 gap-4 mt-8 font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                <p>With businesses today making a shift towards progressive human capital and partnerships. Fidelis Group
-                    offers a gamut of skill development solutions through a variety of programs/projects. We make candidates
-                    industry-ready and inculcate in them the edge to stay competitive.</p>
-                <p>We are partnered with NSDC and MoHA on a PPP model & hence are proud to assist the Govt. in Skilling
-                    India. Our trained candidates are placed in numerous industries such as Retail, Hospitality, IT/ITES
-                    etc.</p>
+                <p>We strategically implement specialized consulting and SME services to engage and align the right process and resources to meet specific demands.</p>
             </div>
         </div>
     </section>
@@ -123,12 +118,12 @@
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">OUR MODEL</h2>
-                <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">A Balanced Approach To Augment Tactical Growth</p>
+                <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Extensive And Strategic Coverage</p>
             </div>
-            <div class="space-y-8 lg:grid lg:grid-cols-4 sm:gap-6 xl:gap-10 lg:space-y-0">
+            <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                 <!-- Pricing Card -->
                 <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Assess</h3>
+                    <h3 class="mb-4 text-2xl font-semibold">Project Management</h3>
                     <!-- List -->
                     <ul role="list" class="mb-8 space-y-4 text-left">
                         <li class="flex items-center space-x-3">
@@ -136,7 +131,7 @@
                             <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            <span>Gaps Methodology</span>
+                            <span>Consulting PM’s with 15 years of exp In project management, transition IT transformation</span>
                         </li>
                     </ul>
                     <a href="{{ route('contact-us') }}" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
@@ -150,7 +145,7 @@
                 </div>
                 <!-- Pricing Card -->
                 <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Augment</h3>
+                    <h3 class="mb-4 text-2xl font-semibold">Digital App Development Solutions</h3>
                     <!-- List -->
                     <ul role="list" class="mb-8 space-y-4 text-left">
                         <li class="flex items-center space-x-3">
@@ -158,15 +153,9 @@
                             <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            <span>Modern Practices</span>
+                            <span>Project Consulting, Android App Development</span>
                         </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Industry Ready Approach</span>
-                        </li>
+
                     </ul>
                     <a href="{{ route('contact-us') }}" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
                         <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
@@ -180,7 +169,7 @@
                 <!-- Pricing Card -->
                 <div
                     class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Accelerate</h3>
+                    <h3 class="mb-4 text-2xl font-semibold">Data Centre Consulting</h3>
                     <!-- List -->
                     <ul role="list" class="mb-8 space-y-4 text-left">
                         <li class="flex items-center space-x-3">
@@ -188,29 +177,7 @@
                             <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            <span>Tactical</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Programs</span>
-                        </li>
-
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Training</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Strategy</span>
+                            <span>Resources with specialized consulting for short term projects on Systems Management, Database Administration Migration, Virtualization, DC set up, Tech</span>
                         </li>
                     </ul>
                     <a href="{{ route('contact-us') }}" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
@@ -225,7 +192,7 @@
 
                 <div
                     class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-                    <h3 class="mb-4 text-2xl font-semibold">Accumulate</h3>
+                    <h3 class="mb-4 text-2xl font-semibold">Operations Delivery</h3>
                     <!-- List -->
                     <ul role="list" class="mb-8 space-y-4 text-left">
                         <li class="flex items-center space-x-3">
@@ -233,29 +200,7 @@
                             <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            <span>Map</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Performance</span>
-                        </li>
-
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Map Delivery</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <!-- Icon -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            <span>Placements</span>
+                            <span>IT Operations Managers, Service delivery Managers, Service Management Optimization professionals</span>
                         </li>
                     </ul>
                     <a href="{{ route('contact-us') }}" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
@@ -268,10 +213,164 @@
                     </a>
                 </div>
 
+                <div
+                    class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <h3 class="mb-4 text-2xl font-semibold">ERP</h3>
+                    <!-- List -->
+                    <ul role="list" class="mb-8 space-y-4 text-left">
+                        <li class="flex items-center space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Consultants with domain expertise in Retail, BFSI, Manufacturing, Healthcare etc</span>
+                        </li>
+                    </ul>
+                    <a href="{{ route('contact-us') }}" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
+                        <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
+                        <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
+                        <span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
+                        <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Get Started</span>
+                    </a>
+                </div>
+
+                <div
+                class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                <h3 class="mb-4 text-2xl font-semibold">Network Security</h3>
+                <!-- List -->
+                <ul role="list" class="mb-8 space-y-4 text-left">
+                    <li class="flex items-center space-x-3">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>SME’s in Network setup consulting, VoIP Security, Firewalls, IDS, IPS SIEM tool implementation</span>
+                    </li>
+                </ul>
+                <a href="{{ route('contact-us') }}" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
+                    <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
+                    <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
+                    <span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                    <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
+                    <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Get Started</span>
+                </a>
+            </div>
 
             </div>
         </div>
     </section>
+
+ 
+    <div class="container md:mt-24 mt-16">
+        <div class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp"
+            data-wow-delay=".1s">
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">   Industry Sectors Coverage</h3>
+        </div>
+        <!--end grid-->
+    </div>
+    <!--end container-->
+
+    <div class="container md:mb-24 mb-16">
+    
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+            <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/gzrilpgj.json"
+                        trigger="hover"
+                        delay="2000"
+                        style="width:80px;height:80px">
+                    </lord-icon>
+                </div>
+
+                <div class="mt-6">
+                    <a href="" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out">Non IT Manufacturing</a>
+                </div>
+            </div><!--end feature-->
+
+            <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <lord-icon
+                    class="h-24 w-24 fill-indigo-600/5 group-hover:fill-white/10"
+                    src="https://cdn.lordicon.com/hcowevpv.json"
+                    trigger="hover"
+                    colors="primary:#2516c7,tertiary:#ebe6ef"
+                    style="width:80px;height:80px">
+                </lord-icon>
+
+                </div>
+
+                <div class="mt-6">
+                    <a href="" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out">Non IT Retail</a>
+                </div>
+            </div><!--end feature-->
+
+            <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/uiaaaqiz.json"
+                        trigger="hover"
+                        colors="primary:#2516c7,secondary:#e86830"
+                        style="width:80px;height:80px">
+                    </lord-icon>
+                </div>
+
+                <div class="mt-6">
+                    <a href="" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out">IT & ITES</a>
+                </div>
+            </div><!--end feature-->
+
+            <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/nnbhwnej.json"
+                        trigger="hover"
+                        colors="primary:#646e78"
+                        style="width:80px;height:80px">
+                    </lord-icon>    
+                </div>
+
+                <div class="mt-6">
+                    <a href="" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out">IT Apps Dev/Testing</a>
+                </div>
+            </div><!--end feature-->
+            
+            <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/wjrtlwtp.json"
+                        trigger="hover"
+                        colors="primary:#e86830,secondary:#2516c7,tertiary:#08a88a,quaternary:#ffc739"
+                        style="width:80px;height:80px">
+                    </lord-icon>
+                </div>
+
+                <div class="mt-6">
+                    <a href="" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out">SAP (Tech & Funct)</a>
+                </div>
+            </div><!--end feature-->
+
+            <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
+                <div class="relative overflow-hidden text-transparent -m-3">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/ggihhudh.json"
+                        trigger="hover"
+                        delay="2000"
+                        colors="primary:#2516c7,secondary:#646e78,tertiary:#e86830"
+                        style="width:80px;height:80px">
+                    </lord-icon>
+                </div>
+
+                <div class="mt-6">
+                    <a href="" class="text-lg font-medium group-hover:text-white transition-all duration-500 ease-in-out">IT IMS/IT</a>
+                </div>
+            </div><!--end feature-->
+
+        </div>
+    </div><!--end container-->
 
 
     {{-- Logo --}}

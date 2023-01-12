@@ -41,9 +41,9 @@
 <footer aria-label="Site Footer" class="footer text-white">
     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="lg:flex lg:items-start lg:gap-8">
-            <div class="text-teal-600">
+            {{-- <div class="text-teal-600">
               <img src="https://fidelisgroup.in/wp-content/uploads/2020/10/Fidelis-LOGO-250px-2.png" alt="Logo" class="" style="width: 90px;">
-            </div>
+            </div> --}}
 
             <div class="grid grid-cols-2 gap-8 mt-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
                 <div class="col-span-2">
