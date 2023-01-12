@@ -114,7 +114,7 @@
                 <div class="overflow-hidden relative inset-0" style="height: 750px;">
                     <div class="flex items-center justify-center transition-all duration-700 ease-in-out"
                         data-carousel-item="active">
-                        <div class="image-wrap absolute inset-0 -top-[350px] -bottom-[350px] -left-[100px] -right-[100px] min-w-full w-auto min-h-full h-auto overflow-hidden m-auto z-1 bg-[url('../../assets/images/business/bg01.jpg')] bg-top bg-no-repeat">
+                        <div class="image-wrap absolute inset-0 -top-[350px] -bottom-[350px] -left-[100px] -right-[100px] min-w-full w-auto min-h-full h-auto overflow-hidden m-auto z-1 bg-top bg-no-repeat">
                             <video autoplay muted loop inline src="{{ asset('videos/video.mp4') }}" class="w-[100%]"></video>
                         </div>
                         <div
