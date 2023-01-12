@@ -22,13 +22,13 @@
         </div>
 
         <nav aria-label="Site Nav" class="hidden items-center justify-center gap-8 text-sm font-medium lg:flex lg:w-0 lg:flex-1">
-            <a class="text-gray-900" href="">About</a>
-            <a class="text-gray-900" href="">People & Culture</a>
-            <a class="text-gray-900" href="">Our Journey</a>
-            <a class="text-gray-900" href="">Mission, Vision & Values</a>
-            <a class="text-gray-900" href="">Client Speak</a>
-            <a class="text-gray-900" href="">Why choose</a>
-            <a class="text-gray-900" href="">Locations</a>
+            <a class="text-gray-900" href="{{ route('about-us') }}">About</a>
+            <a class="text-gray-900" href="{{ route('people') }}">People & Culture</a>
+            <a class="text-gray-900" href="{{ route('journey') }}">Our Journey</a>
+            <a class="text-gray-900" href="{{ route('mission-vision-values') }}">Mission, Vision & Values</a>
+            <a class="text-gray-900" href="{{ route('clients-speak') }}">Client Speak</a>
+            <a class="text-gray-900" href="{{ route('why-choose-us') }}">Why choose</a>
+            <a class="text-gray-900" href="{{ route('locations') }}">Locations</a>
         </nav>
 
         <div class="hidden items-center gap-4 lg:flex">
@@ -58,7 +58,7 @@
     <div class="border-t border-gray-100 lg:hidden">
         <nav class="flex items-center justify-center overflow-x-auto p-4 text-sm font-medium">
             <a href="{{ route('our-competencies') }}" class="flex-shrink-0 pl-4 text-gray-900" >Competencies</a>
-            <a href="#" class="flex-shrink-0 pl-4 text-gray-900" >Industries</a>
+            <a href="{{ route('Industries') }}" class="flex-shrink-0 pl-4 text-gray-900" >Industries</a>
             <a href="{{ route('case-studies') }}" class="flex-shrink-0 pl-4 text-gray-900" >Case Studies</a>
             <a href="{{ route('careers') }}" class="flex-shrink-0 pl-4 text-gray-900" >Careers</a>
             <a href="{{ route('blogs') }}" class="flex-shrink-0 pl-4 text-gray-900" >Journal</a>
@@ -86,7 +86,7 @@
                 <nav aria-label="Site Nav" class="hidden md:block">
                     <ul class="flex items-center gap-6 text-sm">
                         <li>
-                            <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Company <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                            <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Services <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                         </li>
 
                         <li>
@@ -204,9 +204,9 @@
         <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-3 md:grid-cols-4 md:px-6">
 
             <ul aria-labelledby="mega-menu-full-dropdown-button">
-                <li><h3>Business Process</h3></li>
+                <li class="font-extrabold underline">Business Process</li>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Robotic Process Automation</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">With businesses today adopting more automation to accelerate their productivity</span>
                     </a>
@@ -220,7 +220,7 @@
             </ul>
 
             <ul aria-labelledby="mega-menu-full-dropdown-button">
-                <li><h3>Information Management</h3></li>
+                <li class="font-extrabold underline">Information Management</li>
                 <li>
                     <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Business Intelligence And Analytical Services</div>
@@ -235,41 +235,8 @@
                 </li>
             </ul>
 
-            <ul>
-                <li>Applications</li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Application Development</div>
-                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Staying on top of the line, state of the art architecture and leveraging next generation technologies.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                        <div class="font-semibold">ERP Application Management Services</div>
-                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Making a shift towards digital ecosystems & progressive partnerships, solutions.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Application Management</div>
-                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Shift towards digital ecosystems & progressive partnerships, solutions.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Applications QA And Validation</div>
-                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Cost arbitrage and value proposition solutions.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Devops Advisory</div>
-                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Structured to help clients streamline business processes, development and operation teams</span>
-                    </a>
-                </li>
-            </ul>
             <ul class="hidden md:block">
-                <li>Platform And Infrastructure</li>
+                <li class="font-extrabold underline">Platform And Infrastructure</li>
                 <li>
                     <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Cloud Computing</div>
@@ -291,7 +258,22 @@
             </ul>
 
             <ul class="hidden md:block">
-                <li>Staffing solutions</li>
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold">Managed Services</div>
+                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold">Learning Academy</div>
+                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="hidden md:block">
+                <li class="font-extrabold underline">Staffing solutions</li>
                 <li>
                     <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Contigent Staffing</div>
@@ -310,6 +292,9 @@
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
                 </li>
+            </ul>
+
+            <ul>
                 <li>
                     <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Talent Kloud</div>
@@ -324,17 +309,39 @@
                 </li>
             </ul>
 
-            <ul class="hidden md:block">
+            <ul>
+                <li class="font-extrabold underline">Applications</li>
                 <li>
                     <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Managed Services</div>
-                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                        <div class="font-semibold">Application Development</div>
+                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Staying on top of the line, state of the art architecture and leveraging next generation technologies.</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Learning Academy</div>
-                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
+                        <div class="font-semibold">ERP Application Management Services</div>
+                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Making a shift towards digital ecosystems & progressive partnerships, solutions.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold">Application Management</div>
+                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Shift towards digital ecosystems & progressive partnerships, solutions.</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold">Applications QA And Validation</div>
+                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Cost arbitrage and value proposition solutions.</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                        <div class="font-semibold">Devops Advisory</div>
+                        <span class="text-sm font-light text-gray-500 dark:text-gray-400">Structured to help clients streamline business processes, development and operation teams</span>
                     </a>
                 </li>
             </ul>

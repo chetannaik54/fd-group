@@ -30,42 +30,42 @@ Route::get('home6', [PageController::class, 'home6']);
 
 Route::get('joblanding', [PageController::class, 'jobslanding']);
 
-Route::prefix('competencies')->group(function () {
+Route::prefix('services')->group(function () {
     Route::prefix('business-processes')->group(function () {
-        Route::get('/robotic-process-automation', [PageController::class, 'privacy']);
-        Route::get('/business-process-management-&-automation', [PageController::class, 'privacy']);
+        Route::get('/robotic-process-automation', [PageController::class, 'robotic_process_automation'])->name('');
+        Route::get('/business-process-management-&-automation', [PageController::class, 'business_process_management_automation']);
     });
 
     Route::prefix('information-management')->group(function () {
-        Route::get('................................................................................................................................................................./business-intelligence-&-analytical-services', [PageController::class, 'privacy']);
-        Route::get('/database-&-storage-admin', [PageController::class, 'privacy']);
+        Route::get('/business-intelligence-&-analytical-services', [PageController::class, 'business_intelligence_analytical_services']);
+        Route::get('/database-&-storage-admin', [PageController::class, 'database_storage_admin']);
     });
 
     Route::prefix('applications')->group(function () {
-        Route::get('/application-development', [PageController::class, 'privacy']);
-        Route::get('/erp-application-development-services', [PageController::class, 'privacy']);
-        Route::get('/application-management', [PageController::class, 'privacy']);
-        Route::get('/application-QA-&-validation', [PageController::class, 'privacy']);
-        Route::get('/devops-advisory', [PageController::class, 'privacy']);
+        Route::get('/application-development', [PageController::class, 'application_development']);
+        Route::get('/erp-application-development-services', [PageController::class, 'erp_application_development_services']);
+        Route::get('/application-management', [PageController::class, 'application_management']);
+        Route::get('/application-QA-&-validation', [PageController::class, 'application_validation']);
+        Route::get('/devops-advisory', [PageController::class, 'devops_advisory']);
     });
 
     Route::prefix('platform-&-Infrastructure')->group(function () {
-        Route::get('/cloud-computing', [PageController::class, 'privacy']);
-        Route::get('/it-&-infra-management', [PageController::class, 'privacy']);
-        Route::get('/data-center-enablement', [PageController::class, 'privacy']);
+        Route::get('/cloud-computing', [PageController::class, 'cloud_computing']);
+        Route::get('/it-&-infra-management', [PageController::class, 'it_infra_management']);
+        Route::get('/data-center-enablement', [PageController::class, 'data_center_enablement']);
     });
 
-    Route::get('/managed-services', [PageController::class, 'privacy']);
+    Route::get('/managed-services', [PageController::class, 'managed_services']);
 
     Route::prefix('staffing-solutions')->group(function () {
-        Route::get('/contingent-staffing', [PageController::class, 'privacy']);
-        Route::get('/msp-parternship', [PageController::class, 'privacy']);
-        Route::get('/short-term-engagement', [PageController::class, 'privacy']);
-        Route::get('/talent-kloud', [PageController::class, 'privacy']);
-        Route::get('/compliance', [PageController::class, 'privacy']);
+        Route::get('/contingent-staffing', [PageController::class, 'contingent_staffing']);
+        Route::get('/msp-parternship', [PageController::class, 'msp_parternship']);
+        Route::get('/short-term-engagement', [PageController::class, 'short_term_engagement']);
+        Route::get('/talent-kloud', [PageController::class, 'talent_kloud']);
+        Route::get('/compliance', [PageController::class, 'compliance']);
     });
 
-    Route::get('/learning-academy', [PageController::class, 'privacy']);
+    Route::get('/learning-academy', [PageController::class, 'learning_academy']);
 });
 
 Route::get('industries', [PageController::class, 'industries'])->name('Industries');
@@ -91,7 +91,7 @@ Route::get('/blogs', [PageController::class, 'journal'])->name('blogs');
 Route::get('/article/{articleid}', [PageController::class, 'article'])->name('article');
 
 Route::prefix('corporate')->group(function () {
-    Route::get('/about-us', [PageController::class, 'about_us'])->name('about_us');
+    Route::get('/about-us', [PageController::class, 'about_us'])->name('about-us');
     Route::get('/our-competencies', [PageController::class, 'our_competencies'])->name('our-competencies');
     Route::get('/people', [PageController::class, 'people'])->name('people');
     Route::get('/journey', [PageController::class, 'journey'])->name('journey');

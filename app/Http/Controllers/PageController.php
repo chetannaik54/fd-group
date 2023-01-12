@@ -303,10 +303,88 @@ class PageController extends Controller
     }
 
     public function life_Culture_fidelis(){
-        return view('pages.life-at-fidelis');
+        // return view('pages.life-at-fidelis');
+        return view('jobslanding');
     }
 
     public function industries(){
         return view('pages.industries');
     }
+
+    public function robotic_process_automation(){
+        return view('pages.robotic-process-automation');
+    }
+
+    public function business_process_management_automation(){
+        return view('pages.business-process-management-automation');
+    }
+
+    public function business_intelligence_analytical_services(){
+        return view('pages.business-intelligence-analytical-services');
+    }
+
+    public function database_storage_admin(){
+        return view('pages.database-storage-admin');
+    }
+
+    public function application_development(){
+        return view('pages.application-development');
+    }
+
+    public function erp_application_development_services(){
+        return view('pages.erp-application-development-serviecs');
+    }
+
+    public function application_management(){
+        return view('pages,application-management');
+    }
+
+    public function application_validation(){
+        return view('pages.application-qa-validation');
+    }
+
+    public function devops_advisory(){
+        return view('pages.devops-advisory');
+    }
+
+    public function cloud_computing(){
+        return view('pages.cloud-computing');
+    }
+
+    public function it_infra_management(){
+        return view('pages.it-infra-management');
+    }
+
+    public function data_center_enablement(){
+        return view('pages.data-center-enablement');
+    }
+
+    public function managed_services(){
+        return view('pages.managed-services');
+    }
+
+    public function contingent_staffing(){
+        return view('pages.contigent-staffing');
+    }
+
+    public function msp_parternship(){
+        return view('pages.msp-partnership');
+    }
+
+    public function short_term_engagement(){
+        return view('pages.short-term-engagement');        
+    }
+
+    public function talent_kloud(){
+        return view('pages.talent-kloud');
+    }
+
+    public function compliance(){
+        return view('pages.compliance');
+    }
+
+    public function learning_academy(){
+        return view('pages.learning-academy');
+    }
+
 }

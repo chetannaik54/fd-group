@@ -2,18 +2,15 @@
 <section class="mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
 
     <div class="show z-[1030] w-full py-4 px-6 md:flex justify-between items-center text-center md:text-left">
-        <div
-            class="mb-4 md:mb-0 flex items-center flex-wrap justify-center md:justify-start prose md:prose-lg lg:prose-xl">
+        <div class="mb-4 md:mb-0 flex items-center flex-wrap justify-center md:justify-start prose md:prose-lg lg:prose-xl">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-4 h-4 mr-2">
-                <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
-                <path fill="currentColor"
-                    d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z" />
+                <path fill="currentColor" d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z" />
             </svg>
             <h5>We Fuel Industry Transformation</h5>
             <h2 class="mt-4">Augment, Accelerate And Accentuate With Fidelis Group</h2>
             <!-- Base -->
             <a class="group relative inline-block focus:outline-none focus:ring" href="/contact-us">
-                <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-orange-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"></span>
+                <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-blue-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"></span>
                 <span class="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75">
                     Contact Us Now
                 </span>
@@ -21,7 +18,7 @@
             &nbsp;&nbsp;
             <!-- Hover -->
             <a class="group relative inline-block focus:outline-none focus:ring" href="/career">
-                <span class="absolute inset-0 translate-x-0 translate-y-0 bg-orange-600 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"></span>
+                <span class="absolute inset-0 translate-x-0 translate-y-0 bg-blue-600 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"></span>
                 <span class="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest">
                     Careers
                 </span>

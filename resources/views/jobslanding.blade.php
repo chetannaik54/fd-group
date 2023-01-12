@@ -1,8 +1,8 @@
 @extends('pages.template.layout2')
 
 @section('customcss')
-<link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
-<link href="assets/libs/choices.js/public/assets/styles/choices.min.css" rel="stylesheet">
+<link href="{{ asset('assets/libs/tiny-slider/tiny-slider.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/libs/choices.js/public/assets/styles/choices.min.css') }}" rel="stylesheet">
 
 @endsection
 
@@ -92,17 +92,17 @@
 
         <div class="absolute inset-0 bg-indigo-600/5"></div>
         <ul class="circles p-0 mb-0">
-            <li class="brand-img"><img src="assets/images/client/shree-logo.png" class="w-9 h-9" alt=""></li>
-            <li class="brand-img"><img src="assets/images/client/skype.png" class="w-9 h-9" alt=""></li>
-            <li class="brand-img"><img src="assets/images/client/snapchat.png" class="w-9 h-9" alt=""></li>
-            <li class="brand-img"><img src="assets/images/client/spotify.png" class="w-9 h-9" alt=""></li>
-            <li class="brand-img"><img src="assets/images/client/telegram.png" class="w-9 h-9" alt=""></li>
-            <li class="brand-img"><img src="assets/images/client/whatsapp.png" class="w-9 h-9" alt=""></li>
-            <li class="brand-img"><img src="assets/images/client/android.png" class="w-9 h-9" alt=""></li>
-            <li class="brand-img"><img src="assets/images/client/facebook-logo-2019.png" class="w-9 h-9" alt="">
+            <li class="brand-img"><img src="/assets/images/client/shree-logo.png" class="w-9 h-9" alt=""></li>
+            <li class="brand-img"><img src="/assets/images/client/skype.png" class="w-9 h-9" alt=""></li>
+            <li class="brand-img"><img src="/assets/images/client/snapchat.png" class="w-9 h-9" alt=""></li>
+            <li class="brand-img"><img src="/assets/images/client/spotify.png" class="w-9 h-9" alt=""></li>
+            <li class="brand-img"><img src="/assets/images/client/telegram.png" class="w-9 h-9" alt=""></li>
+            <li class="brand-img"><img src="/assets/images/client/whatsapp.png" class="w-9 h-9" alt=""></li>
+            <li class="brand-img"><img src="/assets/images/client/android.png" class="w-9 h-9" alt=""></li>
+            <li class="brand-img"><img src="/assets/images/client/facebook-logo-2019.png" class="w-9 h-9" alt="">
             </li>
-            <li class="brand-img"><img src="assets/images/client/linkedin.png" class="w-9 h-9" alt=""></li>
-            <li class="brand-img"><img src="assets/images/client/google-logo.png" class="w-9 h-9" alt=""></li>
+            <li class="brand-img"><img src="/assets/images/client/linkedin.png" class="w-9 h-9" alt=""></li>
+            <li class="brand-img"><img src="/assets/images/client/google-logo.png" class="w-9 h-9" alt=""></li>
         </ul>
     </section>
     <!--end section-->
@@ -120,6 +120,22 @@
         </div>
     </div>
     <!-- End Hero -->
+
+    {{-- <section class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">A career you love</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Got the agility and flexibility to solve exciting real-world challenges? Be a part of our uber cool team in shaping the world for a digital future. Check out exciting career opportunities at Fidelis!</p>
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    Explore opportunities
+                </a>
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="" alt="mockup">
+            </div>                
+        </div>
+    </section> --}}
+    
 
     <!-- Start Section-->
     <section class="relative md:py-24 py-16">
@@ -268,14 +284,14 @@
                     <div class="grid grid-cols-12 gap-6 items-center">
                         <div class="col-span-6">
                             <div class="grid grid-cols-1 gap-6">
-                                <img src="assets/images/about/ab03.jpg" class="shadow rounded-md" alt="">
-                                <img src="assets/images/about/ab02.jpg" class="shadow rounded-md" alt="">
+                                <img src="/assets/images/about/ab03.jpg" class="shadow rounded-md" alt="">
+                                <img src="/assets/images/about/ab02.jpg" class="shadow rounded-md" alt="">
                             </div>
                         </div>
 
                         <div class="col-span-6">
                             <div class="grid grid-cols-1 gap-6">
-                                <img src="assets/images/about/ab01.jpg" class="shadow rounded-md" alt="">
+                                <img src="/assets/images/about/ab01.jpg" class="shadow rounded-md" alt="">
                             </div>
                         </div>
                     </div>
@@ -373,7 +389,7 @@
                     </div>
 
                     <div class="flex items-center p-6 border-t border-gray-100 dark:border-gray-700">
-                        <img src="assets/images/client/facebook-logo-2019.png"
+                        <img src="/assets/images/client/facebook-logo-2019.png"
                             class="h-12 w-12 shadow-md dark:shadow-gray-800 rounded-md p-2 bg-white dark:bg-slate-900"
                             alt="">
 
@@ -400,7 +416,7 @@
                     </div>
 
                     <div class="flex items-center p-6 border-t border-gray-100 dark:border-gray-700">
-                        <img src="assets/images/client/google-logo.png"
+                        <img src="/assets/images/client/google-logo.png"
                             class="h-12 w-12 shadow-md dark:shadow-gray-800 rounded-md p-2 bg-white dark:bg-slate-900"
                             alt="">
 
@@ -427,7 +443,7 @@
                     </div>
 
                     <div class="flex items-center p-6 border-t border-gray-100 dark:border-gray-700">
-                        <img src="assets/images/client/linkedin.png"
+                        <img src="/assets/images/client/linkedin.png"
                             class="h-12 w-12 shadow-md dark:shadow-gray-800 rounded-md p-2 bg-white dark:bg-slate-900"
                             alt="">
 
@@ -454,7 +470,7 @@
                     </div>
 
                     <div class="flex items-center p-6 border-t border-gray-100 dark:border-gray-700">
-                        <img src="assets/images/client/skype.png"
+                        <img src="/assets/images/client/skype.png"
                             class="h-12 w-12 shadow-md dark:shadow-gray-800 rounded-md p-2 bg-white dark:bg-slate-900"
                             alt="">
 
@@ -481,7 +497,7 @@
                     </div>
 
                     <div class="flex items-center p-6 border-t border-gray-100 dark:border-gray-700">
-                        <img src="assets/images/client/spotify.png"
+                        <img src="/assets/images/client/spotify.png"
                             class="h-12 w-12 shadow-md dark:shadow-gray-800 rounded-md p-2 bg-white dark:bg-slate-900"
                             alt="">
 
@@ -508,7 +524,7 @@
                     </div>
 
                     <div class="flex items-center p-6 border-t border-gray-100 dark:border-gray-700">
-                        <img src="assets/images/client/telegram.png"
+                        <img src="/assets/images/client/telegram.png"
                             class="h-12 w-12 shadow-md dark:shadow-gray-800 rounded-md p-2 bg-white dark:bg-slate-900"
                             alt="">
 
@@ -561,7 +577,7 @@
                             </div>
 
                             <div class="text-center mt-5">
-                                <img src="assets/images/client/01.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
+                                <img src="/assets/images/client/01.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
                                     alt="">
                                 <h6 class="mt-2 font-semibold">Calvin Carlo</h6>
                                 <span class="text-slate-400 text-sm">Manager</span>
@@ -586,7 +602,7 @@
                             </div>
 
                             <div class="text-center mt-5">
-                                <img src="assets/images/client/02.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
+                                <img src="/assets/images/client/02.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
                                     alt="">
                                 <h6 class="mt-2 font-semibold">Christa Smith</h6>
                                 <span class="text-slate-400 text-sm">Manager</span>
@@ -611,7 +627,7 @@
                             </div>
 
                             <div class="text-center mt-5">
-                                <img src="assets/images/client/03.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
+                                <img src="/assets/images/client/03.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
                                     alt="">
                                 <h6 class="mt-2 font-semibold">Jemina CLone</h6>
                                 <span class="text-slate-400 text-sm">Manager</span>
@@ -636,7 +652,7 @@
                             </div>
 
                             <div class="text-center mt-5">
-                                <img src="assets/images/client/04.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
+                                <img src="/assets/images/client/04.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
                                     alt="">
                                 <h6 class="mt-2 font-semibold">Smith Vodka</h6>
                                 <span class="text-slate-400 text-sm">Manager</span>
@@ -661,7 +677,7 @@
                             </div>
 
                             <div class="text-center mt-5">
-                                <img src="assets/images/client/05.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
+                                <img src="/assets/images/client/05.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
                                     alt="">
                                 <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
                                 <span class="text-slate-400 text-sm">Manager</span>
@@ -686,7 +702,7 @@
                             </div>
 
                             <div class="text-center mt-5">
-                                <img src="assets/images/client/06.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
+                                <img src="/assets/images/client/06.jpg" class="h-14 w-14 rounded-full shadow-md mx-auto"
                                     alt="">
                                 <h6 class="mt-2 font-semibold">Cristino Murfi</h6>
                                 <span class="text-slate-400 text-sm">Manager</span>
@@ -699,42 +715,6 @@
         </div>
         <!--end container-->
 
-        <div class="container md:mt-24 mt-16">
-            <div class="grid md:grid-cols-12 grid-cols-1 items-center">
-                <div class="lg:col-span-5 md:col-span-6">
-                    <img src="assets/images/illustrator/envelope.svg" class="mx-auto d-block" alt="">
-                </div>
-
-                <div class="lg:col-span-7 md:col-span-6">
-                    <span class="bg-indigo-600/5 text-indigo-600 text-xs font-bold px-2.5 py-0.5 rounded h-5">Mobile
-                        Apps</span>
-                    <h4 class="md:text-3xl text-2xl lg:leading-normal leading-normal font-medium my-4">Available for your
-                        <br> Smartphones</h4>
-                    <p class="text-slate-400 max-w-xl mb-0">Search all the open positions on the web. Get your own
-                        personalized salary estimate. Read reviews on over 30000+ companies worldwide.</p>
-                    <div class="my-5">
-                        <a href=""><img src="assets/images/app/app.png" class="m-1 inline-block"
-                                alt=""></a>
-
-                        <a href=""><img src="assets/images/app/playstore.png" class="m-1 inline-block"
-                                alt=""></a>
-                    </div>
-
-                    <div class="inline-block">
-                        <div class="pt-4 flex items-center border-t border-gray-100 dark:border-gray-700">
-                            <i data-feather="smartphone" class="mr-2 text-indigo-600 h-10 w-10"></i>
-                            <div class="content">
-                                <h6 class="mb-0 text-base font-medium">Install app now on your cellphones</h6>
-                                <a href=""
-                                    class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Learn
-                                    More <i class="uil uil-angle-right-b"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--end gird-->
-        </div>
         <!--end container-->
     </section>
     <!--end section-->
@@ -742,7 +722,7 @@
 @endsection
 
 @section('script')
-<script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
-<script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-<script src="assets/libs/feather-icons/feather.min.js"></script>
+<script src="{{ asset('assets/libs/tiny-slider/min/tiny-slider.js') }}"></script>
+<script src="{{ asset('assets/libs/choices.js/public/assets/scripts/choices.min.js') }}"></script>
+<script src="{{ asset('assets/libs/feather-icons/feather.min.js') }}"></script>
 @endsection

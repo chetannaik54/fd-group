@@ -148,7 +148,7 @@
                 <!-- Base -->
                 <a class="group relative inline-block focus:outline-none focus:ring" href="/contact-us">
                     <span
-                        class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-orange-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"></span>
+                        class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-blue-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"></span>
                     <span
                         class="relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75">
                         Contact Us Now
@@ -196,7 +196,34 @@
                     </a>
                 </li>
 
-                <li class="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+                <li>
+                    <a href="#" class="relative block group">
+                        <img src="https://images.unsplash.com/photo-1618898909019-010e4e234c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" class="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90" />
+
+                        <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+                            <h3 class="text-xl font-medium text-white">Company Name</h3>
+
+                            <span class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"> Data Centre Operations & Maintenance </span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="relative block group">
+                        <img src="https://images.unsplash.com/photo-1624623278313-a930126a11c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="" class="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90" />
+
+                        <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
+                            <h3 class="text-xl font-medium text-white">Company name 2</h3>
+
+                            <span class="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                                End User Support & Technical Helpdesk Services
+                            </span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li class="lg:col-span-1 lg:col-start-3 lg:row-span-2 lg:row-start-1">
                     <a href="#" class="relative block group">
                         <img src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80" alt="" class="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90" />
 

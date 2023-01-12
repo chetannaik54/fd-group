@@ -10,8 +10,8 @@
                     </h2>
 
                     <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-1 lg:gap-16">
-                        <div class="relative h-64 overflow-hidden sm:h-80">
-                            <img alt="Party" src="https://fidelisgroup.in/wp-content/uploads/2021/07/From-Fidelis-CEO.png" class="absolute inset-0 h-full w-full object-cover" />
+                        <div class="relative">
+                            <img alt="Party" src="https://fidelisgroup.in/wp-content/uploads/2021/07/From-Fidelis-CEO.png" class="inset-0 h-full w-full object-cover" />
                         </div>
 
                         <div class="lg:py-16 grid grid-cols-3 gap-3">
@@ -61,22 +61,22 @@
                                     </li>
                                     <li>
                                         <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                            <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
+                                            <span class="flex-1 ml-3 whitespace-nowrap">NOC an awesome framework</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                            <span class="flex-1 ml-3 whitespace-nowrap">Users</span>
+                                            <span class="flex-1 ml-3 whitespace-nowrap">SOC the Ultimate software never seen before</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                                            <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
+                                            <span class="flex-1 ml-3 whitespace-nowrap">Deep Rooted thoughts from the CEO of Fidelis Group</span>
                                         </a>
                                     </li>
                                 </ul>
                                 <br>
-                                <h3>DISCOVER</h3>
+                                <h3>Categories</h3>
                                 <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
                                     <li>
                                         <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">

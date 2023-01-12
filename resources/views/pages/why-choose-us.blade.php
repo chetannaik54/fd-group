@@ -6,23 +6,23 @@
         <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
                 <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-                    <img alt="Party"
-                        src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                        class="absolute inset-0 h-full w-full object-cover" />
+                    <img alt="Party" src="https://fidelisgroup.in/wp-content/uploads/2020/10/img-slider-03-1-1-800x500.jpg" class="absolute inset-0 h-full w-full object-cover" />
                 </div>
 
                 <div class="lg:py-24">
-                    <h2 class="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+                    <h2 class="text-3xl font-bold sm:text-4xl">Why Fidelis Group India?</h2>
 
                     <p class="mt-4 text-gray-600">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-                        atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-                        veniam tempora deserunt? Molestiae eius quidem quam repellat.
+                        We bring to the table a leadership of industry veterans, advisory and think tanks who have been instrumental in accentuating future driven solutions across organizations and bring game changing insights to business processes and verticals.
                     </p>
 
-                    <a href="#"
+                    <p class="mt-4 text-gray-600">
+                        Here are 4 reasons why you should choose us to build your infrastructure, support your people and systems, as well as advise you on projects that will reduce your risk, enhance your productivity and give you a real competitive edge.
+                    </p>
+
+                    <a href="{{ route('case-studies') }}"
                         class="mt-8 inline-flex items-center rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500">
-                        <span class="text-sm font-medium"> Get Started </span>
+                        <span class="text-sm font-medium"> Still dont believe us! <br>See our customer success </span>
 
                         <svg class="ml-3 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -38,25 +38,19 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class="max-w-screen-md mb-8 lg:mb-16">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business
-                    teams like yours</h2>
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Find out how companies succeed with Fidelis</h2>
                 <p class="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where
                     technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
             </div>
-            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-12 md:space-y-0">
                 <div>
-                    <div
-                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z"
-                                clip-rule="evenodd"></path>
+                    <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate seamlessly with
-                        all the organization and hit your marketing goals every month with our marketing plan.</p>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Human Capital</h3>
+                    <p class="text-gray-500 dark:text-gray-400">We understand that our people impact the success of our business, and we have always focused on the right human capital.</p>
                 </div>
                 <div>
                     <div
@@ -68,9 +62,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Legal</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Protect your organization, devices and stay compliant with
-                        our structured workflows and custom permissions made for you.</p>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Customer First</h3>
+                    <p class="text-gray-500 dark:text-gray-400">We strive to provide superior customer service and ensure that we provide seamless support and handhold our clients to growth.</p>
                 </div>
                 <div>
                     <div
@@ -85,9 +78,8 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Business Automation</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Auto-assign tasks, send Slack messages, and much more. Now
-                        power up with hundreds of new templates to help you get started.</p>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Seamless Support</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Our team and resources are trustworthy, dedicated and experienced and will go the extra mile to solve your business challenges.</p>
                 </div>
                 <div>
                     <div
@@ -102,37 +94,8 @@
                                 clip-rule="evenodd"></path>
                         </svg>
                     </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Finance</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Audit-proof software built for critical financial operations
-                        like month-end close and quarterly budgeting.</p>
-                </div>
-                <div>
-                    <div
-                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Enterprise Design</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Craft beautiful, delightful experiences for both marketing
-                        and product with real cross-company collaboration.</p>
-                </div>
-                <div>
-                    <div
-                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                        <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor"
-                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <h3 class="mb-2 text-xl font-bold dark:text-white">Operations</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Keep your company’s lights on with customizable, iterative,
-                        and structured workflows built for all efficient teams and individual.</p>
+                    <h3 class="mb-2 text-xl font-bold dark:text-white">Quality</h3>
+                    <p class="text-gray-500 dark:text-gray-400">We are committed to deliver outstanding, cutting edge solutions that add real value and foresight to make your business future ready.</p>
                 </div>
             </div>
         </div>

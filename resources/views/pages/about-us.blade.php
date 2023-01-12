@@ -3,27 +3,26 @@
 @section('content')
     <section class="">
         <div class="mx-auto">
-            <div class="mx-auto max-w-xl text-center">
+            <div class="mx-auto text-center">
                 <h1 class="text-3xl font-extrabold sm:text-5xl">
-                    Understand User Flow.
-                    <strong class="font-extrabold text-red-700 sm:block">
-                        Increase Conversion.
+                    About 
+                    <strong class="float-start font-extrabold text-red-700 sm:block">
+                        Fidelis Group.
                     </strong>
                 </h1>
 
                 <p class="mt-4 sm:text-xl sm:leading-relaxed">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-                    tenetur fuga ducimus numquam ea!
+                    Leading The Industry For Over A Decade, we have strived to build a better system of innovation, execution and sustained growth for our clients augmented by intellect, seamless solutions , research, collaboration, talent, industry and stakeholders.
                 </p>
 
                 <div class="mt-8 flex flex-wrap justify-center gap-4">
                     <a class="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-                        href="/get-started">
+                        href="{{ route('contact-us') }}">
                         Get Started
                     </a>
 
                     <a class="block w-full rounded px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-                        href="/about">
+                        href="{{ route('case-studies') }}">
                         Learn More
                     </a>
                 </div>
@@ -41,7 +40,7 @@
 
                 <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
                     <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                        href="/accountant">
+                        href="{{ route('banking') }}">
                         <span class="inline-block rounded-lg bg-gray-50 p-3">
                             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +54,7 @@
                             </svg>
                         </span>
 
-                        <h2 class="mt-2 font-bold">Accountant</h2>
+                        <h2 class="mt-2 font-bold">Banking</h2>
 
                         <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                             Lorem ipsum dolor sit amet consectetur.
@@ -63,7 +62,7 @@
                     </a>
 
                     <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                        href="/accountant">
+                        href="{{ route('fintech') }}">
                         <span class="inline-block rounded-lg bg-gray-50 p-3">
                             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +76,7 @@
                             </svg>
                         </span>
 
-                        <h2 class="mt-2 font-bold">Accountant</h2>
+                        <h2 class="mt-2 font-bold">Fintech</h2>
 
                         <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                             Lorem ipsum dolor sit amet consectetur.
@@ -85,7 +84,7 @@
                     </a>
 
                     <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                        href="/accountant">
+                        href="{{ route('healthcare') }}">
                         <span class="inline-block rounded-lg bg-gray-50 p-3">
                             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +98,7 @@
                             </svg>
                         </span>
 
-                        <h2 class="mt-2 font-bold">Accountant</h2>
+                        <h2 class="mt-2 font-bold">Healthcare</h2>
 
                         <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                             Lorem ipsum dolor sit amet consectetur.
@@ -107,7 +106,7 @@
                     </a>
 
                     <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                        href="/accountant">
+                        href="{{ route('manufacturing') }}">
                         <span class="inline-block rounded-lg bg-gray-50 p-3">
                             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +120,7 @@
                             </svg>
                         </span>
 
-                        <h2 class="mt-2 font-bold">Accountant</h2>
+                        <h2 class="mt-2 font-bold">Manufacturing</h2>
 
                         <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                             Lorem ipsum dolor sit amet consectetur.
@@ -129,7 +128,7 @@
                     </a>
 
                     <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                        href="/accountant">
+                        href="{{ route('enterprise-technology') }}>
                         <span class="inline-block rounded-lg bg-gray-50 p-3">
                             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +142,7 @@
                             </svg>
                         </span>
 
-                        <h2 class="mt-2 font-bold">Accountant</h2>
+                        <h2 class="mt-2 font-bold">Enterprise Technology</h2>
 
                         <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                             Lorem ipsum dolor sit amet consectetur.
@@ -151,7 +150,7 @@
                     </a>
 
                     <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                        href="/accountant">
+                        href="{{ route('retail-&-ecommerce') }}">
                         <span class="inline-block rounded-lg bg-gray-50 p-3">
                             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -165,7 +164,7 @@
                             </svg>
                         </span>
 
-                        <h2 class="mt-2 font-bold">Accountant</h2>
+                        <h2 class="mt-2 font-bold">Retail & E-commerce</h2>
 
                         <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                             Lorem ipsum dolor sit amet consectetur.
