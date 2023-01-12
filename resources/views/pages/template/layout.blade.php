@@ -194,6 +194,8 @@
 
         <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
         <!--Left Side Buttons Start-->	
         <div class="sticky-left-container">
             <ul class="sticky-left">

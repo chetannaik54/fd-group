@@ -4,7 +4,7 @@
 
 <section class="bg-white dark:bg-gray-900">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
+        <div class="mr-auto place-self-center lg:col-span-7 animate__animated animate__backInLeft animate__slower">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Framework</h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-lg dark:text-gray-400">Fidelis helps you take control of your infrastructure support through a suite of NOC solutions
                 designed to meet the specific needs of your technology environment and operational
@@ -24,7 +24,7 @@
                 </a>
 
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex animate__animated animate__backInRight animate__slower">
             <img src="{{ asset('img/comp-NC-product.png') }}" alt="mockup">
         </div>
     </div>
@@ -32,7 +32,7 @@
 
 <section class="bg-white dark:bg-gray-900">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 animate__animated animate__backInLeft animate__slower">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">NOC Support</h2>
             <p class="mb-4">Need us anytime? Our NOC support services provide exactly the level
                 of support you need—when you need it. Focus your attention and resources on revenue-
@@ -40,7 +40,7 @@
                 trusted by enterprises, communications service providers, and OEMs to deliver maximum
                 uptime, availability, and performance.</p>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
+        <div class="grid grid-cols-2 gap-4 mt-8 animate__animated animate__backInRight animate__slower">
             <img class="w-full rounded-lg" src="https://img.freepik.com/free-vector/cross-platform-software-concept-illustration_114360-7293.jpg?w=1380&t=st=1673520303~exp=1673520903~hmac=0cb26a177592471a79198b4e7dbe55e60cdcd4f6e4ea10544e6b2fd64b74995e 1" alt="office content 1">
             <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://img.freepik.com/free-psd/3d-nft-icon-developer-male-illustration_629802-6.jpg?w=826&t=st=1673520327~exp=1673520927~hmac=77b1e6c0375d531689ecffaf384c7df51342a9d4c9a91a9a3f2c2f1b77c838fe" alt="office content 2">
         </div>
@@ -49,12 +49,12 @@
 
 <section class="bg-white dark:bg-gray-900">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="grid grid-cols-2 gap-4 mt-8">
+        <div class="grid grid-cols-2 gap-4 mt-8 animate__animated animate__backInLeft animate__slower">
             <img class="w-full rounded-lg" src="https://img.freepik.com/free-vector/business-operation-planning-software-technology-integration_335657-3131.jpg?w=1380&t=st=1673520372~exp=1673520972~hmac=c5f8a9b253ce00b4432d981d92a8f8027d68ad26c632f733be187e2a675b24f2" alt="office content 1">
             <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://img.freepik.com/free-vector/operating-system-concept-illustration_114360-1716.jpg?w=1380&t=st=1673520388~exp=1673520988~hmac=3ec14beb175f78562ac11b900b506e43f52576cd4cadfdb44d2148bce5d94394" alt="office content 2">
         </div>
 
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 animate__animated animate__backInRight animate__slower">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">NOC Operations Consulting</h2>
             <p class="mb-4">Setting-up a new NOC or optimizing an existing
                 one? Our NOC experts assess support requirements, analyze gaps, and draw on
@@ -66,7 +66,7 @@
 </section>
 
 <section class="bg-white dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 animate__animated animate__bounceInUp animate__slower">
         <div class="max-w-screen-md mb-8 lg:mb-16">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">NOC Features</h2>
             <p class="text-gray-500 sm:text-lg dark:text-gray-400">NOC Structure</p>

@@ -4,7 +4,7 @@
 
 <section class="bg-white dark:bg-gray-900">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
+        <div class="mr-auto place-self-center lg:col-span-7 animate__animated animate__backInLeft animate__slower">
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Framework</h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-lg dark:text-gray-400">Fidelis helps you take control of your infrastructure support through a suite of SOC solutions
                 designed to meet the specific needs of your technology environment and operational
@@ -23,7 +23,7 @@
                     <span class="relative invisible">Get a free demo</span>
                 </a>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex animate__animated animate__backInRight animate__slower">
             <img src="https://img.freepik.com/free-photo/standard-quality-control-collage_23-2149631017.jpg?w=1380&t=st=1673520477~exp=1673521077~hmac=b02cf081a84bc2bb1230b6661eeeb2dd88de400ff4b1fecfeb27bdd42dc217f2" alt="mockup">
         </div>
     </div>
@@ -31,7 +31,7 @@
 
 <section class="bg-white dark:bg-gray-900">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 animate__animated animate__backInLeft animate__slower">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">SOC Support</h2>
             <p class="mb-4">Need us anytime? Our SOC support services provide exactly the level
                 of support you need—when you need it. Focus your attention and resources on revenue-
@@ -39,22 +39,21 @@
                 trusted by enterprises, communications service providers, and OEMs to deliver maximum
                 uptime, availability, and performance.</p>
         </div>
-        <div class="grid grid-cols-2 gap-4 mt-8">
+        <div class="grid grid-cols-2 gap-4 mt-8 animate__animated animate__backInRight animate__slower">
             <img class="w-full rounded-lg" src="https://img.freepik.com/free-vector/people-with-mobile-phones-using-smart-voice-assistant-software-man-woman-near-screen-with-microphone-soundwaves-sound-recording-app-interface-ai-technology-concept_74855-10131.jpg?w=1060&t=st=1673520595~exp=1673521195~hmac=4d253d95779f97d8d262b3a2d1022913e2f0134e6e5cdf789573f7aeba7769d9" alt="office content 1">
             <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://img.freepik.com/free-vector/laptop-software-assisting-testing-process-tiny-people-testers-automated-testing-automotive-executed-test-software-auto-tester-concept_335657-2437.jpg?w=1380&t=st=1673520611~exp=1673521211~hmac=a46c2091563a89a6e1fe69e1d5ce610aecc2a3e7b3dec8c659971be46a180dbb" alt="office content 2">
-
         </div>
     </div>
 </section>
 
 <section class="bg-white dark:bg-gray-900">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="grid grid-cols-2 gap-4 mt-8">
+        <div class="grid grid-cols-2 gap-4 mt-8 animate__animated animate__backInLeft animate__slower">
             <img class="w-full rounded-lg" src="https://img.freepik.com/free-vector/gradient-devops-illustration_23-2149370940.jpg?w=1380&t=st=1673520504~exp=1673521104~hmac=b8003437ef44ec07762ff88978823dd0b238c65246ae57a998afc87f9d498c20" alt="office content 1">
             <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://img.freepik.com/free-vector/flat-design-devops-illustration_52683-84086.jpg?w=826&t=st=1673520538~exp=1673521138~hmac=391d1fb9774869a5aefb1cc724fdbd0e09116971d264157d47fc8a619d88c5c7" alt="office content 2">
         </div>
 
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400 animate__animated animate__backInRight animate__slower">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">SOC Operations Consulting</h2>
             <p class="mb-4">Setting-up a new SOC or optimizing an existing
                 one? Our SOC experts assess support requirements, analyze gaps, and draw on
@@ -66,7 +65,7 @@
 </section>
 
 <section class="bg-white dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 animate__animated animate__bounceInUp animate__slower">
         <div class="max-w-screen-md mb-8 lg:mb-16">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">SOC Features</h2>
             <p class="text-gray-500 sm:text-lg dark:text-gray-400">SOC Structure</p>
