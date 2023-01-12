@@ -3,7 +3,7 @@
 
         <div class="flex items-center gap-4">
             <a href="#">
-                <span class="sr-only">Logo</span>
+                <span class="sr-only">Fidelis</span>
                 <span class="h-10 w-20 rounded-lg bg-gray-200"></span>
             </a>
 
@@ -23,12 +23,12 @@
 
         <nav aria-label="Site Nav" class="hidden items-center justify-center gap-8 text-sm font-medium lg:flex lg:w-0 lg:flex-1">
             <a class="text-gray-900" href="{{ route('about-us') }}">About</a>
-            <a class="text-gray-900" href="{{ route('people') }}">People & Culture</a>
             <a class="text-gray-900" href="{{ route('journey') }}">Our Journey</a>
             <a class="text-gray-900" href="{{ route('mission-vision-values') }}">Mission, Vision & Values</a>
-            <a class="text-gray-900" href="{{ route('clients-speak') }}">Client Speak</a>
-            <a class="text-gray-900" href="{{ route('why-choose-us') }}">Why choose</a>
+            <a class="text-gray-900" href="{{ route('clients-speak') }}">Testimonials</a>
+            <a class="text-gray-900" href="{{ route('people') }}">Team</a>
             <a class="text-gray-900" href="{{ route('locations') }}">Locations</a>
+            <a class="text-gray-900" href="{{ route('why-choose-us') }}">Why choose</a>
         </nav>
 
         <div class="hidden items-center gap-4 lg:flex">
@@ -171,17 +171,15 @@
 
                 <div class="flex items-center gap-4">
                     <div class="sm:flex sm:gap-4">
-                        <a class="rounded-md bg-orange-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                            href="/">
-                            Login
+                        <a class="rounded-md bg-orange-600 px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-400 hover:ring-2 hover:ring-offset-2 hover:ring-orange-400 transition-all ease-out duration-300" href="{{ route('contact-us') }}">
+                            Get a free demo
                         </a>
 
-                        <div class="hidden sm:flex">
-                            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-orange-600"
-                                href="/">
+                        {{-- <div class="hidden sm:flex">
+                            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-orange-600" href="">
                                 Register
                             </a>
-                        </div>
+                        </div> --}}
                     </div>
 
                     <div class="block md:hidden">

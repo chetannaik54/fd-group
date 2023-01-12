@@ -58,6 +58,50 @@
                 opacity: 0.2;
             }
             }
+
+/*Left Side Buttons Start*/
+.sticky-left-container{
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    left: -158px;
+    top:40%;
+    width: 200px;
+    z-index:2;
+  }
+  .sticky-left li{
+    list-style-type: none;
+    background-color: none;
+    color: #efefef;
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor: pointer; 
+  }
+  .sticky-left li:hover{
+    margin-right: -150px;
+    background:#333;
+    border-radius: 25px 25px 25px 0;
+  }
+  .sticky-left li img{
+    float: right;
+    border-radius:50%; 
+    margin: 5px 5px;
+    margin-left: 10px;
+  }
+  .sticky-left li p{
+    padding: 0px;
+    float:right;
+    margin: 0px;
+    text-transform: uppercase;
+    line-height: 43px;
+  }
+/*Left Side Buttons End*/
+
         </style>
 
         @yield('customcss')
@@ -251,6 +295,31 @@
                 style="width:150px;height:150px">
             </lord-icon>
         </a>
+
+        <!--Left Side Buttons Start-->	
+        <div class="sticky-left-container">
+            <ul class="sticky-left">
+            <li>
+                <a target="_blank" href="tel:+918041502234">
+                    <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1yz1jMRdqLQWBx10eFLSWTMGWmKrL9sM6"/>
+                    <p>Phone</p>    
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/+918041502234?text=� Hi, i wanted to know more about NOC. SOC software">
+                    <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1ha6UAQlGBFXnExIXUMgs2l1QwUNgE09K" />
+                    <p>Whatsapp</p>    
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:info@fidelisgroup.in">
+                    <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1Jthmdc-CZpBoymeHEW06x9OTj8_lW7gM" />
+                    <p>Email</p>    
+                </a>
+            </li>
+        </ul>
+        </div>
+    <!--Left Side Buttons End-->
 
         @yield('scripts')
 
