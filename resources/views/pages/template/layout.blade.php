@@ -7,101 +7,8 @@
 
         <title>{{ config('app.name', 'Fidelis') }} | {{ str_replace('-', ' ', Route::currentRouteName()) }}</title>
 
-        <style>
-            @font-face {
-            font-family: "KabarettD";
-                src: url('{{ asset("fonts/KabarettD.ttf") }}');
-            }
-
-            /* common */
-            .loading {
-                font-size: 84px;
-                font-family: "KabarettD";
-                font-weight: 800;
-                text-align: center;
-                color: #28597a;
-            }
-            .loading span {
-                display: inline-block;
-                margin: 0 -0.05em;
-            }
-            /* code #2 */
-            .loading02 span {
-                animation: loading02 1.2s infinite alternate;
-            }
-            .loading02 span:nth-child(2) {
-                animation-delay: 0.2s;
-            }
-            .loading02 span:nth-child(3) {
-                animation-delay: 0.4s;
-            }
-            .loading02 span:nth-child(4) {
-                animation-delay: 0.6s;
-            }
-            .loading02 span:nth-child(5) {
-                animation-delay: 0.8s;
-            }
-            .loading02 span:nth-child(6) {
-                animation-delay: 1s;
-            }
-            .loading02 span:nth-child(7) {
-                animation-delay: 1.2s;
-            }
-
-            @keyframes loading02 {
-            0% {
-                filter: blur(0);
-                opacity: 1;
-            }
-            100% {
-                filter: blur(5px);
-                opacity: 0.2;
-            }
-            }
-
-/*Left Side Buttons Start*/
-.sticky-left-container{
-    padding: 0px;
-    margin: 0px;
-    position: fixed;
-    left: -158px;
-    top:40%;
-    width: 200px;
-    z-index:2;
-  }
-  .sticky-left li{
-    list-style-type: none;
-    background-color: none;
-    color: #efefef;
-    height: 43px;
-    padding: 0px;
-    margin: 0px 0px 1px 0px;
-    -webkit-transition:all 0.25s ease-in-out;
-    -moz-transition:all 0.25s ease-in-out;
-    -o-transition:all 0.25s ease-in-out;
-    transition:all 0.25s ease-in-out;
-    cursor: pointer; 
-  }
-  .sticky-left li:hover{
-    margin-right: -150px;
-    background:#333;
-    border-radius: 25px 25px 25px 0;
-  }
-  .sticky-left li img{
-    float: right;
-    border-radius:50%; 
-    margin: 5px 5px;
-    margin-left: 10px;
-  }
-  .sticky-left li p{
-    padding: 0px;
-    float:right;
-    margin: 0px;
-    text-transform: uppercase;
-    line-height: 43px;
-  }
-/*Left Side Buttons End*/
-
+        <style type="text/css">
+            @font-face{font-family:KabarettD;src:url('{{ asset("fonts/KabarettD.ttf") }}')}.loading{font-size:84px;font-family:KabarettD;font-weight:800;text-align:center;color:#28597a}.loading span{display:inline-block;margin:0 -.05em}.loading02 span{animation:1.2s infinite alternate loading02}.loading02 span:nth-child(2){animation-delay:.2s}.loading02 span:nth-child(3){animation-delay:.4s}.loading02 span:nth-child(4){animation-delay:.6s}.loading02 span:nth-child(5){animation-delay:.8s}.loading02 span:nth-child(6){animation-delay:1s}.loading02 span:nth-child(7){animation-delay:1.2s}@keyframes loading02{0%{filter:blur(0);opacity:1}100%{filter:blur(5px);opacity:.2}}.sticky-left-container{padding:0;margin:0;position:fixed;left:-158px;top:40%;width:200px;z-index:2}.sticky-left li{list-style-type:none;background-color:none;color:#efefef;height:43px;padding:0;margin:0 0 1px;-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out;cursor:pointer}.sticky-left li:hover{margin-right:-150px;background:#333;border-radius:25px 25px 25px 0}.sticky-left li img{float:right;border-radius:50%;margin:5px 5px 5px 10px}.sticky-left li p{padding:0;float:right;margin:0;text-transform:uppercase;line-height:43px}
         </style>
 
         @yield('customcss')
@@ -144,7 +51,7 @@
         {{-- <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"> --}}
 
         {{-- Scripts --}}
-        <script src="https://cdn.tailwindcss.com"></script>
+        {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
         <link rel="stylesheet" href="{{ asset('css/flowheader.css') }}">
@@ -237,7 +144,7 @@
             </dialog>
         </div> --}}
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.min.js"></script>
 
         <script type="text/javascript">
@@ -290,25 +197,25 @@
         <!--Left Side Buttons Start-->	
         <div class="sticky-left-container">
             <ul class="sticky-left">
-            <li>
-                <a target="_blank" href="tel:+918041502234">
-                    <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1yz1jMRdqLQWBx10eFLSWTMGWmKrL9sM6"/>
-                    <p>Phone</p>    
-                </a>
-            </li>
-            <li>
-                <a target="_blank" href="https://wa.me/+918041502234?text=� Hi, i wanted to know more about NOC. SOC software">
-                    <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1ha6UAQlGBFXnExIXUMgs2l1QwUNgE09K" />
-                    <p>Whatsapp</p>    
-                </a>
-            </li>
-            <li>
-                <a target="_blank" href="mailto:info@fidelisgroup.in">
-                    <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1Jthmdc-CZpBoymeHEW06x9OTj8_lW7gM" />
-                    <p>Email</p>    
-                </a>
-            </li>
-        </ul>
+                <li>
+                    <a target="_blank" href="tel:+918041502234">
+                        <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1yz1jMRdqLQWBx10eFLSWTMGWmKrL9sM6"/>
+                        <p>Phone</p>    
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://wa.me/+918041502234?text=� Hi, i wanted to know more about NOC. SOC software">
+                        <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1ha6UAQlGBFXnExIXUMgs2l1QwUNgE09K" />
+                        <p>Whatsapp</p>    
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:info@fidelisgroup.in">
+                        <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1Jthmdc-CZpBoymeHEW06x9OTj8_lW7gM" />
+                        <p>Email</p>    
+                    </a>
+                </li>
+            </ul>
         </div>
     <!--Left Side Buttons End-->
 

@@ -14,16 +14,17 @@
                 support. Comprehensive network, server, and application monitoring and a powerful operational
                 framework deliver detailed metrics and visibility, enabling our or your monitoring teams to react
                 quickly and optimize for peak support execution.</p>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                Get started
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-            <a href="tel:7506821694" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Speak to Sales
-            </a> 
+
+                <a href="{{ route('contact-us') }}" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-blue-500 rounded-full shadow-md group">
+                    <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-blue-500 group-hover:translate-x-0 ease">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </span>
+                    <span class="absolute flex items-center justify-center w-full h-full text-blue-500 transition-all duration-300 transform group-hover:translate-x-full ease">Get a free demo</span>
+                    <span class="relative invisible">Get a free demo</span>
+                </a>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://via.placeholder.com/600x500.png?text=SOC%20Product Image" alt="mockup">
+            <img src="https://img.freepik.com/free-photo/standard-quality-control-collage_23-2149631017.jpg?w=1380&t=st=1673520477~exp=1673521077~hmac=b02cf081a84bc2bb1230b6661eeeb2dd88de400ff4b1fecfeb27bdd42dc217f2" alt="mockup">
         </div>
     </div>
 </section>
@@ -39,8 +40,9 @@
                 uptime, availability, and performance.</p>
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://via.placeholder.com/200x450.png?text=SOC Image 1" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://via.placeholder.com/200x450.png?text=SOC Image 2" alt="office content 2">
+            <img class="w-full rounded-lg" src="https://img.freepik.com/free-vector/people-with-mobile-phones-using-smart-voice-assistant-software-man-woman-near-screen-with-microphone-soundwaves-sound-recording-app-interface-ai-technology-concept_74855-10131.jpg?w=1060&t=st=1673520595~exp=1673521195~hmac=4d253d95779f97d8d262b3a2d1022913e2f0134e6e5cdf789573f7aeba7769d9" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://img.freepik.com/free-vector/laptop-software-assisting-testing-process-tiny-people-testers-automated-testing-automotive-executed-test-software-auto-tester-concept_335657-2437.jpg?w=1380&t=st=1673520611~exp=1673521211~hmac=a46c2091563a89a6e1fe69e1d5ce610aecc2a3e7b3dec8c659971be46a180dbb" alt="office content 2">
+
         </div>
     </div>
 </section>
@@ -48,8 +50,8 @@
 <section class="bg-white dark:bg-gray-900">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://via.placeholder.com/200x450.png?text=SOC Image 1" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://via.placeholder.com/200x450.png?text=SOC Image 1" alt="office content 2">
+            <img class="w-full rounded-lg" src="https://img.freepik.com/free-vector/gradient-devops-illustration_23-2149370940.jpg?w=1380&t=st=1673520504~exp=1673521104~hmac=b8003437ef44ec07762ff88978823dd0b238c65246ae57a998afc87f9d498c20" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://img.freepik.com/free-vector/flat-design-devops-illustration_52683-84086.jpg?w=826&t=st=1673520538~exp=1673521138~hmac=391d1fb9774869a5aefb1cc724fdbd0e09116971d264157d47fc8a619d88c5c7" alt="office content 2">
         </div>
 
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">

@@ -347,11 +347,10 @@
 
                                 <div class="slider-container">
                                     <ul class="slider">
-                                        @for ($i = 2; $i <= 10; $i++)
+                                        @for ($i = 2; $i <= 20; $i++)
                                             <li class="slider__slide">
                                                 <div class="slide__content">
-                                                    <img src="https://fidelisgroup.in/wp-content/uploads/2020/10/Picture{{ $i }}.png"
-                                                        alt="">
+                                                    <img src="https://fidelisgroup.in/wp-content/uploads/2020/10/Picture{{ $i }}.png" alt="" class="w-auto h-24">
                                                 </div>
                                             </li>
                                         @endfor
@@ -366,12 +365,12 @@
 
             <section>
                 <div class="grid grid-cols-3 gap-3">
-                    <a href="#" class="group relative block bg-black">
+                    <a href="#coreservices" class="group relative block bg-black">
                         <img alt="Developer" src="https://fidelisgroup.in/wp-content/uploads/2020/10/image-blog-2-1-800x450.jpg" class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
 
                         <div class="relative p-8">
                             <p class="text-sm font-medium uppercase tracking-widest text-orange-500 hover:text-blue-500">
-                                Our Competencies
+                                Our Services
                             </p>
 
                             <p class="text-2xl font-bold text-white">The Fidelis Advantage</p>
@@ -385,9 +384,9 @@
                                 </div>
                             </div>
                         </div>
-                    </a>                    
+                    </a>
 
-                    <a href="#" class="group relative block bg-black">
+                    <a href="{{ route('journey') }}" class="group relative block bg-black">
                         <img alt="Developer" src="https://fidelisgroup.in/wp-content/uploads/2018/05/285-jir-60871-nam-eye-id-392451-jpeg1-800x450.jpg" class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
 
                         <div class="relative p-8">
@@ -550,11 +549,10 @@
             </section>
 
             <!-- Start Section-->
-            <section class="relative md:py-24 py-16 overflow-hidden">
+            <section class="relative md:py-24 py-16 overflow-hidden" id="coreservices">
                 <div class="container">
-                    <div class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp"
-                        data-wow-delay=".1s">
-                        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Core Compentencies</h3>
+                    <div class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Core Services</h3>
 
                         <p class="text-slate-400 max-w-xl mx-auto">working with Fidelis CSS that can provide everything
                             you need to generate awareness, drive traffic, connect.</p>
@@ -1492,7 +1490,6 @@
         @include('pages.template.footer')
     </div>
 
-
     <!-- Fonts -->
     {{-- <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"> --}}
 
@@ -1626,13 +1623,6 @@
         </script> --}}
 
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
-
-    <a target="_blank" href="tel:+918041502234" class="bottom-0 left-0 sticky">
-        <lord-icon src="https://cdn.lordicon.com/avkeowsl.json" trigger="loop" delay="2000"
-            style="width:150px;height:150px">
-        </lord-icon>
-    </a>
-
 
     <!-- JAVASCRIPTS -->
     <script src="assets/libs/wow.js/wow.min.js"></script>

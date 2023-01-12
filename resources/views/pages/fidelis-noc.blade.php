@@ -14,16 +14,18 @@
                 support. Comprehensive network, server, and application monitoring and a powerful operational
                 framework deliver detailed metrics and visibility, enabling our or your monitoring teams to react
                 quickly and optimize for peak support execution.</p>
-            <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                Get started
-                <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-            <a href="tel:7506821694" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Speak to Sales
-            </a> 
+
+                <a href="{{ route('contact-us') }}" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-blue-500 rounded-full shadow-md group">
+                    <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-blue-500 group-hover:translate-x-0 ease">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </span>
+                    <span class="absolute flex items-center justify-center w-full h-full text-blue-500 transition-all duration-300 transform group-hover:translate-x-full ease">Get a free demo</span>
+                    <span class="relative invisible">Get a free demo</span>
+                </a>
+
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://via.placeholder.com/600x500.png?text=NOC%20Product Image" alt="mockup">
+            <img src="{{ asset('img/comp-NC-product.png') }}" alt="mockup">
         </div>
     </div>
 </section>
@@ -39,8 +41,8 @@
                 uptime, availability, and performance.</p>
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://via.placeholder.com/200x450.png?text=NOC Image 1" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://via.placeholder.com/200x450.png?text=NOC Image 2" alt="office content 2">
+            <img class="w-full rounded-lg" src="https://img.freepik.com/free-vector/cross-platform-software-concept-illustration_114360-7293.jpg?w=1380&t=st=1673520303~exp=1673520903~hmac=0cb26a177592471a79198b4e7dbe55e60cdcd4f6e4ea10544e6b2fd64b74995e 1" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://img.freepik.com/free-psd/3d-nft-icon-developer-male-illustration_629802-6.jpg?w=826&t=st=1673520327~exp=1673520927~hmac=77b1e6c0375d531689ecffaf384c7df51342a9d4c9a91a9a3f2c2f1b77c838fe" alt="office content 2">
         </div>
     </div>
 </section>
@@ -48,8 +50,8 @@
 <section class="bg-white dark:bg-gray-900">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://via.placeholder.com/200x450.png?text=NOC Image 1" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://via.placeholder.com/200x450.png?text=NOC Image 1" alt="office content 2">
+            <img class="w-full rounded-lg" src="https://img.freepik.com/free-vector/business-operation-planning-software-technology-integration_335657-3131.jpg?w=1380&t=st=1673520372~exp=1673520972~hmac=c5f8a9b253ce00b4432d981d92a8f8027d68ad26c632f733be187e2a675b24f2" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://img.freepik.com/free-vector/operating-system-concept-illustration_114360-1716.jpg?w=1380&t=st=1673520388~exp=1673520988~hmac=3ec14beb175f78562ac11b900b506e43f52576cd4cadfdb44d2148bce5d94394" alt="office content 2">
         </div>
 
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
