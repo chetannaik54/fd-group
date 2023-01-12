@@ -77,69 +77,6 @@
         .tagcloud--item:hover {
             color: #ff4500
         }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(-5%)
-            }
-
-            100% {
-                transform: translateX(calc((0 - var(--slider-inner-width)) - 5%))
-            }
-        }
-
-        .slider {
-            --slider-inner-width: 2500px;
-            --slider-speed: 5s;
-            -webkit-transform: translate3d(0, 0, 0);
-            animation: scroll linear infinite var(--slider-speed);
-            width: calc(2 * var(--slider-inner-width));
-            transition: animation-play-state .3s
-        }
-
-        .slider:hover {
-            animation-play-state: paused
-        }
-
-        .flex-container {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 4rem 0
-        }
-
-        .slider-container {
-            height: 100px;
-            overflow: hidden;
-            position: relative;
-            width: 100%
-        }
-
-        .slider-container .slider {
-            display: flex;
-            align-items: center;
-            list-style: none;
-            margin: 0
-        }
-
-        .slider-container .slider__slide {
-            height: 100px;
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center
-        }
-
-        .slider-container .slider__slide:hover {
-            cursor: pointer
-        }
-
-        .slider-container .slider__slide .slide__content {
-            color: #fff;
-            font-size: 80px
-        }
     </style>
 </head>
 
@@ -338,25 +275,7 @@
                                 </div>
                             </div>
                             <div class="w-full md:w-1/2 p-8">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NaIoSNuC2_0"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                                <p class="mb-6 text-sm text-gray-500 font-semibold uppercase">Trusted and loved by 100+
-                                    tech first teams</p>
-
-                                <div class="slider-container">
-                                    <ul class="slider">
-                                        @for ($i = 2; $i <= 20; $i++)
-                                            <li class="slider__slide">
-                                                <div class="slide__content">
-                                                    <img src="https://fidelisgroup.in/wp-content/uploads/2020/10/Picture{{ $i }}.png" alt="" class="w-auto h-24">
-                                                </div>
-                                            </li>
-                                        @endfor
-                                    </ul>
-                                </div>
-
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NaIoSNuC2_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -433,60 +352,46 @@
                 </div>
             </section>
 
-            <section class="bg-gray-100 dark:bg-gray-900">
-                <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                    <dl class="grid gap-8 mx-auto text-gray-900 sm:grid-cols-4 dark:text-white">
+            <section class="dark:bg-gray-900">
+                <div class="max-w-screen px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                    <dl class="grid gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
 
-                        <a href="#" class="relative block rounded-sm border-t-4 border-pink-600 p-8 pb-24 shadow-xl bg-white">
+                        <a href="#" class="relative block rounded-sm border-t-4 border-orange-600 p-8 pb-24 shadow-xl bg-white">
                             <h3 class="text-4xl font-bold" id="yearsinbusiness">15</h3>
                             <p class="mt-4 text-lg font-medium text-gray-500">
                                 Years in business
                             </p>
 
                             <span class="absolute bottom-8 right-8">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-600" fill="none" viewBox="0 0 24 24"
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                               </svg>
                             </span>
                         </a>
 
-                        <a href="#" class="relative block rounded-sm border-t-4 border-pink-600 p-8 pb-24 shadow-xl bg-white">
+                        <a href="#" class="relative block rounded-sm border-t-4 border-orange-600 p-8 pb-24 shadow-xl bg-white">
                             <h3 class="text-4xl font-bold" id="happycustomer">2500</h3>
                             <p class="mt-4 text-lg font-medium text-gray-500">
                                 Happy Customers
                             </p>
 
                             <span class="absolute bottom-8 right-8">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-600" fill="none" viewBox="0 0 24 24"
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                               </svg>
                             </span>
                         </a>
 
-                        <a href="#" class="relative block rounded-sm border-t-4 border-pink-600 p-8 pb-24 shadow-xl bg-white">
-                            <h3 class="text-4xl font-bold" id="noproducts">4</h3>
-                            <p class="mt-4 text-lg font-medium text-gray-500">
-                                Products
-                            </p>
-
-                            <span class="absolute bottom-8 right-8">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-600" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                              </svg>
-                            </span>
-                        </a>
-
-                        <a href="#" class="relative block rounded-sm border-t-4 border-pink-600 p-8 pb-24 shadow-xl bg-white">
+                        <a href="#" class="relative block rounded-sm border-t-4 border-orange-600 p-8 pb-24 shadow-xl bg-white">
                             <h3 class="text-4xl font-bold" id="presentincountries">12</h3>
                             <p class="mt-4 text-lg font-medium text-gray-500">
                                 Present in countries
                             </p>
 
                             <span class="absolute bottom-8 right-8">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-600" fill="none" viewBox="0 0 24 24"
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                               </svg>
@@ -496,16 +401,23 @@
                 </div>
             </section>
 
+            <p class="mb-6 text-sm text-gray-500 font-semibold uppercase">Trusted and loved by 100+ tech first teams</p>
+
+            <div class="grid grid-cols-6 gap-4 owl-carousel">
+                @for ($i = 2; $i <= 20; $i++)
+                    <div><img src="https://fidelisgroup.in/wp-content/uploads/2020/10/Picture{{ $i }}.png" alt="" class="w-auto" /></div>
+                @endfor
+            </div>
 
             <section class="relative md:py-24 py-16 overflow-hidden">
                 <div class="container">
                     <div class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                         <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">1500+ Jobs posted last week</h3>
                     </div>
-                    <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-4">
+                    <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-2">
                         <div>
                             <input
-                            class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                            class="w-full rounded-lg border-gray-200 p-3 text-sm h-16"
                             placeholder="What are you looking for"
                             type="text"
                             id="name"
@@ -514,7 +426,7 @@
             
                         <div>
                             <label for="preferred location"></label>
-                            <select name="" id="" class="w-full rounded-lg border-gray-200 p-3 text-sm">
+                            <select name="" id="" class="w-full rounded-lg border-gray-200 p-3 text-sm h-16">
                                 <option value="">Delhi</option>
                                 <option value="">Mumbai</option>
                                 <option value="">Bangalore</option>
@@ -524,7 +436,7 @@
                         </div>
 
                         <div>
-                            <select name="" id="" class="w-full rounded-lg border-gray-200 p-3 text-sm">
+                            <select name="" id="" class="w-full rounded-lg border-gray-200 p-3 text-sm h-16">
                                 <option value="">Fresher</option>
                                 <option value="">1 Year</option>
                                 <option value="">2 Year</option>
@@ -536,7 +448,7 @@
                         </div>
 
                         <div>
-                            <a class="group flex items-center justify-between rounded-lg border border-current px-5 py-3 text-indigo-600 transition-colors hover:bg-indigo-600 focus:outline-none focus:ring active:bg-indigo-500" href="/"> <span class="font-medium transition-colors group-hover:text-white"> Search my jobs </span> 
+                            <a class="group flex items-center justify-between rounded-lg border border-current px-5 py-3 text-indigo-600 transition-colors hover:bg-indigo-600 focus:outline-none focus:ring active:bg-indigo-500" href="{{ route('careers') }}"> <span class="font-medium transition-colors group-hover:text-white"> Search my jobs </span> 
                                 <span class="ml-4 flex-shrink-0 rounded-full border border-indigo-600 bg-white p-2 group-active:border-indigo-500"> 
                                     <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -1773,42 +1685,41 @@
 
         incEltNbr("yearsinbusiness"); /*Call this funtion with the ID-name for that element to increase the number within*/
         incEltNbr("happycustomer");
-        incEltNbr("noproducts");
+        // incEltNbr("noproducts");
         incEltNbr("presentincountries");
     </script>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new Swiper('.swiper-container', {
-            loop: true,
-            slidesPerView: 1,
-            spaceBetween: 32,
-            autoplay: {
-                delay: 8000,
-            },
-            breakpoints: {
-                640: {
-                centeredSlides: true,
-                slidesPerView: 1.25,
-                },
-                1024: {
-                centeredSlides: false,
-                slidesPerView: 1.5,
-                },
-            },
-            navigation: {
-                nextEl: '.next-button',
-                prevEl: '.prev-button',
-            },
-            })
-        })
-    </script>
-
-    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <link rel="stylesheet" href="{{ asset('assets/OwlCarousel/dist/assets/owl.carousel.min.css') }} ">
+    <link rel="stylesheet" href="{{ asset('assets/OwlCarousel/dist/assets/owl.theme.default.min.css') }}">
+    <script src="{{ asset('assets/OwlCarousel/dist/owl.carousel.min.js') }}"></script>
+        <script>
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    lazyLoad:true,
+                    margin:120,
+                    responsiveClass:true,
+                    autoplay:true,
+                    autoplayTimeout:1000,
+                    autoplayHoverPause:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true
+                        },
+                        600:{
+                            items:3,
+                            nav:false
+                        },
+                        1000:{
+                            items:7,
+                            nav:false,
+                            loop:true
+                        }
+                    }
+                })
+            });
+        </script>
 
     <script>
         $(window).load(function() {
