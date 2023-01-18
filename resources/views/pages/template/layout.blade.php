@@ -16,7 +16,7 @@
     <body class="font-sans antialiased">
           
         {{-- Loading screen --}}
-        <section id="loader" class="flex h-screen">
+        {{-- <section id="loader" class="flex h-screen">
             <div class="loading loading02 m-auto">
               <span>F</span>
               <span>I</span>
@@ -26,7 +26,7 @@
               <span>I</span>
               <span>S</span>
             </div>
-        </section>
+        </section> --}}
 
         <div id="pagecontent" class="min-h-screen hidden invisible">
             @include('pages.template.header')
@@ -47,11 +47,7 @@
             @include('pages.template.footer')
         </div>
 
-        <!-- Fonts -->
-        {{-- <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap"> --}}
-
         {{-- Scripts --}}
-        {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
         <link rel="stylesheet" href="{{ asset('css/flowheader.css') }}">
@@ -195,31 +191,6 @@
         <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-        <!--Left Side Buttons Start-->	
-        <div class="sticky-left-container">
-            <ul class="sticky-left">
-                <li>
-                    <a target="_blank" href="tel:+918041502234">
-                        <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1yz1jMRdqLQWBx10eFLSWTMGWmKrL9sM6"/>
-                        <p>Phone</p>    
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://wa.me/+918041502234?text=� Hi, i wanted to know more about NOC. SOC software">
-                        <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1ha6UAQlGBFXnExIXUMgs2l1QwUNgE09K" />
-                        <p>Whatsapp</p>    
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" href="mailto:info@fidelisgroup.in">
-                        <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1Jthmdc-CZpBoymeHEW06x9OTj8_lW7gM" />
-                        <p>Email</p>    
-                    </a>
-                </li>
-            </ul>
-        </div>
-    <!--Left Side Buttons End-->
 
         @yield('scripts')
 

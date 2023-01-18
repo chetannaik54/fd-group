@@ -1,195 +1,144 @@
-<header aria-label="Site Header" class="shadow-sm">
-    <div class="mx-auto flex h-16 items-center justify-between px-4">
-
-        <div class="flex items-center gap-4">
-            <a href="#">
-                <span class="sr-only">Fidelis</span>
-                <span class="h-10 w-20 rounded-lg bg-gray-200"></span>
+<!--Left Side Buttons Start-->
+<div class="sticky-left-container">
+    <ul class="sticky-left">
+        <li>
+            <a target="_blank" href="tel:+918041502234">
+                <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1yz1jMRdqLQWBx10eFLSWTMGWmKrL9sM6" />
+                <p>Phone</p>
             </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://wa.me/+918041502234?text=� Hi, i wanted to know more about NOC. SOC software">
+                <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1ha6UAQlGBFXnExIXUMgs2l1QwUNgE09K" />
+                <p>Whatsapp</p>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="mailto:info@fidelisgroup.in">
+                <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1Jthmdc-CZpBoymeHEW06x9OTj8_lW7gM" />
+                <p>Email</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<!--Left Side Buttons End-->
 
-            <form class="mb-0 hidden lg:flex">
-                <div class="relative">
-                    <input class="h-10 rounded-lg border-gray-200 pr-10 text-sm placeholder-gray-300 focus:z-10" placeholder="Search..." type="text" id="search" autocomplete="off" />
+<div class="fixed top-1/4 -right-2 z-50">
+    <span class="relative inline-block rotate-90">
+        <input type="checkbox" class="checkbox opacity-0 absolute" id="chk">
+        <label class="label bg-slate-900 dark:bg-white shadow dark:shadow-gray-800 cursor-pointer rounded-full flex justify-between items-center p-1 w-14 h-8" for="chk">
+            <i class="uil uil-moon text-[20px] text-yellow-500"></i>
+            <i class="uil uil-sun text-[20px] text-yellow-500"></i>
+            <span class="ball bg-white dark:bg-slate-900 rounded-full absolute top-[2px] left-[2px] w-7 h-7"></span>
+        </label>
+    </span>
+</div>
 
-                    <button type="submit" class="absolute inset-y-0 right-0 mr-px rounded-r-lg p-2 text-gray-600">
-                        <span class="sr-only">Submit Search</span>
-                        <svg class="h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path clip-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" fill-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-            </form>
-        </div>
-
-        <nav aria-label="Site Nav" class="hidden items-center justify-center gap-8 text-sm font-medium lg:flex lg:w-0 lg:flex-1">
-            <a class="text-gray-900" href="{{ route('about-us') }}">About</a>
-            <a class="text-gray-900" href="{{ route('journey') }}">Our Journey</a>
-            <a class="text-gray-900" href="{{ route('mission-vision-values') }}">Mission, Vision & Values</a>
-            <a class="text-gray-900" href="{{ route('clients-speak') }}">Testimonials</a>
-            <a class="text-gray-900" href="{{ route('people') }}">Team</a>
-            <a class="text-gray-900" href="{{ route('locations') }}">Locations</a>
-            <a class="text-gray-900" href="{{ route('why-choose-us') }}">Why choose</a>
-        </nav>
-
-        <div class="hidden items-center gap-4 lg:flex">
-            <ul>
-                <li class="nav-item dropdown">
-                    <a id="languagedropdownNavbarLink" data-dropdown-toggle="languagedropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
-                        <span class="flag-icon flag-icon-{{Config::get('languages')[App::getLocale()]['flag-icon']}}"></span> {{ Config::get('languages')[App::getLocale()]['display'] }} <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
-                    </a>
-
-                    <!-- Dropdown menu -->
-                    <div id="languagedropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                        <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                            @foreach (Config::get('languages') as $lang => $language)
-                                @if ($lang != App::getLocale())
-                                    <li>
-                                        <a class="dropdown-item block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white" href="{{ route('lang.switch', $lang) }}"><span class="flag-icon flag-icon-{{$language['flag-icon']}}"></span> {{$language['display']}}</a>
-                                    </li>
-                                @endif
-                            @endforeach
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="border-t border-gray-100 lg:hidden">
-        <nav class="flex items-center justify-center overflow-x-auto p-4 text-sm font-medium">
-            <a href="{{ route('our-competencies') }}" class="flex-shrink-0 pl-4 text-gray-900" >Competencies</a>
-            <a href="{{ route('Industries') }}" class="flex-shrink-0 pl-4 text-gray-900" >Industries</a>
-            <a href="{{ route('case-studies') }}" class="flex-shrink-0 pl-4 text-gray-900" >Case Studies</a>
-            <a href="{{ route('careers') }}" class="flex-shrink-0 pl-4 text-gray-900" >Careers</a>
-            <a href="{{ route('blogs') }}" class="flex-shrink-0 pl-4 text-gray-900" >Journal</a>
-            <a href="{{ route('contact-us') }}" class="flex-shrink-0 pl-4 text-gray-900" >Contact us</a>
-        </nav>
-    </div>
-</header>
-
-<header aria-label="Site Header" class="bg-white sticky top-0 shoadow z-[99999]">
-    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
-            <div class="flex-1 md:flex md:items-center md:gap-12">
-                <a class="block text-teal-600" href="/">
-                    <span class="sr-only">Home</span>
-                    <img src="https://fidelisgroup.in/wp-content/uploads/2020/10/Fidelis-LOGO-250px-2.png" alt="" class="w-36">
-                </a>
-            </div>
-
-            <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-blue-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+<header aria-label="Site Header" class="bg-white border-gray-100 sticky top-0 shadow-lg z-[99999]">
+    <div class="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8">
+        <div class="flex items-center">
+            <button type="button" class="p-2 sm:mr-4 lg:hidden">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
             </button>
 
-            <div class="md:flex md:items-center md:gap-12">
-                <nav aria-label="Site Nav" class="hidden md:block">
-                    <ul class="flex items-center gap-6 text-sm">
-                        <li>
-                            <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Services <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
-                        </li>
+            <a href="#" class="flex">
+                <span class="sr-only">Logo</span>
+                <span class="inline-block h-10 w-32 rounded-lg bg-gray-200"> {{-- <img src="https://fidelisgroup.in/wp-content/uploads/2020/10/Fidelis-LOGO-250px-2.png" alt="" class="w-36" /> --}} </span>
+            </a>
+        </div>
 
-                        <li>
-                            <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Industries <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                  <li>
-                                    <a href="{{ route('banking') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Banking</a>
-                                  </li>
-                                  <li>
-                                    <a href="{{ route('fintech') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fintech</a>
-                                  </li>
-                                  <li>
-                                    <a href="{{ route('healthcare') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Healthcare</a>
-                                  </li>
-                                  <li>
-                                    <a href="{{ route('manufacturing') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Manufacturing</a>
-                                  </li>
-                                  <li>
-                                    <a href="{{ route('enterprise-technology') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Enterprise Technology</a>
-                                  </li>
-                                  <li>
-                                    <a href="{{ route('retail-&-ecommerce') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Retail & E-commerce</a>
-                                  </li>
-                                </ul>
-                            </div>
-                        </li>
+        <div class="flex flex-1 items-center justify-end">
+            <nav aria-label="Site Nav" class="hidden lg:flex lg:gap-9 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide lg:text-gray-500">
+                <a href="{{ route('about-us') }}" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700">About us</a>
 
-                        <li>
-                            <a class="text-black-500 transition hover:text-black-500/75" href="{{ route('case-studies') }}">
-                                Case Studies
-                            </a>
-                        </li>
+                <a id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700">Solutions </a>
 
+                <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700">Industries</a>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600 w-[250px]">
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                         <li>
-                            <a id="productsdropdownNavbarLink" data-dropdown-toggle="productsdropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Products <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
-                            <!-- Dropdown menu -->
-                            <div id="productsdropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                  <li>
-                                    <a href="{{ route('fidelis-noc') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">NOC - Fidelis</a>
-                                  </li>
-                                  <li>
-                                    <a href="{{ route('fidelis-soc') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">SOC - Fidelis</a>
-                                  </li>
-                                </ul>
-                            </div>
+                            <a href="{{ route('banking') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Banking</a>
                         </li>
-
                         <li>
-                            <a id="careerdropdownNavbarLink" data-dropdown-toggle="careerdropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-blue-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Careers <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
-                            <!-- Dropdown menu -->
-                            <div id="careerdropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                  <li>
-                                    <a href="{{ route('life-fidelis') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Culture</a>
-                                  </li>
-                                  <li>
-                                    <a href="{{ route('careers') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Jobs at Fidelis</a>
-                                  </li>
-                                  <li>
-                                    <a href="{{ route('refer-candidate') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Refer a candidate</a>
-                                  </li>
-                                </ul>
-                            </div>
+                            <a href="{{ route('fintech') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fintech</a>
                         </li>
-
                         <li>
-                            <a class="text-black-500 transition hover:text-black-500/75" href="{{ route('blogs') }}">
-                                Blogs
-                            </a>
+                            <a href="{{ route('healthcare') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Healthcare</a>
                         </li>
-
                         <li>
-                            <a class="text-black-500 transition hover:text-black-500/75" href="{{ route('contact-us') }}">
-                                Contact us
-                            </a>
+                            <a href="{{ route('manufacturing') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Manufacturing</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('enterprise-technology') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Enterprise Technology</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('retail-&-ecommerce') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Retail & E-commerce</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
 
-                <div class="flex items-center gap-4">
-                    <div class="sm:flex sm:gap-4">
-                        <a class="rounded-md bg-orange-600 px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-400 hover:ring-2 hover:ring-offset-2 hover:ring-orange-400 transition-all ease-out duration-300" href="{{ route('contact-us') }}">
-                            Get a free demo
+                <a href="{{ route('case-studies') }}" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700">
+                    Case Studies
+                </a>
+
+                <a id="careerdropdownNavbarLink" data-dropdown-toggle="careerdropdownNavbar" href="#" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700"> Careers </a>
+                <div id="careerdropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                        <li>
+                            <a href="{{ route('life-fidelis') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Culture</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('careers') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Jobs at Fidelis</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('refer-candidate') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Refer a candidate</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="{{ route('blogs') }}" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700"> Blogs</a>
+
+                <a href="{{ route('contact-us') }}" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700">Contact </a>
+
+                <a
+                    class="bg-orange-600 px-5 text-sm font-medium text-white shadow hover:bg-gradient-to-r hover:from-orange-500 hover:to-orange-400 hover:ring-2 hover:ring-offset-2 hover:ring-orange-400 transition-all ease-out duration-300 block h-16 border-b-4 border-transparent leading-[4rem]"
+                    href="{{ route('contact-us') }}"
+                >
+                    Get a free demo
+                </a>
+            </nav>
+
+            <div class="ml-8 flex items-center">
+                <div class="flex items-center divide-x divide-gray-100 border-x border-gray-100">
+                    <span x-data="{ open: false }" @mouseleave="open = false">
+                        <a @mouseover="open = true" class="block border-b-4 border-transparent p-3 hover:border-orange-700">
+                            <lord-icon src="https://cdn.lordicon.com/oqhlhtfq.json" trigger="hover" colors="primary:#4bb3fd,secondary:#ebe6ef" state="hover-2" style="width: 32px; height: 32px;"></lord-icon>
+                            <span class="sr-only">Cart</span>
                         </a>
+                        <div x-show="open" class="absolute right-0 w-48 py-2 mt-2 bg-gray-100 rounded-md shadow-xl">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-400 hover:text-white"> Dropdown List 1 </a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-400 hover:text-white"> Dropdown List 2 </a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-400 hover:text-white"> Dropdown List 3 </a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-400 hover:text-white"> Dropdown List 4 </a>
+                        </div>
+                    </span>
 
-                        {{-- <div class="hidden sm:flex">
-                            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-orange-600" href="">
-                                Register
-                            </a>
-                        </div> --}}
-                    </div>
+                    <span>
+                        <a href="/account" class="block border-b-4 border-transparent p-3 hover:border-orange-700">
+                            <lord-icon src="https://cdn.lordicon.com/ajkxzzfb.json" trigger="hover" style="width: 32px; height: 32px;"></lord-icon>
+                            <span class="sr-only"> Account </span>
+                        </a>
+                    </span>
 
-                    <div class="block md:hidden">
-                        <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
+                    <span class="hidden sm:block">
+                        <a href="/search" class="block border-b-4 border-transparent p-3 hover:border-orange-700">
+                            <lord-icon src="https://cdn.lordicon.com/osbjlbsb.json" trigger="hover" style="width: 32px; height: 32px;"></lord-icon>
+                            <span class="sr-only"> Search </span>
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -200,7 +149,6 @@
 <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
     <div id="mega-menu-full-dropdown" class="mt-1 bg-white border-gray-200 shadow-sm border-y dark:bg-gray-800 dark:border-gray-600 hidden">
         <div class="grid px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-3 md:grid-cols-6 md:px-6">
-
             <ul aria-labelledby="mega-menu-full-dropdown-button">
                 <li class="font-extrabold underline px-3">Business Process</li>
                 <li>
@@ -258,7 +206,7 @@
             <ul class="hidden md:block">
                 <li class="font-extrabold underline px-3">Staffing solutions</li>
                 <li>
-                    <a href="{{ route('contingent-staffing')  }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <a href="{{ route('contingent-staffing') }}" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
                         <div class="font-semibold">Contigent Staffing</div>
                         <span class="text-sm font-light text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span>
                     </a>
@@ -341,35 +289,31 @@
     </div>
 </nav>
 
-@if (Route::is('index'))
-@else
-    <div class="flowheader magazine-banner">
+@if (Route::is('index')) @else
+<div class="flowheader magazine-banner">
+    <!--Content before waves-->
 
-        <!--Content before waves-->
+    <div class="shapeshifter"></div>
 
-        <div class="shapeshifter"></div>
-
-        <div class="inner-header banner-heading flex-container">
-            <h1 style="font-size: 40px; text-transform: uppercase;">{{ str_replace('-', ' ', Route::currentRouteName()) }}</h1>
-            <p><a class="color-white" href="{{ route('index') }}">Home</a> » {{ str_replace('-', ' ', Route::currentRouteName()) }}</p>
-        </div>
-
-        <!--Waves Container-->
-        <div>
-            <svg class="waves" shape-rendering="auto" preserveAspectRatio="none" viewBox="0 24 150 28"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs>
-                    <path id="a" d="m-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use x="48" fill="rgba(255,255,255,0.7" xlink:href="#a" />
-                    <use x="48" y="3" fill="rgba(255,255,255,0.5)" xlink:href="#a" />
-                    <use x="48" y="5" fill="rgba(255,255,255,0.3)" xlink:href="#a" />
-                    <use x="48" y="7" fill="#fff" xlink:href="#a" />
-                </g>
-            </svg>
-        </div>
-        <!--Waves end-->
-
+    <div class="inner-header banner-heading flex-container">
+        <h1 style="font-size: 40px; text-transform: uppercase;">{{ str_replace('-', ' ', Route::currentRouteName()) }}</h1>
+        <p><a class="color-white" href="{{ route('index') }}">Home</a> » {{ str_replace('-', ' ', Route::currentRouteName()) }}</p>
     </div>
+
+    <!--Waves Container-->
+    <div>
+        <svg class="waves" shape-rendering="auto" preserveAspectRatio="none" viewBox="0 24 150 28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <path id="a" d="m-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use x="48" fill="rgba(255,255,255,0.7" xlink:href="#a" />
+                <use x="48" y="3" fill="rgba(255,255,255,0.5)" xlink:href="#a" />
+                <use x="48" y="5" fill="rgba(255,255,255,0.3)" xlink:href="#a" />
+                <use x="48" y="7" fill="#fff" xlink:href="#a" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+</div>
 @endif

@@ -1,39 +1,51 @@
 @extends('pages.template.layout')
 
 @section('customcss')
-<style>.timedot{ left: -22px !important }</style>
+    <style>
+        .timedot {
+            left: -22px !important
+        }
+    </style>
 @endsection
 
 @section('content')
 
-<div>
-    <ol class="relative border-l border-gray-200 dark:border-gray-700 left-80">
-        <li class="mb-10 ml-4 relative">
-            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700 timedot"></div>
-            <time class="absolute left-0 top-0 lg:left-auto lg:right-full lg:mr-[calc(6.5rem+1px)] w-40">February 2021</time>
-            <img src="https://fidelisgroup.in/wp-content/uploads/2021/07/From-Fidelis-CEO.png" alt="From-Fidelis-CEO" class="" style="max-width: 400px;">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Deep Rooted thoughts from the CEO of Fidelis Group</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">I remember as if it was still yesterday, we had just laid down the foundation of Fidelis Group in the year 2010.</p>
-            <a href="/article/Deep-Rooted-thoughts-from-the-CEO-of-Fidelis-Group" class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Read more <svg class="ml-2 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
-        </li>
-        <li class="mb-10 ml-4 relative">
-            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700 timedot"></div>
-            <time class="absolute left-0 top-0 lg:left-auto lg:right-full lg:mr-[calc(6.5rem+1px)] w-40">March 2022</time>
-            <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="max-width: 400px;">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">NOC an awesome framework</h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-            <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Read more <svg class="ml-2 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
-        </li>
-        <li class="ml-4 relative">
-            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700 timedot"></div>
-            <time class="absolute left-0 top-0 lg:left-auto lg:right-full lg:mr-[calc(6.5rem+1px)] w-40">April 2022</time>
-            <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style="max-width: 400px;">
-            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SOC the Ultimate software never seen before</h3>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
-            <a href="#" class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="ml-2 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
-        </li>
-    </ol>
-    
-</div>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -mx-4 -my-8">
+
+                @for($i =0; $i<=3; $i++)
+                <div class="py-8 px-4 lg:w-1/3">
+                    <div class="h-full flex items-start">
+                        <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+                            <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">February</span>
+                            <span class="font-medium text-lg text-gray-800 title-font leading-none">2021</span>
+                        </div>
+                        <div class="flex-grow pl-6">
+                            <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">CATEGORY</h2>
+                            <img src="https://api.lorem.space/image?w=400&h=225" alt="From-Fidelis-CEO" class="" style="max-width: 400px;">
+                            <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Deep Rooted thoughts from the CEO of Fidelis Group</h1>
+                            <p class="leading-relaxed mb-5">I remember as if it was still yesterday, we had just laid down the foundation of Fidelis Group in the year 2010.
+                                <a href="/article/Deep-Rooted-thoughts-from-the-CEO-of-Fidelis-Group" class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Read more 
+                                    <svg class="ml-2 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </p>
+                            {{-- Author --}}
+                            <a class="inline-flex items-center">
+                                <img alt="blog" src="https://api.lorem.space/image/face?w=150&h=150" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
+                                <span class="flex-grow flex flex-col pl-3">
+                                    <span class="title-font font-medium text-gray-900">Nilesh</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                @endfor
+
+            </div>
+        </div>
+    </section>
 
 @endsection

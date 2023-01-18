@@ -453,13 +453,12 @@
                 <div class="container">
                     <div class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                         <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Core Services</h3>
-
                         <p class="text-slate-400 max-w-xl mx-auto">working with Fidelis will provide everything you need to generate awareness, drive traffic, connect.</p>
                     </div>
                     <!--end grid-->
 
                     <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px] mt-8">
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+                        <a href="{{ route('robotic-process-automation') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                             <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
                                 <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
                                     <i data-feather="monitor" class="h-5 w-5 rotate-45"></i>
@@ -468,9 +467,9 @@
                                     <h4 class="mb-0 text-lg font-medium">Robotic Process Automation</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <a href="" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="{{ route('business-process-management-automation') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay=".3s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -485,7 +484,7 @@
                             </div>
                         </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="{{ route('business-intelligence-analytical-services') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay=".5s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -498,9 +497,9 @@
                                     </h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a  href="{{ route('database-storage-admin') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay=".7s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -512,9 +511,9 @@
                                     <h4 class="mb-0 text-lg font-medium">Database And Storage Admin</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
+                        <a href="{{ route('application-development') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
                                 <div
@@ -525,9 +524,9 @@
                                     <h4 class="mb-0 text-lg font-medium">Application Development</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="{{ route('erp-application-development-services') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay="1.1s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -539,9 +538,9 @@
                                     <h4 class="mb-0 text-lg font-medium">ERP Application Management Services</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="{{ route('application-management') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay="1.3s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -554,10 +553,9 @@
                                     <h4 class="mb-0 text-lg font-medium">Application Management</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
-                            data-wow-delay="1.5s">
+                        <a href="{{ route('application-QA-&-validation') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp" data-wow-delay="1.5s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
                                 <div
@@ -569,9 +567,9 @@
                                     <h4 class="mb-0 text-lg font-medium">Applications QA And Validation</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="{{ route('devops-advisory') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay="1.7s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -584,9 +582,9 @@
                                     <h4 class="mb-0 text-lg font-medium">Devops Advisory</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="{{ route('cloud-computing') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay="1.7s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -599,10 +597,9 @@
                                     <h4 class="mb-0 text-lg font-medium">Cloud Computing</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="{{ route('it-&-infra-management') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay="1.7s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -617,8 +614,7 @@
                             </div>
                         </div>
 
-
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="{{ route('data-center-enablement') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay="1.7s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -631,9 +627,9 @@
                                     <h4 class="mb-0 text-lg font-medium">Data Center Enablement</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
+                        <a href="{{ route('managed-services') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
                             data-wow-delay="1.7s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
@@ -646,10 +642,9 @@
                                     <h4 class="mb-0 text-lg font-medium">Managed Services</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp"
-                            data-wow-delay="1.7s">
+                        <a href="{{ route('contingent-staffing') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp" data-wow-delay="1.7s">
                             <div
                                 class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
                                 <div
@@ -661,7 +656,7 @@
                                     <h4 class="mb-0 text-lg font-medium">Skill Development</h4>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                     <!--end grid-->

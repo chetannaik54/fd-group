@@ -275,7 +275,63 @@ class PageController extends Controller
     }
 
     public function contactus(){
-        return view('pages.contact-us');
+        $locations = array(
+            array(
+                'company' => 'Fidelis Technologies.',
+                'city' => 'Hubli',
+                'address' => 'IBMR, Co-working & Startups, 3rd floor, Akshay Plaza, Akshay colony, Vidyanagar, Hubli - 580021'
+            ),
+            array(
+                'company' => 'Fidelis Technology Services Pvt. Ltd.',
+                'city' => 'Bengaluru',
+                'address' => 'No. 357, 2nd Floor, San Diego, 6th Main Rd, 1st Block Koramangala, Koramangala Extension, Bengaluru, Karnataka 560034, INDIA'
+            ),
+            array(
+                'company' => 'Fidelis Technology Services Pvt. Ltd.',
+                'city' => 'Mumbai',
+                'address' => 'Suprabhat, Bldg No. 46, Office No: 2250 Gandhinagar, Bandra (East), Near MIG Cricket Club, Bandra Kalanagar Complex, Opp MHADA Office, Mumbai – 400051, INDIA'
+            ),
+            array(
+                'company' => 'Fidelis Technology Services Pvt. Ltd.',
+                'city' => 'Jammu & Kashmir',
+                'address' => '#72, Naikpora, Padshahi Bagh Srinagar, Kashmir-190008, INDIA'
+            ),
+            array(
+                'company' => 'Fidelis Technology Services Pvt. Ltd.',
+                'city' => 'Hyderabad',
+                'address' => 'Phoenix Tech Tower Private Limited, Genpact Road Plot No.14/46, 1st Floor, Phoenix Tech Tower, Uppal, Hyderabad, Telangana-500039, INDIA'
+            ),
+            array(
+                'company' => 'Fidelis Technology Services Pvt. Ltd.',
+                'city' => 'Chennai',
+                'address' => 'KRM Plaza, 8th, South Tower, KRM Plaza, Harrington Road 2, Chetpet, Chennai, Tamil Nadu-600031, INDIA'
+            ),
+            array(
+                'company' => 'Fidelis Technology Services Pvt. Ltd.',
+                'city' => 'Delhi/ NCR',
+                'address' => 'Unitech Cyber Park, Tower- B, 10th Floor, Unitech Cyber Park, Sector 39, Gurugram, Haryana-12200, INDIA'
+            ),
+            array(
+                'company' => 'Fidelis Group, INC,',
+                'city' => 'United States',
+                'address' => '2609 Crooks Road #216,Troy, Michigan State, USA 48084',
+                'email' => 'info-usa@fidelisgroup.in'
+            ),
+            array(
+                'company' => 'Fidelis Technologies Pte Ltd',
+                'city' => 'Singapore APAC',
+                'address' => '111 Somerset Road, #08-10A, 111 Somerset, Singapore, 238164, Singapore',
+                'email' => 'info-sg@fidelisgroup.in'
+            ),
+            array(  
+                'company' => 'Fidelis Technologies',
+                'city' => 'Dubai',
+                'address' => 'Office 08 J-0118, Warehouse -P1, Block J, Saih Shuaib 2, Dubai, UAE',
+                'email' => 'info-uae@fidelisgroup.in'
+            )
+        );
+
+        return view('pages.contact-us', compact('locations'));
     }
 
     public function careers(){
@@ -303,8 +359,8 @@ class PageController extends Controller
     }
 
     public function life_Culture_fidelis(){
-        // return view('pages.life-at-fidelis');
-        return view('jobslanding');
+        return view('pages.life-at-fidelis');
+        // return view('jobslanding');
     }
 
     public function industries(){
