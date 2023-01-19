@@ -491,7 +491,6 @@
 <script src="https://unpkg.com/tippy.js@1.1.3/dist/tippy.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Physics2DPlugin3.min.js"></script>
 
 <script>
 gsap.registerPlugin(Physics2DPlugin);
