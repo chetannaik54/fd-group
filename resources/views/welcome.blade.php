@@ -340,7 +340,7 @@
                 </div>
             </section>
 
-            <section class="dark:bg-gray-900">
+            <section class="dark:bg-gray-900 hidden">
                 <div class="max-w-screen px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
                     <dl class="grid gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
 
@@ -391,7 +391,7 @@
 
             <p class="mb-6 text-sm text-gray-500 font-semibold uppercase">Trusted and loved by 100+ tech first teams</p>
 
-            <div class="grid grid-cols-6 gap-4 owl-carousel">
+            <div id="logo-slider" class="grid grid-cols-6 gap-4 owl-carousel">
                 @for ($i = 2; $i <= 20; $i++)
                     <div><img src="https://fidelisgroup.in/wp-content/uploads/2020/10/Picture{{ $i }}.png" alt="" class="w-auto" /></div>
                 @endfor
@@ -448,8 +448,367 @@
                 </div>
             </section>
 
+<!-- ====== Pricing Section Start -->
+<section class="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] hidden">
+    <div class="container mx-auto">
+        <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
+                    <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+                        Our Core Solutions
+                    </h2>
+                    <p class="text-body-color text-base">
+                        working with Fidelis will provide everything you need to generate awareness, drive traffic, connect.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="-mx-4 flex flex-wrap justify-center">
+            <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+                <div class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12">
+                    <span class="text-primary mb-4 block text-lg font-semibold">
+                        Individual
+                    </span>
+                    <h2 class="text-dark mb-5 text-[22px] font-bold">
+                        Business<br>Processes
+                    </h2>
+                    <p class="text-body-color mb-8 border-b border-[#F2F2F2] pb-8 text-base">
+                        Perfect for using in a personal website or a client project.
+                    </p>
+                    <div class="mb-7">
+                        <p class="text-body-color mb-1 text-base leading-loose">1 User</p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            All UI components
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Lifetime access
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Free updates
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Use on 1 (one) project
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            3 Months support
+                        </p>
+                    </div>
+                    <a href="javascript:void(0)" class="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white">
+                        Know Business Process   
+                    </a>
+                    <div>
+                        <span class="absolute right-0 top-7 z-[-1]">
+                            <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3056D3" stop-opacity="0.09" />
+                                        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="absolute right-4 top-4 z-[-1]">
+                            <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+                <div class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12">
+                    <span class="text-primary mb-4 block text-lg font-semibold">
+                        Business
+                    </span>
+                    <h2 class="text-dark mb-5 text-[22px] font-bold">
+                        Information Management
+                    </h2>
+                    <p class="text-body-color mb-8 border-b border-[#F2F2F2] pb-8 text-base">
+                        Perfect for using in a Business website or a client project.
+                    </p>
+                    <div class="mb-7">
+                        <p class="text-body-color mb-1 text-base leading-loose">5 Users</p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            All UI components
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Lifetime access
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Free updates
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Use on 3 (Three) project
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            4 Months support
+                        </p>
+                    </div>
+                    <a href="javascript:void(0)" class="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white">
+                        Know our information Management
+                    </a>
+                    <div>
+                        <span class="absolute right-0 top-7 z-[-1]">
+                            <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3056D3" stop-opacity="0.09" />
+                                        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="absolute right-4 top-4 z-[-1]">
+                            <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+                <div class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12">
+                    <span class="text-primary mb-4 block text-lg font-semibold">
+                        Professional
+                    </span>
+                    <h2 class="text-dark mb-5 text-[22px] font-bold">
+                        Platform And Infrastructure
+                    </h2>
+                    <p class="text-body-color mb-8 border-b border-[#F2F2F2] pb-8 text-base">
+                        Perfect for using in a Professional website or a client project.
+                    </p>
+                    <div class="mb-7">
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Unlimited Users
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            All UI components
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Lifetime access
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Free updates
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Use on Unlimited project
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            12 Months support
+                        </p>
+                    </div>
+                    <a href="javascript:void(0)" class="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white">
+                        Choose Professional
+                    </a>
+                    <div>
+                        <span class="absolute right-0 top-7 z-[-1]">
+                            <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3056D3" stop-opacity="0.09" />
+                                        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="absolute right-4 top-4 z-[-1]">
+                            <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+                <div class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12">
+                    <span class="text-primary mb-4 block text-lg font-semibold">
+                        Professional
+                    </span>
+                    <h2 class="text-dark mb-5 text-[22px] font-bold">
+                        Applications
+                    </h2>
+                    <p class="text-body-color mb-8 border-b border-[#F2F2F2] pb-8 text-base">
+                        Perfect for using in a Professional website or a client project.
+                    </p>
+                    <div class="mb-7">
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Unlimited Users
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            All UI components
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Lifetime access
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Free updates
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            Use on Unlimited project
+                        </p>
+                        <p class="text-body-color mb-1 text-base leading-loose">
+                            12 Months support
+                        </p>
+                    </div>
+                    <a href="javascript:void(0)" class="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white">
+                        Choose Professional
+                    </a>
+                    <div>
+                        <span class="absolute right-0 top-7 z-[-1]">
+                            <svg width="77" height="172" viewBox="0 0 77 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3056D3" stop-opacity="0.09" />
+                                        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="absolute right-4 top-4 z-[-1]">
+                            <svg width="41" height="89" viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- ====== Pricing Section End -->
+
+
             <!-- Start Section-->
-            <section class="relative md:py-24 py-16 overflow-hidden" id="coreservices">
+            <section class="relative md:py-24 py-16 overflow-hidden hidden" id="coreservices">
                 <div class="container">
                     <div class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                         <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Core Services</h3>
@@ -457,7 +816,93 @@
                     </div>
                     <!--end grid-->
 
-                    <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px] mt-8">
+                    
+
+                    <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+                        <h2 id="accordion-flush-heading-1">
+                          <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+                            <span>Business Processes</span>
+                            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </h2>
+                        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                          <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                          </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-2">
+                          <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="true" aria-controls="accordion-flush-body-2">
+                            <span>Information Management</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </h2>
+                        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                          <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+                            <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
+                          </div>
+                        </div>
+                        <h2 id="accordion-flush-heading-3">
+                          <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="true" aria-controls="accordion-flush-body-3">
+                            <span>Applications</span>
+                            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          </button>
+                        </h2>
+                        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+                          <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                            <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                            <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                              <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                              <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                          <h2 id="accordion-flush-heading-4">
+                            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-4" aria-expanded="true" aria-controls="accordion-flush-body-4">
+                              <span>Platform And Infrastructure</span>
+                              <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                          </h2>
+                          <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+                            <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+                              <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                              <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                              <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                              <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                                <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <h2 id="accordion-flush-heading-5">
+                            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-5" aria-expanded="true" aria-controls="accordion-flush-body-5">
+                              <span>Staffing solutions</span>
+                              <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                          </h2>
+                          <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+                            <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+                              <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+                              <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+                              <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+                              <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                                <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+                                <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      
+
+                    
+                      <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px] mt-8">
                         <a href="{{ route('robotic-process-automation') }}" class="lg:col-span-4 md:col-span-6 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                             <div class="flex transition-all duration-500 hover:scale-105 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
                                 <div class="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
@@ -664,11 +1109,10 @@
                 </div>
                 <!--end contanier-->
 
-                <div class="container md:mt-24 mt-16">
+                <div class="md:mt-24 mt-16">
                     <div class="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp"
                         data-wow-delay=".1s">
-                        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Why
-                            Everyone Loves Fidelis</h3>
+                        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Eliminating Challenges Across Industries And Geographies</h3>
 
                         <p class="text-slate-400 max-w-xl mx-auto">Working with Fidelis will provide everything you
                             need to generate awareness, drive traffic, connect.</p>
@@ -677,9 +1121,9 @@
                 </div>
                 <!--end container-->
 
-                <div class="container md:mb-24 mb-16">
+                <div class="md:mb-24 mb-16 mx-auto max-w-screen-xxl">
     
-                    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
+                    <div class="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
                         <div class="group relative p-6 shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 hover:bg-indigo-600 dark:hover:bg-indigo-600 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden">
                             <div class="relative overflow-hidden text-transparent -m-3">
                                 <lord-icon
@@ -781,12 +1225,10 @@
     
                     </div>
                 </div><!--end container-->
-    
-    
 
                 <!--end container-->
-
-                <section class="bg-gray-100 rounded-lg">
+                
+                  <section class="bg-gray-100 rounded-lg">
                     <div class="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:mr-0 lg:pl-8 lg:pr-0">
                       <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
                         <div class="max-w-xl text-center sm:text-left">
@@ -801,41 +1243,31 @@
                           </a>
                   
                           <div class="hidden lg:mt-8 lg:flex lg:gap-4">
-                            <button
-                              class="prev-button rounded-full border border-orange-600 p-3 text-orange-600 hover:bg-orange-600 hover:text-white">
+                            <button class="prev-button rounded-full border border-orange-600 p-3 text-orange-600 hover:bg-orange-600 hover:text-white">
                               <span class="sr-only">Previous Slide</span>
-                              <svg class="h-5 w-5 -rotate-180 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                              </svg>
+                              <svg class="h-5 w-5 -rotate-180 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" /></svg>
                             </button>
                   
-                            <button
-                              class="next-button rounded-full border border-orange-600 p-3 text-orange-600 hover:bg-orange-600 hover:text-white">
+                            <button class="next-button rounded-full border border-orange-600 p-3 text-orange-600 hover:bg-orange-600 hover:text-white">
                               <span class="sr-only">Next Slide</span>
-                              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                              </svg>
+                              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" /></svg>
                             </button>
                           </div>
                         </div>
                   
                         <div class="-mx-6 lg:col-span-2 lg:mx-0">
-                          <div class="swiper-container !overflow-hidden">
-                            <div class="swiper-wrapper">
+                          <div class=" !overflow-hidden">
+                            <div id="testimonial-carousel" class="owl-carousel">
                               <div class="swiper-slide">
                                 <blockquote class="flex h-full flex-col justify-between bg-white p-12">
                                   <div>
                                     <div class="flex gap-0.5 text-orange-500">
                                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                       </svg>
                   
                                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                       </svg>
                   
                                       <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -967,6 +1399,7 @@
                                   </footer>
                                 </blockquote>
                               </div>
+
                             </div>
                           </div>
                         </div>
@@ -994,16 +1427,16 @@
             <!-- End Section-->
 
             <section class="relative z-20 overflow-hidden bg-white pt-0 pb-12 lg:pt-[120px] lg:pb-[90px]">
-                <div class="container mx-auto grid grid-cols-2">
+                <div class="container mx-auto grid grid-cols-3">
                   <div class="-mx-4 flex flex-wrap">
                     <div class="w-full px-4">
                       <div class="mx-auto my-[200px] mb-[60px] max-w-[510px] text-center lg:mb-20">
-                        <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"> End to End Solutions </h2>
+                        <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]"> End to End Cloud Solutions </h2>
                         <p class="text-body-color text-base"> At Fidelis, we believe that good corporate governance is driven by adherence to moral and ethical values, legal and regulatory framework and the adoption of good practices.</p>
                       </div>
                     </div>
                   </div>
-                  <div class="grid grid-cols-2 justify-center">
+                  <div class="col-span-2 grid grid-cols-3 justify-center">
                     <div class="w-full px-4">
                       <div
                         class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12">
@@ -1020,7 +1453,7 @@
                           <p class="text-body-color mb-1 text-base leading-loose"> 3 Months support </p>
                         </div><a href="javascript:void(0)"
                           class="text-primary hover:bg-primary hover:border-primary block w-full rounded-md border border-[#D4DEFF] bg-transparent p-4 text-center text-base font-semibold transition hover:text-white">
-                          Checkout NOC </a>
+                          Know more </a>
                         <div> <span class="absolute right-0 top-7 z-[-1]"> <svg width="77" height="172" viewBox="0 0 77 172"
                               fill="none" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
@@ -1030,8 +1463,9 @@
                                   <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
                                 </linearGradient>
                               </defs>
-                            </svg> </span> <span class="absolute right-4 top-4 z-[-1]"> <svg width="41" height="89"
-                              viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            </svg> 
+                        </span> 
+                            <span class="absolute right-4 top-4 z-[-1]"> <svg width="41" height="89"  viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
                               <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
                               <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
@@ -1064,7 +1498,9 @@
                               <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
                               <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
                               <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
-                            </svg> </span> </div>
+                            </svg> 
+                        </span>
+                     </div>
                       </div>
                     </div>
                     <div class="w-full px-4">
@@ -1129,6 +1565,69 @@
                             </svg> </span> </div>
                       </div>
                     </div>
+
+                    <div class="w-full px-4">
+                        <div
+                          class="border-primary shadow-pricing relative z-10 mb-10 overflow-hidden rounded-xl border border-opacity-20 bg-white py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12">
+                          <h2 class="text-dark mb-5 text-[42px] font-bold"> AMS </h2>
+                          <p class="text-body-color mb-8 border-b border-[#F2F2F2] pb-8 text-base"> Perfect for using in a Business
+                            website or a client project. </p>
+                          <div class="mb-7">
+                            <p class="text-body-color mb-1 text-base leading-loose">5 Users</p>
+                            <p class="text-body-color mb-1 text-base leading-loose"> All UI components </p>
+                            <p class="text-body-color mb-1 text-base leading-loose"> Lifetime access </p>
+                            <p class="text-body-color mb-1 text-base leading-loose"> Free updates </p>
+                            <p class="text-body-color mb-1 text-base leading-loose"> Use on 3 (Three) project </p>
+                            <p class="text-body-color mb-1 text-base leading-loose"> 4 Months support </p>
+                          </div><a href="javascript:void(0)" class="bg-primary border-primary block w-full rounded-md border p-4 text-center text-base font-semibold text-black transition hover:bg-opacity-90"> Choose AMS </a>
+                          <div> <span class="absolute right-0 top-7 z-[-1]"> <svg width="77" height="172" viewBox="0 0 77 172"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+                                <defs>
+                                  <linearGradient id="paint0_linear" x1="86" y1="0" x2="86" y2="172" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#3056D3" stop-opacity="0.09" />
+                                    <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+                                  </linearGradient>
+                                </defs>
+                              </svg> </span> <span class="absolute right-4 top-4 z-[-1]"> <svg width="41" height="89"
+                                viewBox="0 0 41 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="38.9138" cy="87.4849" r="1.42021" transform="rotate(180 38.9138 87.4849)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="74.9871" r="1.42021" transform="rotate(180 38.9138 74.9871)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="62.4892" r="1.42021" transform="rotate(180 38.9138 62.4892)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="38.3457" r="1.42021" transform="rotate(180 38.9138 38.3457)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="13.634" r="1.42021" transform="rotate(180 38.9138 13.634)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="50.2754" r="1.42021" transform="rotate(180 38.9138 50.2754)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="26.1319" r="1.42021" transform="rotate(180 38.9138 26.1319)" fill="#3056D3" />
+                                <circle cx="38.9138" cy="1.42021" r="1.42021" transform="rotate(180 38.9138 1.42021)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="87.4849" r="1.42021" transform="rotate(180 26.4157 87.4849)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="74.9871" r="1.42021" transform="rotate(180 26.4157 74.9871)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="62.4892" r="1.42021" transform="rotate(180 26.4157 62.4892)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="38.3457" r="1.42021" transform="rotate(180 26.4157 38.3457)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="13.634" r="1.42021" transform="rotate(180 26.4157 13.634)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="50.2754" r="1.42021" transform="rotate(180 26.4157 50.2754)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="26.1319" r="1.42021" transform="rotate(180 26.4157 26.1319)" fill="#3056D3" />
+                                <circle cx="26.4157" cy="1.4202" r="1.42021" transform="rotate(180 26.4157 1.4202)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="87.4849" r="1.42021" transform="rotate(180 13.9177 87.4849)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="74.9871" r="1.42021" transform="rotate(180 13.9177 74.9871)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="62.4892" r="1.42021" transform="rotate(180 13.9177 62.4892)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="38.3457" r="1.42021" transform="rotate(180 13.9177 38.3457)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="13.634" r="1.42021" transform="rotate(180 13.9177 13.634)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="50.2754" r="1.42021" transform="rotate(180 13.9177 50.2754)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="26.1319" r="1.42021" transform="rotate(180 13.9177 26.1319)" fill="#3056D3" />
+                                <circle cx="13.9177" cy="1.42019" r="1.42021" transform="rotate(180 13.9177 1.42019)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="87.4849" r="1.42021" transform="rotate(180 1.41963 87.4849)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="74.9871" r="1.42021" transform="rotate(180 1.41963 74.9871)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="62.4892" r="1.42021" transform="rotate(180 1.41963 62.4892)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="38.3457" r="1.42021" transform="rotate(180 1.41963 38.3457)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="13.634" r="1.42021" transform="rotate(180 1.41963 13.634)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="50.2754" r="1.42021" transform="rotate(180 1.41963 50.2754)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="26.1319" r="1.42021" transform="rotate(180 1.41963 26.1319)" fill="#3056D3" />
+                                <circle cx="1.41963" cy="1.4202" r="1.42021" transform="rotate(180 1.41963 1.4202)" fill="#3056D3" />
+                              </svg> </span> </div>
+                        </div>
+                      </div>
+  
+
                   </div>
                 </div>
               </section>
@@ -1673,7 +2172,7 @@
     <script src="{{ asset('assets/OwlCarousel/dist/owl.carousel.min.js') }}"></script>
         <script>
             $(document).ready(function(){
-                $('.owl-carousel').owlCarousel({
+                $('#logo-slider').owlCarousel({
                     loop:true,
                     lazyLoad:true,
                     margin:120,
@@ -1696,6 +2195,26 @@
                             loop:true
                         }
                     }
+                });
+
+                var owl = $('#testimonial-carousel');
+                $(owl).owlCarousel({
+                    loop:true,
+                    lazyLoad:true,
+                    margin:120,
+                    responsiveClass:true,
+                    autoplay:true,
+                    autoplayTimeout:6000,
+                    autoplayHoverPause:true,
+                    items: 1,
+                });
+
+                $('.next-button').click(function() {
+                    owl.trigger('next.owl.carousel');
+                })
+                // Go to the previous item
+                $('.prev-button').click(function() {
+                    owl.trigger('prev.owl.carousel', [300]);
                 })
             });
         </script>

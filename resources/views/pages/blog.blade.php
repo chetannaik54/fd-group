@@ -10,42 +10,70 @@
 
 @section('content')
 
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-wrap -mx-4 -my-8">
+<section class="bg-white dark:bg-gray-900">
+    <div class="pb-8 px-4 mx-auto max-w-screen-2xl lg:pb-16 lg:px-6">
+        <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+            <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">We use an agile approach to solve issues and connect with the needs of your audience early and often.</p>
+        </div>
 
-                @for($i =0; $i<=3; $i++)
-                <div class="py-8 px-4 lg:w-1/3">
-                    <div class="h-full flex items-start">
-                        <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-                            <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">February</span>
-                            <span class="font-medium text-lg text-gray-800 title-font leading-none">2021</span>
+        <div class="grid grid-cols-1 sm:grid-cols-6 gap-5 sm:gap-6 2xl:gap-8">
+            @for ($i = 0; $i < 11; $i++)
+            <div class="relative flex flex-col sm:col-span-3 lg:col-span-2 transition duration-0 hover:duration-700 hover:scale-110">
+                <a href="#" class="block flex-shrink-0 relative w-full rounded-3xl overflow-hidden z-0 aspect-w-4 aspect-h-3">
+                    <div class="overflow-hidden z-0">
+                        <img src="https://api.lorem.space/image?w=450&h=450&t={{ $i }}" alt="Deep Rooted Thoughts from the CEO of Fidelis Group" class="object-cover w-full h-full" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" />
+                    </div>
+                    <span class="bg-neutral-900 bg-opacity-30"></span>
+                </a>
+                <a href="https://ncmaz.chisnghiax.com/delectus-optio-nulla-iste-fuga-alias/" class="absolute inset-0"></a>
+                <span class="absolute top-3 inset-x-3">
+                    <div class="flow-root">
+                        <div class="flex flex-wrap space-x-2 -my-1">
+                            <a href="/" class="transition-colors hover:text-white duration-300 inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs text-yellow-800 bg-yellow-100 hover:bg-yellow-800"> Computing </a>
+                            <a href="/" class="transition-colors hover:text-white duration-300 inline-flex px-2.5 py-1 rounded-full font-medium text-xs relative my-1 text-[10px] sm:text-xs text-green-800 bg-green-100 hover:bg-green-800">Solutions</a>
                         </div>
-                        <div class="flex-grow pl-6">
-                            <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">CATEGORY</h2>
-                            <img src="https://api.lorem.space/image?w=400&h=225" alt="From-Fidelis-CEO" class="" style="max-width: 400px;">
-                            <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Deep Rooted thoughts from the CEO of Fidelis Group</h1>
-                            <p class="leading-relaxed mb-5">I remember as if it was still yesterday, we had just laid down the foundation of Fidelis Group in the year 2010.
-                                <a href="/article/Deep-Rooted-thoughts-from-the-CEO-of-Fidelis-Group" class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Read more 
-                                    <svg class="ml-2 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                    </svg>
+                    </div>
+                </span>
+                <div class="w-11/12 transform -mt-32">
+                    <div class="px-5 flex items-center space-x-4">
+                            <div class="px-4 py-1 flex items-center justify-center rounded-full bg-neutral-50 text-primary-500 cursor-pointer text-sm text-neutral-500">
+                                February 11, 2022
+                            </div>
+                    </div>
+                    <div class="p-5 mt-5 bg-white dark:bg-neutral-900 shadow-xl dark:shadow-2xl rounded-3xl rounded-tl-none flex flex-col flex-grow">
+                        <h3 class="block text-base sm:text-lg lg:text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+                            <a href="/" class="line-clamp-2" title="Deep Rooted Thoughts from the CEO of Fidelis Group">Deep Rooted Thoughts from the CEO of Fidelis Group</a>
+                        </h3>
+                        <span class="hidden sm:block text-sm text-neutral-500 dark:text-neutral-400 mt-3 mb-5">
+                            <span class="line-clamp-2">
+                                <p>
+                                    I remember as if it was still yesterday, we had just laid down the foundation of Fidelis Group in the year 2010
+                                </p>
+                            </span>
+                        </span>
+                        <div class="mt-3 flex items-end justify-between sm:mt-auto">
+                            <div class="flex items-center space-x-2 relative">
+                                <div class="relative">
+                                    <button class="relative items-center min-w-[68px] rounded-full text-neutral-6000 bg-neutral-50 transition-colors dark:text-neutral-200 dark:bg-neutral-800 hover:bg-teal-50 dark:hover:bg-teal-100 hover:text-teal-600 dark:hover:text-teal-500 hidden sm:flex px-3 h-8 text-xs focus:outline-none" data-postid="320" data-siteid="1" data-groupid="1" data-favoritecount="49" style="">
+                                        <lord-icon src="https://cdn.lordicon.com/pnhskdva.json" trigger="hover" style="width:32px;height:32px"></lord-icon>
+                                        <span class="simplefavorite-button-count" style="">49</span>
+                                    </button>
+                                </div>
+                                <a href="https://ncmaz.chisnghiax.com/delectus-optio-nulla-iste-fuga-alias/#comments"                            class="relative items-center min-w-[68px] rounded-full text-neutral-6000 bg-neutral-50 transition-colors dark:text-neutral-200 dark:bg-neutral-800 hover:bg-teal-50 dark:hover:bg-teal-100 hover:text-teal-600 dark:hover:text-teal-500 hidden sm:flex px-3 h-8 text-xs focus:outline-none" title="Comments">
+                                    <lord-icon src="https://cdn.lordicon.com/hpivxauj.json" trigger="hover" style="width:32px;height:32px"></lord-icon>
+                                    <span class="ml-1 text-neutral-900 dark:text-neutral-200">0</span>
                                 </a>
-                            </p>
-                            {{-- Author --}}
-                            <a class="inline-flex items-center">
-                                <img alt="blog" src="https://api.lorem.space/image/face?w=150&h=150" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
-                                <span class="flex-grow flex flex-col pl-3">
-                                    <span class="title-font font-medium text-gray-900">Nilesh</span>
-                                </span>
-                            </a>
+                            </div>
+                            <div class="relative inline-block text-left" data-headlessui-state="">
+                                <lord-icon src="https://cdn.lordicon.com/zmkotitn.json" trigger="hover" style="width:32px;height:32px"></lord-icon>
+                            </div>
                         </div>
                     </div>
                 </div>
-                @endfor
-
             </div>
-        </div>
-    </section>
+            @endfor            
+        </div>       
 
+    </div>
+</section>
 @endsection

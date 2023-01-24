@@ -1,4 +1,5 @@
-@extends('pages.template.layout') @section('customcss')
+@extends('pages.template.layout') 
+@section('customcss')
 <style type="text/css">
     .team-container {
         display: flex;
@@ -70,15 +71,53 @@
         transform: translateX(-50%);
         box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
     }
-</style>
 
-@endsection @section('content')
+    @-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 15s linear infinite;
+  -moz-animation: rotating 15s linear infinite;
+  -ms-animation: rotating 15s linear infinite;
+  -o-animation: rotating 15s linear infinite;
+  animation: rotating 15s linear infinite;
+}
+</style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+@endsection 
+@section('content')
 <section class="">
     <div class="mx-auto">
         <div class="mx-auto text-center">
             <h1 class="text-3xl font-extrabold sm:text-5xl">
                 About
-                <strong class="float-start font-extrabold text-red-700 sm:block">
+                <strong class="float-start font-extrabold text-orange-700 sm:block">
                     Fidelis Group.
                 </strong>
             </h1>
@@ -88,15 +127,6 @@
                 industry and stakeholders.
             </p>
 
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
-                <a class="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto" href="{{ route('contact-us') }}">
-                    Get Started
-                </a>
-
-                <a class="block w-full rounded px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto" href="{{ route('case-studies') }}">
-                    Learn More
-                </a>
-            </div>
         </div>
     </div>
 </section>
@@ -135,7 +165,7 @@
                     <h2 class="mt-2 font-bold">Banking</h2>
 
                     <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                        Lorem ipsum dolor sit amet consectetur.
+                        Indian banking industry has recently witnessed the roll out of innovative banking models
                     </p>
                 </a>
 
@@ -156,7 +186,7 @@
                     <h2 class="mt-2 font-bold">Fintech</h2>
 
                     <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                        Lorem ipsum dolor sit amet consectetur.
+                        FinTech is a rapidly evolving segment of the financial services sector
                     </p>
                 </a>
 
@@ -177,7 +207,7 @@
                     <h2 class="mt-2 font-bold">Healthcare</h2>
 
                     <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                        Lorem ipsum dolor sit amet consectetur.
+                        Medical services are one of the fields of business that fundamentally depends on IT
                     </p>
                 </a>
 
@@ -198,7 +228,7 @@
                     <h2 class="mt-2 font-bold">Manufacturing</h2>
 
                     <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                        Lorem ipsum dolor sit amet consectetur.
+                        Manufacturing Industry in India has gone through various phases of development.
                     </p>
                 </a>
 
@@ -219,7 +249,7 @@
                     <h2 class="mt-2 font-bold">Enterprise Technology</h2>
 
                     <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                        Lorem ipsum dolor sit amet consectetur.
+                        High Tech companies are transforming at a rapid pace. This change is enabled by embracing emerging technologies
                     </p>
                 </a>
 
@@ -240,7 +270,7 @@
                     <h2 class="mt-2 font-bold">Retail & E-commerce</h2>
 
                     <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                        Lorem ipsum dolor sit amet consectetur.
+                        The Retail market in India has undergone a major transformation and has witnessed.
                     </p>
                 </a>
             </div>
@@ -250,8 +280,14 @@
 
 <div class="grid grid-cols-3 gap-6">
     <article class="group">
-        <img alt="Lava" src="https://fidelisgroup.in/wp-content/uploads/2020/11/018-rocket-launch.png" class="h-56 w-56 rounded-xl object-cover transition group-hover:grayscale-[50%]" />
-
+        <lord-icon
+            src="https://cdn.lordicon.com/flvisirw.json"
+            trigger="loop"
+            delay="2000"        
+            class="h-56 w-56 rounded-xl object-cover transition group-hover:grayscale-[50%]"
+            style="width:250px;height:250px">
+        </lord-icon>
+    
         <div class="p-4">
             <a href="#">
                 <h3 class="text-lg font-medium text-gray-900">
@@ -266,7 +302,14 @@
     </article>
 
     <article class="group">
-        <img alt="Lava" src="https://fidelisgroup.in/wp-content/uploads/2020/11/004-donut-chart-1.png" class="h-56 w-56 rounded-xl object-cover transition group-hover:grayscale-[50%]" />
+        <lord-icon
+            src="https://cdn.lordicon.com/luglsinl.json"
+            trigger="loop"
+            delay="1000"
+            class="h-56 w-56 rounded-xl object-cover transition group-hover:grayscale-[50%]"
+            style="width:250px;height:250px">
+        </lord-icon>
+
 
         <div class="p-4">
             <a href="#">
@@ -282,8 +325,14 @@
     </article>
 
     <article class="group">
-        <img alt="Lava" src="https://fidelisgroup.in/wp-content/uploads/2020/11/025-windmill.png" class="h-56 w-56 rounded-xl object-cover transition group-hover:grayscale-[50%]" />
-
+        <lord-icon
+            src="https://cdn.lordicon.com/yifklmdo.json"
+            trigger="loop"
+            delay="2000"
+            class="h-56 w-56 rounded-xl object-cover transition group-hover:grayscale-[50%]"
+            style="width:250px;height:250px">
+        </lord-icon>
+    
         <div class="p-4">
             <a href="#">
                 <h3 class="text-lg font-medium text-gray-900">
@@ -303,12 +352,11 @@
     <div class="bg-white text-gray-500 py-8">
         <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
             <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-                <p class="ml-2 text-yellow-300 uppercase tracking-loose">Working Process</p>
-                <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">Working Process of Fest</p>
+                <p class="ml-2 text-blue-500 uppercase tracking-loose">Journey sofar</p>
+                <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">Inspired. <br>  Fuelled. <br> Sustained</p>
                 <p class="text-sm md:text-base text-gray-500 mb-4">
-                    Here’s your guide to the tech fest 2021 process. Go through all the steps to know the exact process of the fest.
+                    Since 2007, we have experienced and understood the growing part that solving real world problems plays in everyday life as we are spontaneously building on our heritage and business culture and reinventing ourselves just as the legendary phoenix bird always takes a new birth from its ashes to assume a new life.
                 </p>
-                <a href="#" class="bg-transparent mr-auto hover:bg-yellow-300 text-yellow-300 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"> Explore Now</a>
             </div>
             <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
                 <div class="container mx-auto w-full h-full">
@@ -318,31 +366,25 @@
                         <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                             <div class="order-1 w-5/12"></div>
                             <div class="order-1 w-5/12 px-1 py-4 text-right">
-                                <p class="mb-3 text-base text-yellow-300">1-6 May, 2021</p>
-                                <h4 class="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
-                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">
-                                    Pick your favourite event(s) and register in that event by filling the form corresponding to that event. Its that easy :)
-                                </p>
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl">2007</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">Fidelis started its journey in the name of Paylink Financial services as a payroll and accounts partner</p>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">We commenced our incredible journey with a core focus on payroll and accounts services under the able leadership of our CEO Subrahmanya. B.A.</p>
                             </div>
                         </div>
                         <div class="mb-8 flex justify-between items-center w-full right-timeline">
                             <div class="order-1 w-5/12"></div>
                             <div class="order-1 w-5/12 px-1 py-4 text-left">
-                                <p class="mb-3 text-base text-yellow-300">6-9 May, 2021</p>
-                                <h4 class="mb-3 font-bold text-lg md:text-2xl">Participation</h4>
-                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">
-                                    Participate online. The links for your registered events will be sent to you via email and whatsapp groups. Use those links and show your talent.
-                                </p>
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl">2010</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">Captured 1st retail giant with 25 resources</p>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">In the year 2011 we forayed into large scale operations and captured our first retail client with staffing solutions</p>
                             </div>
                         </div>
                         <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                             <div class="order-1 w-5/12"></div>
                             <div class="order-1 w-5/12 px-1 py-4 text-right">
-                                <p class="mb-3 text-base text-yellow-300">10 May, 2021</p>
-                                <h4 class="mb-3 font-bold text-lg md:text-2xl">Result Declaration</h4>
-                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">
-                                    The ultimate genius will be revealed by our judging panel on 10th May, 2021 and the resukts will be announced on the whatsapp groups and will be mailed to you.
-                                </p>
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl">2011</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100"><em>Fidelis Retail India Pvt Ltd</em> &#8211; a group company of fidelis group was formed to spread our wings towards Retail trade and business</p>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">In the year 2012 we entered the retail business space to create an impact and expand the scope of our services across the industry</p>
                             </div>
                         </div>
 
@@ -350,13 +392,83 @@
                             <div class="order-1 w-5/12"></div>
 
                             <div class="order-1 w-5/12 px-1 py-4">
-                                <p class="mb-3 text-base text-yellow-300">12 May, 2021</p>
-                                <h4 class="mb-3 font-bold text-lg md:text-2xl text-left">Prize Distribution</h4>
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl text-left">2012</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">Fidelis started its journey in the name of Paylink Financial services as a payroll and accounts partner</p>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">We commenced our incredible journey with a core focus on payroll and accounts services under the able leadership of our CEO Subrahmanya. B.A.</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-right">
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl">2013</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">Our first import of Antipasti from Italy &#8211; <em>a rare food collection in India</em></p>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">In the year 2013 we took a major stride in the international retail market by facilitating a major import of a rare food from Italy.</p>        
+                            </div>
+                        </div>
+                        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-left">
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl">2014</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">1. Reached a milestone of 500 resources <br>2. Started Skill Development Programme By Collaborating With NSDC</p>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">In the year 2014 we reached major milestones and emerged as key player for staffing solutions and forayed into the skill development space with a major government body liasion.</p>
+                            </div>
+                        </div>
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-right">
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl">2015</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">In 2015 after an extensive market study, we decided to foray into into the IT Space and build on our competencies for a wide industry coverage</p>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">Fidelis was awarded a skill development project by name DDUGKY to set up training centers in rural places of Karnataka</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                            <div class="order-1 w-5/12"></div>
+
+                            <div class="order-1 w-5/12 px-1 py-4">
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl text-left">2016</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">Fidelis was awarded a skill development project by name DDUGKY to set up training centers in rural places of Karnataka</p>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">In the year 2016 we forayed into large scale skill development programs and implementations in association with government advisory for initiatives for rural areas.</p>
+                            </div>
+                        </div>
+
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-right">
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl">2017</h4>
                                 <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">
-                                    The winners will be contacted by our team for their addresses and the winning goodies will be sent at their addresses.
+                                    1. Branch office started in <em>Troy, Michigan-USA</em><br>
+                                    2. Reached a milestone of 1000 employees
+                                </p>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">
+                                    In the year 2017, we set foot on international soil with a branch office in USA and a large team of employees to drive our work ahead.
                                 </p>
                             </div>
                         </div>
+                        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-left">
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl">2019</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">
+                                    In the year 2019 we set benchmarks and emerged as a powerful workforce as we reached a milestone of 2000 Employees
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-right">
+                                <h4 class="mb-3 font-bold text-lg md:text-2xl">2020</h4>
+                                <p class="text-sm md:text-base leading-snug text-gray-500 text-opacity-100">
+                                    We spontaneously keep innovating and improve on our service delivery models as we at Fidelis reached a record of handling
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                            <div class="order-1 w-5/12"><br> <br></div>
+                        </div>
+
                     </div>
                     <img class="mx-auto -mt-36 md:-mt-36" src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png" />
                 </div>
@@ -368,113 +480,70 @@
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+            <h1 class="text-lg font-medium mb-4 text-gray-900 tracking-widest">Other TEAM members</h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
         </div>
         <div class="flex flex-wrap -m-4">
-            <div class="p-4 lg:w-1/2">
+            
+            <div class="p-4 lg:w-1/2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                     <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://fidelisgroup.in/wp-content/uploads/2022/04/Subbu-1.png" />
                     <div class="flex-grow sm:pl-8">
-                        <h2 class="title-font font-medium text-lg text-gray-900">Holden Caulfield</h2>
-                        <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                        <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                        <h2 class="title-font font-medium text-lg text-gray-900">Subrahmanya. B.A</h2>
+                        <h3 class="text-gray-500 mb-3">Chief Executive Officer</h3>
+                        <p class="mb-4">Subrahmanya is a first generation entrepreneur and industry veteran. CEO & Founder of Fidelis Group, he is the think tank to drive governance, growth and a bright future at Fidelis.</p>
+                        <p class="mb-4">A visionary, he has nurtured strategic and decision driven growth at Fidelis Group to where we stand today as industry leaders. With expertise spanning 25 years in Payroll Management, Accounting Services, Staffing, Project Management & HR services and earlier stints with companies like TESCO & 3i Infotech; Subrahmanya is a MBA graduate from Adam Smith University, USA. He is passionate about automobiles & technology gadgets and an avid world explorer.</p>
                         <span class="inline-flex">
-                            <a class="text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                </svg>
-                            </a>
                             <a class="ml-2 text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                </svg>
-                            </a>
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="32px" height="32px"><path fill="#0078d4" d="M8.421,14h0.052l0,0C11.263,14,13,12,13,9.5C12.948,6.945,11.263,5,8.526,5S4,6.945,4,9.5	C4,12,5.736,14,8.421,14z M4,17h9v26H4V17z M44,26.5c0-5.247-4.253-9.5-9.5-9.5c-3.053,0-5.762,1.446-7.5,3.684V17h-9v26h9V28l0,0	c0-2.209,1.791-4,4-4s4,1.791,4,4v15h9C44,43,44,27.955,44,26.5z"/></svg>                            </a>
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="p-4 lg:w-1/2">
+            <div class="p-4 lg:w-1/2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
                 <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                     <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://fidelisgroup.in/wp-content/uploads/2022/04/Nagashree.png" />
                     <div class="flex-grow sm:pl-8">
-                        <h2 class="title-font font-medium text-lg text-gray-900">Alper Kamu</h2>
-                        <h3 class="text-gray-500 mb-3">Designer</h3>
-                        <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                        <h2 class="title-font font-medium text-lg text-gray-900">Nagashree .S</h2>
+                        <h3 class="text-gray-500 mb-3">Vice President – Finance & Accounts</h3>
+                        <p class="mb-4">Nagashree is a key decision maker, an astute & detail oriented finance professional. Instrumental in driving growth and operation from our inception, she is the crucial, Finance & Accounts function for Fidelis. She has led and augmented robust & streamlined finance driven processes for the Fidelis Group. She effectively liaises with the auditors & is responsible for investments, cash & fund flow management.</p>
+                        <p class="mb-4">A seasoned industry veteran bringing in an intellectual capital of over 13 years she is a commerce graduate from Bangalore University. While not brainstorming, travelling & watching thought provoking movies keep her motivated.</p>
                         <span class="inline-flex">
-                            <a class="text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                </svg>
-                            </a>
                             <a class="ml-2 text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="32px" height="32px"><path fill="#0078d4" d="M8.421,14h0.052l0,0C11.263,14,13,12,13,9.5C12.948,6.945,11.263,5,8.526,5S4,6.945,4,9.5	C4,12,5.736,14,8.421,14z M4,17h9v26H4V17z M44,26.5c0-5.247-4.253-9.5-9.5-9.5c-3.053,0-5.762,1.446-7.5,3.684V17h-9v26h9V28l0,0	c0-2.209,1.791-4,4-4s4,1.791,4,4v15h9C44,43,44,27.955,44,26.5z"/></svg>                            
                             </a>
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="p-4 lg:w-1/2">
+
+            <div class="p-4 lg:w-1/2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                 <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                     <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://fidelisgroup.in/wp-content/uploads/2022/04/Raghavendra.png" />
                     <div class="flex-grow sm:pl-8">
-                        <h2 class="title-font font-medium text-lg text-gray-900">Atticus Finch</h2>
-                        <h3 class="text-gray-500 mb-3">UI Developer</h3>
-                        <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                        <h2 class="title-font font-medium text-lg text-gray-900">Raghavendra Mesta</h2>
+                        <h3 class="text-gray-500 mb-3">Vice President - HR & Operations</h3>
+                        <p class="mb-4">Raghavendra is a key force in the intellectual capital for Fidelis Group. A seasoned HR Professional he finds his passion in driving human capital at Fidelis Group. An operations expert he finds gratification in developing and implementing effective HR processes and systems to drive transformation across organizations we work with. </p>
+                        <p class="mb-4">An ardent professional, Raghavendra earned his post-graduation in Commerce (M.com – Corporate Secretaryship) from Karnataka University and secured 3rd rank. He is an active participant in several HR professional networks in India and an active member of the Indian Staffing Federation.</p>
                         <span class="inline-flex">
-                            <a class="text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                </svg>
-                            </a>
                             <a class="ml-2 text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="32px" height="32px"><path fill="#0078d4" d="M8.421,14h0.052l0,0C11.263,14,13,12,13,9.5C12.948,6.945,11.263,5,8.526,5S4,6.945,4,9.5	C4,12,5.736,14,8.421,14z M4,17h9v26H4V17z M44,26.5c0-5.247-4.253-9.5-9.5-9.5c-3.053,0-5.762,1.446-7.5,3.684V17h-9v26h9V28l0,0	c0-2.209,1.791-4,4-4s4,1.791,4,4v15h9C44,43,44,27.955,44,26.5z"/></svg>                            
                             </a>
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="p-4 lg:w-1/2">
+            <div class="p-4 lg:w-1/2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
                 <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                     <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://fidelisgroup.in/wp-content/uploads/2022/04/Prasad.png" />
                     <div class="flex-grow sm:pl-8">
-                        <h2 class="title-font font-medium text-lg text-gray-900">Henry Letham</h2>
-                        <h3 class="text-gray-500 mb-3">Designer</h3>
-                        <p class="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                        <h2 class="title-font font-medium text-lg text-gray-900">Raghavendra Prasad</h2>
+                        <h3 class="text-gray-500 mb-3">Vice President - Sales</h3>
+                        <p class="mb-4">With vast experience in sales and recruitment, Raghavendra is a leader with impressive business acumen and strategic skills in talent acquisition. With industry acumen of over 22 years gained in sales and business development, he has grown in the recruitment industry and works extensively in hiring talent for mid and senior levels.</p>
+                        <p class="mb-4">Raghavendra’s expertise and proficiency has contributed extensively in Recruitment & Staffing solutions, Software product services, IT Training & Education. His fervour to start new ventures and initiatives have made him a mentor, who believes in the potential that resides in people and ways to harness that naturally.</p>
                         <span class="inline-flex">
-                            <a class="text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                </svg>
-                            </a>
                             <a class="ml-2 text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                                </svg>
-                            </a>
-                            <a class="ml-2 text-gray-500">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="32px" height="32px"><path fill="#0078d4" d="M8.421,14h0.052l0,0C11.263,14,13,12,13,9.5C12.948,6.945,11.263,5,8.526,5S4,6.945,4,9.5	C4,12,5.736,14,8.421,14z M4,17h9v26H4V17z M44,26.5c0-5.247-4.253-9.5-9.5-9.5c-3.053,0-5.762,1.446-7.5,3.684V17h-9v26h9V28l0,0	c0-2.209,1.791-4,4-4s4,1.791,4,4v15h9C44,43,44,27.955,44,26.5z"/></svg>                            
                             </a>
                         </span>
                     </div>
@@ -488,26 +557,25 @@
 <section class="team">
     <h2 class="section-heading font-sans">Our Team</h2>
     <div class="team-container">
-        <div class="profile">
+        <div class="profile" data-aos="fade-right" data-aos-offset="50" data-aos-easing="ease-in-sine">
             <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="" /><span class="name">Kalyan</span>
         </div>
-        <div class="profile">
+        <div class="profile" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
             <img src="https://images.unsplash.com/photo-1530577197743-7adf14294584?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80" alt="" /><span class="name">Suchitra Tiwari</span>
         </div>
-
-        <div class="profile">
+        <div class="profile" data-aos="fade-right" data-aos-offset="150" data-aos-easing="ease-in-sine">
             <img src="https://images.unsplash.com/photo-1598641795816-a84ac9eac40c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80" alt="" /><span class="name">Sajid Ghani</span>
         </div>
-        <div class="profile">
+        <div class="profile" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
             <img src="https://images.unsplash.com/photo-1484186139897-d5fc6b908812?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="" /><span class="name">Dhriti</span>
         </div>
-        <div class="profile">
+        <div class="profile" data-aos="fade-right" data-aos-offset="250" data-aos-easing="ease-in-sine">
             <img src="https://images.unsplash.com/photo-1618018352910-72bdafdc82a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="" /><span class="name">Milind</span>
         </div>
-        <div class="profile">
+        <div class="profile" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <img src="https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=801&q=80" alt="" /><span class="name">Srikant Tiwari</span>
         </div>
-        <div class="profile">
+        <div class="profile" data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine">
             <img src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80" alt="" /><span class="name">Major Sameer</span>
         </div>
     </div>
@@ -553,7 +621,7 @@
             <div class="md:col-span-6">
                 <div class="lg:mr-8">
                     <div class="relative">
-                        <img src="/assets/images/it/about.jpg" class="rounded-full shadow-lg dark:shadow-gray-800 w-[800px]" alt="" />
+                        <img src="/assets/images/it/about.jpg" class="rotating rounded-full shadow-lg dark:shadow-gray-800 w-[800px]" alt="" />
 
                         <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 mx-auto lg:w-72 w-56 lg:h-72 h-56 flex justify-center items-center bg-white dark:bg-slate-900 rounded-full shadow-lg dark:shadow-gray-800">
                             <div class="text-center">
@@ -569,7 +637,7 @@
             </div>
 
             <div class="md:col-span-6">
-                <div class="lg:ml-8">
+                <div class="lg:ml-8"  data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="500">
                     <h6 class="text-indigo-600 text-sm font-bold uppercase mb-2">Fast & Effective</h6>
                     <h3 class="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
                         We're a global stakeholder <br />
@@ -582,7 +650,7 @@
                         with just a few taps. commodo consequat. Duis aute irure.
                     </p>
 
-                    <a href="#_" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
+                    <a href="{{ route('contact-us') }}" class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
                         <span class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-indigo-600 group-hover:h-full"></span>
                         <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
                             <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -605,10 +673,10 @@
 
 <section class="bg-white dark:bg-gray-900">
     <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img class="w-full dark:hidden" src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="dashboard image" />
+        <img data-aos="fade-right" data-aos-duration="3000" class="w-full dark:hidden" src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="dashboard image" />
         <div class="mt-4 md:mt-0">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Missions</h2>
-            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+            <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Missions</h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="1500">
                 To facilitate a better and sustained “tomorrow” for people and organizations we work with. Not only at work, but in life and to be recognized as the industry leader in all facets by nurturing customer engagement through
                 accelerated solutions and processes, better return on investment and proven delivery models.
             </p>
@@ -623,8 +691,8 @@
 
     <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <div class="mt-4 md:mt-0">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Visions</h2>
-            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white" data-aos-easing="linear" data-aos-duration="1500">Visions</h2>
+            <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="1500">
                 Transform Fidelis into the premiere performance organization by creating benchmarks in execution, leadership, and become an industry leader by running key -business processes for our clients while they focus on their core
                 operations.
             </p>
@@ -635,15 +703,15 @@
                 </svg>
             </a>
         </div>
-        <img class="w-full dark:hidden" src="https://images.pexels.com/photos/3782235/pexels-photo-3782235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="dashboard image" />
+        <img data-aos="fade-left" data-aos-duration="3000" class="w-full dark:hidden" src="https://images.pexels.com/photos/3782235/pexels-photo-3782235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="dashboard image" />
     </div>
 
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white" data-aos="flip-up" data-aos-duration="1500">
                 Our Values
             </h1>
-            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400" data-aos="flip-up" data-aos-duration="1500">
                 Our values are the guiding principles upon which Fidelis Group was founded and how we strive to conduct our business across all verticals. Our Values establish foundation as we shape a thriving future. They determine how we
                 go about working towards our growth across verticals. Our values are to:
             </p>
@@ -653,7 +721,7 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-12 md:space-y-0">
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="1000">
                     <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                         <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -666,7 +734,7 @@
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Commitment</h3>
                     <p class="text-gray-500 dark:text-gray-400">Be accountable, work together as a team and communicate clearly.</p>
                 </div>  
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="1500">
                     <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                         <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -677,7 +745,7 @@
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Innovation</h3>
                     <p class="text-gray-500 dark:text-gray-400">Think outside the box, challenge constructively and act proactively.</p>
                 </div>
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="2000">
                     <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                         <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -691,7 +759,7 @@
                     <h3 class="mb-2 text-xl font-bold dark:text-white">Community</h3>
                     <p class="text-gray-500 dark:text-gray-400">Creating a positive place to work and supporting ethical initiatives.</p>
                 </div>
-                <div>
+                <div data-aos="zoom-in" data-aos-duration="2500">
                     <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                         <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -715,7 +783,7 @@
 <section>
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div class="[column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
-            <div class="mb-8 sm:break-inside-avoid">
+            <div class="mb-8 sm:break-inside-avoid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <blockquote class="rounded-xl bg-gray-50 p-6 shadow">
                     <p class="leading-relaxed text-gray-700">
                         Fidelis has been a wonderful company starting out. Several things worth pointing out are within the overall atmosphere. Since Fidelis is in it's growth phase, it allows the management team to easily help everyone get
@@ -738,7 +806,7 @@
                 </div>
             </div>
 
-            <div class="mb-8 sm:break-inside-avoid">
+            <div class="mb-8 sm:break-inside-avoid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <blockquote class="rounded-xl bg-gray-50 p-6 shadow">
                     <p class="leading-relaxed text-gray-700">
                         Working in Fidelis Technology services pvt ltd more than one year .Very good management and on Time salary.They do employees engagement activities for WFH Employees as well . always feel connected with company.
@@ -760,7 +828,7 @@
                 </div>
             </div>
 
-            <div class="mb-8 sm:break-inside-avoid">
+            <div class="mb-8 sm:break-inside-avoid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <blockquote class="rounded-xl bg-gray-50 p-6 shadow">
                     <p class="leading-relaxed text-gray-700">
                         Excellent work-life balance with top-notch benefits. The management really seems to care about their employees. You may have to work late/from home sometimes when the company needs you to, but that is balanced with
@@ -782,7 +850,7 @@
                 </div>
             </div>
 
-            <div class="mb-8 sm:break-inside-avoid">
+            <div class="mb-8 sm:break-inside-avoid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <blockquote class="rounded-xl bg-gray-50 p-6 shadow">
                     <p class="leading-relaxed text-gray-700">
                         Got placed in HP. Good consultancy and people are friendly here. Job seekers should definitely try here once.
@@ -803,7 +871,7 @@
                 </div>
             </div>
 
-            <div class="mb-8 sm:break-inside-avoid">
+            <div class="mb-8 sm:break-inside-avoid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <blockquote class="rounded-xl bg-gray-50 p-6 shadow">
                     <p class="leading-relaxed text-gray-700">
                         I went for HP interview here for L1 technical support job. The staff was very nice here. I had cleared the round here but did did not get the job. Even after this the staff there held me get interviews in other
@@ -825,7 +893,7 @@
                 </div>
             </div>
 
-            <div class="mb-8 sm:break-inside-avoid">
+            <div class="mb-8 sm:break-inside-avoid" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <blockquote class="rounded-xl bg-gray-50 p-6 shadow">
                     <p class="leading-relaxed text-gray-700">
                         I went to this place sometime back to interview for HP on contract terms with fidelis. I was well received and the round in there was smooth. This place is also very accessible
@@ -848,4 +916,12 @@
         </div>
     </div>
 </section>
+@endsection
+
+@section('scripts')
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
 @endsection

@@ -1,3 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .flowheader {
     position: relative;
     background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, #F97316 100%);
@@ -171,12 +178,6 @@
     background: #00f !important;
     transform: inherit !important;
     text-align: center
-}
-
-@media (min-width:1441px) and (max-width:1920px) {
-    .container {
-        max-width: 1640px
-    }
 }
 
 .shapeshifter {

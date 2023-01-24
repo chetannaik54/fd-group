@@ -319,4 +319,4 @@
     </div>
 </footer>
 
-<a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fixed hidden text-lg rounded-full z-10 bottom-5 right-5 h-9 w-9 text-center bg-indigo-600 text-white leading-9"><i class="uil uil-arrow-up"></i></a>
+<a href="#" onclick="topFunction()" id="back-to-top" class="fixed text-lg rounded-full z-10 bottom-5 right-5 bg-indigo-600 transition ease-in-out duration-300 hover:scale-125 hover:bg-orange-600"><lord-icon src="https://cdn.lordicon.com/xsdtfyne.json" trigger="loop"    delay="2000" colors="primary:#ffffff"  style="width:32px;height:32px"></lord-icon></a>

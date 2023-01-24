@@ -3,19 +3,19 @@
     <ul class="sticky-left">
         <li>
             <a target="_blank" href="tel:+918041502234">
-                <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1yz1jMRdqLQWBx10eFLSWTMGWmKrL9sM6" />
+                <img width="32" height="32" title="" alt="" src="{{ asset('img/social/phone.png') }}" />
                 <p>Phone</p>
             </a>
         </li>
         <li>
             <a target="_blank" href="https://wa.me/+918041502234?text=� Hi, i wanted to know more about NOC. SOC software">
-                <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1ha6UAQlGBFXnExIXUMgs2l1QwUNgE09K" />
+                <img width="32" height="32" title="" alt="" src="{{ asset('img/social/whatsapp.png ') }}" />
                 <p>Whatsapp</p>
             </a>
         </li>
         <li>
             <a target="_blank" href="mailto:info@fidelisgroup.in">
-                <img width="32" height="32" title="" alt="" src="https://drive.google.com/uc?id=1Jthmdc-CZpBoymeHEW06x9OTj8_lW7gM" />
+                <img width="32" height="32" title="" alt="" src="{{ asset('img/social/email.png ') }}" />
                 <p>Email</p>
             </a>
         </li>
@@ -32,7 +32,7 @@
                 </svg>
             </button>
 
-            <a href="#" class="flex">
+            <a href="/" class="flex">
                 <span class="sr-only">Logo</span>
                 <span class="inline-block h-10 w-32 rounded-lg bg-gray-200"> {{-- <img src="https://fidelisgroup.in/wp-content/uploads/2020/10/Fidelis-LOGO-250px-2.png" alt="" class="w-36" /> --}} </span>
             </a>
@@ -43,6 +43,32 @@
                 <a href="{{ route('about-us') }}" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700">About us</a>
 
                 <a id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700">Solutions </a>
+
+                <a id="solutionsdropdownNavbarLink" data-dropdown-toggle="solutionsdropdownNavbar" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700">Solutions </a>
+                <div id="solutionsdropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600 w-[250px]">
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                        <li>
+                            <div id="managedservicedropdownNavbarLink" data-dropdown-toggle="managedservicedropdownNavbar" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Banking</div>
+                            <div id="managedservicedropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600 w-[250px]">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="{{ route('banking') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Banking</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="managedservicedropdownNavbarLink" data-dropdown-toggle="managedservicedropdownNavbar" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Fintech</div>
+                            <div id="managedservicedropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600 w-[250px]">
+                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="{{ route('banking') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Banking</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
                 <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-orange-700">Industries</a>
                 <!-- Dropdown menu -->
@@ -77,7 +103,7 @@
                 <div id="careerdropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                     <ul class="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                         <li>
-                            <a href="{{ route('life-fidelis') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Culture</a>
+                            <a href="{{ route('life-fidelis') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Life at Fidelis</a>
                         </li>
                         <li>
                             <a href="{{ route('careers') }}" class="block px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">Jobs at Fidelis</a>

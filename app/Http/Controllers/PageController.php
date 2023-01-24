@@ -122,11 +122,7 @@ class PageController extends Controller
     }
 
     public function casestudies(){
-        $sampleblogs = Http::get('https://newsapi.org/v2/top-headlines?country=us&apiKey=9afae3f6f72e46f0b654ceb1cf5d3afd');
-        $sampleblogs = json_decode($sampleblogs->body(), true);
-        $sampleblogs = $sampleblogs['articles'];
-
-        return view('pages.case-studies', compact('sampleblogs'));
+        return view('pages.case-studies');
     }
 
     public function casedetails(){

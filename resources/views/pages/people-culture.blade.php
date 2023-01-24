@@ -20,7 +20,6 @@
             <div class="lg:col-span-2 lg:py-8">
                 <ul class="grid grid-cols-2 gap-4">
                     <li>
-                        <a href="#" class="block group">
                             <img src="https://fidelisgroup.in/wp-content/uploads/2022/04/Subbu-1.png" alt="" class="object-cover w-full rounded aspect-square" />
 
                             <div class="mt-3">
@@ -31,11 +30,9 @@
                                 <p>Subrahmanya is a first generation entrepreneur and industry veteran. CEO & Founder of Fidelis Group, he is the think tank to drive governance, growth and a bright future at Fidelis.</p>
                                 <p>A visionary, he has nurtured strategic and decision driven growth at Fidelis Group to where we stand today as industry leaders. With expertise spanning 25 years in Payroll Management, Accounting Services, Staffing, Project Management & HR services and earlier stints with companies like TESCO & 3i Infotech; Subrahmanya is a MBA graduate from Adam Smith University, USA. He is passionate about automobiles & technology gadgets and an avid world explorer.</p>
                             </div>
-                        </a>
                     </li>
 
                     <li>
-                        <a href="#" class="block group">
                             <img src="https://fidelisgroup.in/wp-content/uploads/2022/04/Nagashree.png" alt="" class="object-cover w-full rounded aspect-square" />
 
                             <div class="mt-3">
@@ -46,7 +43,6 @@
                                 <p>Nagashree is a key decision maker, an astute & detail oriented finance professional. Instrumental in driving growth and operation from our inception, she is the crucial, Finance & Accounts function for Fidelis. She has led and augmented robust & streamlined finance driven processes for the Fidelis Group. She effectively liaises with the auditors & is responsible for investments, cash & fund flow management.</p>
                                 <p>A seasoned industry veteran bringing in an intellectual capital of over 13 years she is a commerce graduate from Bangalore University. While not brainstorming, travelling & watching thought provoking movies keep her motivated.</p>
                             </div>
-                        </a>
                     </li>
                 </ul>
             </div>

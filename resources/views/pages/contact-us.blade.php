@@ -2,17 +2,17 @@
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@1.1.3/dist/tippy.css">
 <style type="text/css">
 .map-container{padding:3.2rem .8rem;position:relative;display:inline-block}.map-container img{width:100%}.map-container .point{cursor:pointer;position:absolute;width:0.9rem;height:0.9rem;background-color:orange;border-radius:50%;transition:.3s;will-change:transform,box-shadow;transform:translate(-50%,-50%);box-shadow:0 0 0 rgba(0,172,193,.4);animation:3s infinite pulse}.map-container .point:hover{animation:none;transform:translate(-50%,-50%) scale3D(1.35,1.35,1);box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23)}
-.map-container .Hubli{top:38%;left:68%}
-.map-container .Bengaluru{top:38%;left:69%}
-.map-container .Mumbai{top:35%;left:68%}
-.map-container .JammuKashmir{top:28%;left:69%}
-.map-container .Hyderabad{top:36%;left:69%}
-.map-container .Chennai{top:40%;left:70%}
-.map-container .DelhiNCR    {top:32%;left:69%}
-.map-container .UnitedStates{top:25%;left:15%}
-.map-container .SingaporeAPAC{top:45%;left:80%}
-.map-container .Dubai{top:38%;left:59%}
-.map-container .india{ top:48%;left:68% } @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,172,193,.5)}70%{box-shadow:0 0 0 25px rgba(0,172,193,0)}100%{box-shadow:0 0 0 0 rgba(0,172,193,0)}}
+.map-container .Hubli{top:48%;left:68%}
+.map-container .Bengaluru{top:48%;left:69%}
+.map-container .Mumbai{top:45%;left:68%}
+.map-container .JammuKashmir{top:38%;left:69%}
+.map-container .Hyderabad{top:46%;left:69%}
+.map-container .Chennai{top:50%;left:70%}
+.map-container .DelhiNCR    {top:42%;left:69%}
+.map-container .UnitedStates{top:35%;left:15%}
+.map-container .SingaporeAPAC{top:55%;left:80%}
+.map-container .Dubai{top:48%;left:59%}
+.map-container .india{ top:58%;left:68% } @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,172,193,.5)}70%{box-shadow:0 0 0 25px rgba(0,172,193,0)}100%{box-shadow:0 0 0 0 rgba(0,172,193,0)}}
 .button{--background:#1E2235;--color:#F6F8FF;--shadow:rgba(0, 9, 61, 0.24);--cannon-dark:#A6ACCD;--cannon-light:#F6F8FF;--cannon-shadow:rgba(13, 15, 24, 0.9);--confetti-1:#892AB8;--confetti-2:#EA4C89;--confetti-3:#FFFF04;--confetti-4:#4AF2FD;--z-before:-6;display:block;outline:0;cursor:pointer;position:relative;border:0;background:0 0;padding:9px 22px 9px 16px;line-height:26px;font-family:inherit;font-weight:600;font-size:14px;color:var(--color);-webkit-appearance:none;-webkit-tap-highlight-color:transparent;transition:transform var(--transform-duration, .4s);will-change:transform;transform-style:preserve-3d;transform:perspective(440px) rotateX(calc(var(--rx,0) * 1deg)) rotateY(calc(var(--ry,0) * 1deg)) translateZ(0)}.button:hover{--transform-duration:.16s}.button.success{--confetti-scale:0;--stroke-dashoffset:15}.button:before{content:"";position:absolute;left:0;top:0;right:0;bottom:0;border-radius:12px;transform:translateZ(calc(var(--z-before) * 1px));background:var(--background);box-shadow:0 4px 8px var(--shadow)}.button .icon,.button span{display:inline-block;vertical-align:top;position:relative;z-index:1}.button .icon{--z:2px;width:24px;height:14px;margin:8px 16px 0 0;transform:translate(calc(var(--icon-x,0) * 1px),calc(var(--icon-y,0) * 1px)) translateZ(2px)}.button .icon .confetti{position:absolute;left:17px;bottom:9px}.button .icon .confetti svg{width:18px;height:16px;display:block;stroke-width:1px;fill:none;stroke-linejoin:round;stroke-linecap:round}.button .icon .confetti svg *{transition:stroke-dashoffset .2s;stroke-dasharray:15 20;stroke-dashoffset:var(--stroke-dashoffset,0);stroke:var(--stroke-all,var(--stroke,var(--confetti-2)))}.button .icon .confetti svg :nth-child(2){--stroke:var(--confetti-3)}.button .icon .confetti svg :nth-child(3){--stroke:var(--confetti-1)}.button .icon .confetti .emitter{position:absolute;left:4px;bottom:4px;pointer-events:none}.button .icon .confetti .emitter div{width:4px;height:4px;margin:-2px 0 0 -2px;border-radius:1px;position:absolute;left:0;top:0;transform-style:preserve-3d;background:var(--confetti-all,var(--b,none))}.button .icon .confetti i{width:4px;height:4px;display:block;transform:scale(var(--confetti-scale,.5));position:absolute;transition:transform .25s;left:var(--left,-1px);top:var(--top,3px);border-radius:var(--border-radius,1px);background:var(--confetti-background,var(--confetti-3))}.button .icon .confetti i:nth-child(2){--left:9px;--top:-1px;--border-radius:2px;--confetti-background:var(--confetti-4)}.button .icon .confetti i:nth-child(3){--left:5px;--top:3px;--confetti-background:var(--confetti-1)}.button .icon .confetti i:nth-child(4){--left:10px;--top:14px;--confetti-background:var(--confetti-2)}.button .icon .confetti i:nth-child(5){--left:9px;--top:7px;--confetti-background:var(--confetti-4)}.button .icon .confetti i:nth-child(6){--left:6px;--top:8px;--border-radius:2px;--confetti-background:var(--confetti-2)}.button .icon .cannon{position:relative;width:24px;height:14px;transform:translate(0,3px) rotate(-45deg);filter:drop-shadow(-2px 2px 2px var(--cannon-shadow))}.button .icon .cannon:after,.button .icon .cannon:before{content:"";display:block;height:14px}.button .icon .cannon:before{background:linear-gradient(var(--cannon-dark),var(--cannon-light) 50%,var(--cannon-dark));width:100%;-webkit-clip-path:polygon(25px -1px,0 52%,25px 15px);clip-path:polygon(25px -1px,0 52%,25px 15px)}.button .icon .cannon:after{width:6px;position:absolute;right:-3px;top:0;border-radius:50%;box-shadow:inset 0 0 0 .5px var(--cannon-light);background:linear-gradient(90deg,var(--cannon-dark),var(--cannon-light))}.button.white{--background:#fff;--color:#1E2235;--border:#E1E6F9;--shadow:none;--cannon-dark:#103FC5;--cannon-light:#275EFE;--cannon-shadow:rgba(0, 9, 61, 0.2)}.button.white:before{box-shadow:inset 0 0 0 1px var(--border)}.button.grey{--background:#404660;--cannon-shadow:rgba(13, 15, 24, 0.2);--cannon-dark:#D1D6EE;--cannon-light:#FFFFFF}
 </style>
 @endsection 
@@ -490,102 +490,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://unpkg.com/tippy.js@1.1.3/dist/tippy.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-
-<script>
-gsap.registerPlugin(Physics2DPlugin);
-
-document.querySelectorAll('.button').forEach(button => {
-
-    const bounding = button.getBoundingClientRect()
-
-    button.addEventListener('mousemove', e => {
-
-        let dy = (e.clientY - bounding.top - bounding.height / 2) / -1
-        let dx = (e.clientX - bounding.left - bounding.width / 2)  / 10
-
-        dy = dy > 10 ? 10 : (dy < -10 ? -10 : dy);
-        dx = dx > 4 ? 4 : (dx < -4 ? -4 : dx);
-
-        button.style.setProperty('--rx', dy);
-        button.style.setProperty('--ry', dx);
-
-    });
-
-    button.addEventListener('mouseleave', e => {
-
-        button.style.setProperty('--rx', 0)
-        button.style.setProperty('--ry', 0)
-
-    });
-
-    button.addEventListener('click', e => {
-        button.classList.add('success');
-        gsap.to(button, {
-            '--icon-x': -3,
-            '--icon-y': 3,
-            '--z-before': 0,
-            duration: .2,
-            onComplete() {
-                particles(button.querySelector('.emitter'), 100, -4, 6, -80, -50);
-                gsap.to(button, {
-                    '--icon-x': 0,
-                    '--icon-y': 0,
-                    '--z-before': -6,
-                    duration: 1,
-                    ease: 'elastic.out(1, .5)',
-                    onComplete() {
-                        button.classList.remove('success');
-                    }
-                });
-            }
-        });
-    });
-
-});
-
-function particles(parent, quantity, x, y, minAngle, maxAngle) {
-    let colors = [
-        '#FFFF04',
-        '#EA4C89',
-        '#892AB8',
-        '#4AF2FD',
-    ];
-    for(let i = quantity - 1; i >= 0; i--) {
-        let angle = gsap.utils.random(minAngle, maxAngle),
-            velocity = gsap.utils.random(70, 140),
-            dot = document.createElement('div');
-        dot.style.setProperty('--b', colors[Math.floor(gsap.utils.random(0, 4))]);
-        parent.appendChild(dot);
-        gsap.set(dot, {
-            opacity: 0,
-            x: x,
-            y: y,
-            scale: gsap.utils.random(.4, .7)
-        });
-        gsap.timeline({
-            onComplete() {
-                dot.remove();
-            }
-        }).to(dot, {
-            duration: .05,
-            opacity: 1
-        }, 0).to(dot, {
-            duration: 1.8,
-            rotationX: `-=${gsap.utils.random(720, 1440)}`,
-            rotationZ: `+=${gsap.utils.random(720, 1440)}`,
-            physics2D: {
-                angle: angle,
-                velocity: velocity,
-                gravity: 120
-            }
-        }, 0).to(dot, {
-            duration: 1,
-            opacity: 0
-        }, .8);
-    }
-}
-</script>    
 
 <script>
     $(document).ready(function(){
