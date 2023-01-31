@@ -137,8 +137,7 @@
                 </div>
             </div>
 
-            <div
-                class="mb-4 md:mb-0 flex items-center flex-wrap justify-center md:justify-start prose md:prose-lg lg:prose-xl">
+            <div class="mb-4 md:mb-0 flex items-center flex-wrap justify-center md:justify-start prose md:prose-lg lg:prose-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-4 h-4 mr-2">
                     <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
                     <path fill="currentColor"

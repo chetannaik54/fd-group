@@ -9,7 +9,7 @@
                     <div class="lg:col-span-8 md:col-span-6">
                         <div class="p-6 rounded-md shadow dark:shadow-gray-800">
 
-                            <img src="assets/images/blog/slide02.jpg" class="rounded-md" alt="">
+                            <img src="/assets/images/blog/slide02.jpg" class="rounded-md" alt="">
 
                             <div class="text-center mt-12">
                                 <span class="bg-indigo-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full h-5 ml-1">Technology</span>
@@ -35,7 +35,7 @@
                             <div class="mt-8">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
-                                        <img src="assets/images/client/01.jpg" class="h-11 w-11 rounded-full shadow" alt="">
+                                        <img src="/assets/images/client/01.jpg" class="h-11 w-11 rounded-full shadow" alt="">
     
                                         <div class="ml-3 flex-1">
                                             <a href="" class="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Calvin Carlo</a>
@@ -53,7 +53,7 @@
                             <div class="mt-8">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
-                                        <img src="assets/images/client/02.jpg" class="h-11 w-11 rounded-full shadow" alt="">
+                                        <img src="/assets/images/client/02.jpg" class="h-11 w-11 rounded-full shadow" alt="">
     
                                         <div class="ml-3 flex-1">
                                             <a href="" class="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Calvin Carlo</a>
@@ -71,7 +71,7 @@
                             <div class="mt-8">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
-                                        <img src="assets/images/client/03.jpg" class="h-11 w-11 rounded-full shadow" alt="">
+                                        <img src="/assets/images/client/03.jpg" class="h-11 w-11 rounded-full shadow" alt="">
     
                                         <div class="ml-3 flex-1">
                                             <a href="" class="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Calvin Carlo</a>
@@ -89,7 +89,7 @@
                             <div class="mt-8">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
-                                        <img src="assets/images/client/04.jpg" class="h-11 w-11 rounded-full shadow" alt="">
+                                        <img src="/assets/images/client/04.jpg" class="h-11 w-11 rounded-full shadow" alt="">
     
                                         <div class="ml-3 flex-1">
                                             <a href="" class="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Calvin Carlo</a>
@@ -151,7 +151,7 @@
                         <div class="sticky top-20">
                             <h5 class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center">Author</h5>
                             <div class="text-center mt-8">
-                                <img src="assets/images/client/05.jpg" class="h-24 w-24 mx-auto rounded-full shadow mb-4" alt="">
+                                <img src="/assets/images/client/05.jpg" class="h-24 w-24 mx-auto rounded-full shadow mb-4" alt="">
 
                                 <a href="" class="text-lg font-semibold hover:text-indigo-600 transition-all duration-500 ease-in-out">Cristina Romsey</a>
                                 <p class="text-slate-400">Content Writer</p>
@@ -159,7 +159,7 @@
 
                             <h5 class="text-lg font-semibold bg-gray-50 dark:bg-slate-800 shadow dark:shadow-gray-800 rounded-md p-2 text-center mt-8">Recent post</h5>
                             <div class="flex items-center mt-8">
-                                <img src="assets/images/blog/06.jpg" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="">
+                                <img src="/assets/images/blog/06.jpg" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="">
 
                                 <div class="ml-3">
                                     <a href="" class="font-semibold hover:text-indigo-600">Consultant Business</a>
@@ -168,7 +168,7 @@
                             </div>
                             
                             <div class="flex items-center mt-4">
-                                <img src="assets/images/blog/07.jpg" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="">
+                                <img src="/assets/images/blog/07.jpg" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="">
 
                                 <div class="ml-3">
                                     <a href="" class="font-semibold hover:text-indigo-600">Grow Your Business</a>
@@ -177,7 +177,7 @@
                             </div>
                             
                             <div class="flex items-center mt-4">
-                                <img src="assets/images/blog/08.jpg" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="">
+                                <img src="/assets/images/blog/08.jpg" class="h-16 rounded-md shadow dark:shadow-gray-800" alt="">
 
                                 <div class="ml-3">
                                     <a href="" class="font-semibold hover:text-indigo-600">Look On The Glorious Balance</a>
@@ -214,24 +214,6 @@
                 </div><!--end grid-->
             </div><!--end container-->
 
-            <div class="container md:mt-24 mt-16">
-                <div class="md:flex justify-center">
-                    <div class="lg:w-2/3 text-center">
-                        <h3 class="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold mb-6">Subscribe our weekly subscription</h3>
-
-                        <p class="text-slate-400 max-w-xl mx-auto">Add some text to explain benefits of subscripton on your services. We'll send you the best of our blog just once a weekly.</p>
-
-                        <div class="mt-8">
-                            <div class="text-center subcribe-form">
-                                <form class="relative mx-auto max-w-xl">
-                                    <input type="email" id="subemail" name="name" class="pt-4 pr-40 pb-4 pl-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border border-gray-100 dark:border-gray-700" placeholder="Enter your email id..">
-                                    <button type="submit" class="btn absolute top-[2px] right-[3px] h-[46px] bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full">Subcribe Now</button>
-                                </form><!--end form-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--end container-->
         </section><!--end section-->
         <!-- End -->
 

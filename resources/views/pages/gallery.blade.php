@@ -1,215 +1,191 @@
-@extends('pages.template.layout2')
+@extends('pages.template.layout')
 
 @section('customcss')
-<link href="assets/libs/tobii/css/tobii.min.css" rel="stylesheet">
+<style>.grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: row dense;
+  }
+  
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background: #0c9a9a;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url("https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+    background-size: cover;
+    background-position: center;
+    box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    counter-increment: item-counter;
+  }
+  .item:nth-of-type(3n) {
+    background-image: url("https://images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=");
+  }
+  .item:nth-of-type(4n) {
+    background-image: url("https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=");
+  }
+  .item:nth-of-type(5n) {
+    background-image: url("https://images.unsplash.com/photo-1476097297040-79e9e1603142?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+  }
+  .item:nth-of-type(6n) {
+    background-image: url("https://images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
+  }
+  .item:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .item:hover {
+    transform: scale(1.05);
+  }
+  .item:hover:after {
+    opacity: 0;
+  }
+  .item--medium {
+    grid-row-end: span 2;
+  }
+  .item--large {
+    grid-row-end: span 3;
+  }
+  .item--full {
+    grid-column-end: auto;
+  }
+  @media screen and (min-width: 768px) {
+    .item--full {
+      grid-column: 1/-1;
+      grid-row-end: span 2;
+    }
+  }
+  .item__details {
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    color: #444;
+    background: #fff;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    color: #828282;
+  }
+  .item__details:before {
+    content: counter(item-counter);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-right: 0.5em;
+    color: #444;
+  }</style>
 @endsection
 
 @section('content')
+    <!-- Start Home -->
+    <section class="relative jarallax py-4">
+        <div
+            class="absolute inset-0 h-full w-full bg-gradient-to-t to-transparent via-white/80 dark:via-slate-900/80 from-white dark:from-slate-900">
+        </div>
 
-        <!-- Start Home -->
-        <section class="relative md:py-56 py-44 bg-[url('../../assets/images/photography/photographer.jpg')] jarallax" data-jarallax data-speed="0.5" id="aboutme">
-            <div class="absolute inset-0 h-full w-full bg-gradient-to-t to-transparent via-white/80 dark:via-slate-900/80 from-white dark:from-slate-900"></div>
+        <div class="absolute text-center p-6 bottom-0 left-0 right-0">
+            <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-bold">Gallery</h3>
+        </div>
+    </section>
+    <!--end section-->
+    <!-- End Home -->
 
-            <div class="absolute text-center p-6 bottom-0 left-0 right-0">
-                <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-bold">Gallery</h3>
-            </div>
-        </section><!--end section-->
-        <!-- End Home -->
-
-        <!-- Start Section-->
-        <section class="relative md:py-24 py-16">
-            <div class="container">
-                <div class="grid grid-cols-1 items-center gap-[30px]">
-                    <div class="filters-group-wrap text-center">
-                        <div class="filters-group">
-                            <ul class="mb-0 list-none container-filter-border-bottom filter-options">
-                                <li class="inline-block text-lg font-semibold mx-2 mb-3 cursor-pointer relative border-b border-transparent text-slate-400 transition duration-500 active" data-group="all">All</li>
-                                <li class="inline-block text-lg font-semibold mx-2 mb-3 cursor-pointer relative border-b border-transparent text-slate-400 transition duration-500" data-group="branding">Celebration</li>
-                                <li class="inline-block text-lg font-semibold mx-2 mb-3 cursor-pointer relative border-b border-transparent text-slate-400 transition duration-500" data-group="designing">Office Tour</li>
-                                <li class="inline-block text-lg font-semibold mx-2 mb-3 cursor-pointer relative border-b border-transparent text-slate-400 transition duration-500" data-group="photography">2022</li>
-                                <li class="inline-block text-lg font-semibold mx-2 mb-3 cursor-pointer relative border-b border-transparent text-slate-400 transition duration-500" data-group="development">2021</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--grid-->
-
-                <div id="grid" class="md:flex justify-center mx-auto mt-4">
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p1.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p1.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["designing"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p2.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p2.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p3.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p3.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["designing"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p4.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p4.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["photography"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p5.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p5.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p6.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p6.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["designing"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p7.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p7.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p8.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p8.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["photography"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p9.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p9.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["photography"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p10.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p10.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["development"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p11.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p11.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["development"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p12.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p12.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p13.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p13.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["designing"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p14.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p14.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["photography"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p15.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p15.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["photography"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p16.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p16.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["branding"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p17.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p17.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="lg:w-1/4 md:w-1/3 p-1 picture-item" data-groups='["photography"]'>
-                        <div class="group relative block overflow-hidden rounded-md transition-all duration-500">
-                            <img src="assets/images/photography/p18.jpg" class="" alt="work-image">
-                            <div class="absolute top-1/2 -translate-y-1/2 right-0 left-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                                <a href="assets/images/photography/p18.jpg" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"><i class="uil uil-camera"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--end grid-->
-
-                <div class="grid grid-cols-1 mt-8">
-                    <div class="text-center">
-                        <a href="photography-portfolio.html" class="btn btn-link text-slate-400 dark:text-white/70 dark:hover:text-white hover:text-indigo-600 after:bg-indigo-600 dark:after:bg-white duration-500 ease-in-out">See More <i class="uil uil-arrow-right"></i></a>
-                    </div>
+    <div class="message">
+        Sorry, your browser does not support CSS Grid. 😅
+    </div>
+    <section class="section">
+        <div class="grid">
+            <div class="item">
+                <div class="item__details">
+                    jelly-o brownie sweet
                 </div>
-            </div><!--end container-->
-        </section><!--end section-->
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    Muffin jelly gingerbread
+                </div>
+            </div>
+            <div class="item item--medium">
+                <div class="item__details">
+                    sesame snaps chocolate
+                </div>
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    Oat cake
+                </div>
+            </div>
+            <div class="item item--full">
+                <div class="item__details">
+                    jujubes cheesecake
+                </div>
+            </div>
+            <div class="item item--medium">
+                <div class="item__details">
+                    Dragée pudding brownie
+                </div>
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    Oat cake
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__details">
+                    powder toffee
+                </div>
+            </div>
+            <div class="item item--medium">
+                <div class="item__details">
+                    pudding cheesecake
+                </div>
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    toffee bear claw
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__details">
+                    cake cookie croissant
+                </div>
+            </div>
+            <div class="item item--medium">
+                <div class="item__details">
+                    liquorice sweet roll
+                </div>
+            </div>
+            <div class="item item--medium">
+                <div class="item__details">
+                    chocolate marzipan
+                </div>
+            </div>
+            <div class="item item--large">
+                <div class="item__details">
+                    danish dessert lollipop
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__details">
+                    sugar plum dragée
+                </div>
+            </div>
+        </div>
+        </div>
+    @endsection
 
-@endsection
-
-@section('script')
-<script src="assets/libs/shufflejs/shuffle.min.js"></script>
-<script src="assets/libs/tobii/js/tobii.min.js"></script>
-<script src="assets/libs/jarallax/jarallax.min.js"></script>
-<script src="assets/libs/feather-icons/feather.min.js"></script>
-@endsection
+    @section('scripts')
+    @endsection

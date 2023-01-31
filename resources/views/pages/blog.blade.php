@@ -25,7 +25,7 @@
                     </div>
                     <span class="bg-neutral-900 bg-opacity-30"></span>
                 </a>
-                <a href="https://ncmaz.chisnghiax.com/delectus-optio-nulla-iste-fuga-alias/" class="absolute inset-0"></a>
+                <a href="{{ route('article', $i) }}" class="absolute inset-0"></a>
                 <span class="absolute top-3 inset-x-3">
                     <div class="flow-root">
                         <div class="flex flex-wrap space-x-2 -my-1">

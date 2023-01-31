@@ -30,21 +30,21 @@
     <body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
 
         {{-- @include('partials.navbar.nav-center-light') --}}
-        {{-- @include('partials.navbar.nav-center-white-bg')
-        @include('partials.navbar.nav-center')
-        @include('partials.navbar.nav-left-light')
-        @include('partials.navbar.nav-left')
-        @include('partials.navbar.nav-right-light')
-        @include('partials.navbar.nav-right') --}}
+        {{-- @include('partials.navbar.nav-center-white-bg') --}}
+        {{-- @include('partials.navbar.nav-center') --}}
+        {{-- @include('partials.navbar.nav-left-light') --}}
+        {{-- @include('partials.navbar.nav-left') --}}
+        {{-- @include('partials.navbar.nav-right-light') --}}
+        {{-- @include('partials.navbar.nav-right') --}}
 
         @yield('content')
 
-        {{-- @include('partials.footer.footer-four')
-        @include('partials.footer.footer-light')
-        @include('partials.footer.footer-small')
-        @include('partials.footer.footer-three')
-        @include('partials.footer.footer-transparent')
-        @include('partials.footer.footer-two') --}}
+        {{-- @include('partials.footer.footer-four') --}}
+        {{-- @include('partials.footer.footer-light') --}}
+        {{-- @include('partials.footer.footer-small') --}}
+        {{-- @include('partials.footer.footer-three') --}}
+        {{-- @include('partials.footer.footer-transparent') --}}
+        {{-- @include('partials.footer.footer-two')  --}}
         {{-- @include('partials.footer.footer') --}}
 
         @yield('script')

@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
         <style type="text/css">
-            @font-face{font-family:KabarettD;src:url('{{ asset("fonts/KabarettD.ttf") }}')}.loading{font-size:84px;font-family:KabarettD;font-weight:800;text-align:center;color:#28597a}.loading span{display:inline-block;margin:0 -.05em}.loading02 span{animation:1.2s infinite alternate loading02}.loading02 span:nth-child(2){animation-delay:.2s}.loading02 span:nth-child(3){animation-delay:.4s}.loading02 span:nth-child(4){animation-delay:.6s}.loading02 span:nth-child(5){animation-delay:.8s}.loading02 span:nth-child(6){animation-delay:1s}.loading02 span:nth-child(7){animation-delay:1.2s}@keyframes loading02{0%{filter:blur(0);opacity:1}100%{filter:blur(5px);opacity:.2}}.sticky-left-container{padding:0;margin:0;position:fixed;left:-158px;top:40%;width:200px;z-index:2}.sticky-left li{list-style-type:none;background-color:none;color:#efefef;height:43px;padding:0;margin:0 0 1px;-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out;cursor:pointer}.sticky-left li:hover{margin-right:-150px;background:#333;border-radius:25px 25px 25px 0}.sticky-left li img{float:right;border-radius:50%;margin:5px 5px 5px 10px}.sticky-left li p{padding:0;float:right;margin:0;text-transform:uppercase;line-height:43px}
+            @font-face{font-family:KabarettD;src:url('{{ asset("fonts/KabarettD.ttf") }}')}.loading{font-size:84px;font-family:KabarettD;font-weight:800;text-align:center;color:#28597a}.loading span{display:inline-block;margin:0 -.05em}.loading02 span{animation:1.2s infinite alternate loading02}.loading02 span:nth-child(2){animation-delay:.2s}.loading02 span:nth-child(3){animation-delay:.4s}.loading02 span:nth-child(4){animation-delay:.6s}.loading02 span:nth-child(5){animation-delay:.8s}.loading02 span:nth-child(6){animation-delay:1s}.loading02 span:nth-child(7){animation-delay:1.2s}@keyframes loading02{0%{filter:blur(0);opacity:1}100%{filter:blur(5px);opacity:.2}}
         </style>
 
         @yield('customcss')
@@ -34,15 +34,6 @@
         <div id="pagecontent" class="min-h-screen hidden invisible">
             @include('pages.template.header')
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
-
             <!-- Page Content -->
             <main class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
                 @yield('content')
@@ -56,6 +47,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/flowheader.css') }}">
 
+        <script src="https://use.fontawesome.com/58e9257588.js"></script>
+
         {{-- <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
         <script src="https://unpkg.com/kursor"></script>
         <script>
@@ -63,8 +56,6 @@
                 type: 1
             })
         </script>
-
-        <script src="https://use.fontawesome.com/58e9257588.js"></script>
 
         <script>
                 var html = '';
@@ -207,6 +198,13 @@
         </script>
 
         @yield('scripts')
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     </body>
 </html>

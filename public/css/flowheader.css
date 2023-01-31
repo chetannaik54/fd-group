@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .flowheader {
@@ -1982,3 +1982,58 @@ dialog::backdrop { background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(3px); -
     transition: transform 0.3s ease;
   }
   
+      /* since nested groupes are not supported we have to use 
+       regular css for the nested dropdowns 
+    */
+    li>ul                 { transform: translatex(100%) scale(0) }
+    li:hover>ul           { transform: translatex(101%) scale(1) }
+    li > button svg       { transform: rotate(-90deg) }
+    li:hover > button svg { transform: rotate(-270deg) }
+  
+    /* Below styles fake what can be achieved with the tailwind config
+       you need to add the group-hover variant to scale and define your custom
+       min width style.
+         See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+         for implementation with config file
+    */
+    .group:hover .group-hover\:scale-100 { transform: scale(1) }
+    .group:hover .group-hover\:-rotate-180 { transform: rotate(180deg) }
+    .scale-0 { transform: scale(0) }
+    .min-w-32 { min-width: 8rem }
+
+    .pulse {
+        animation: pulse-animation 2s infinite;
+      }
+      
+      @keyframes pulse-animation {
+        0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+        }
+        100% {
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+        }
+      }
+      
+
+      .sticky-left-container{padding:0;margin:0;position:fixed;left:-158px;top:40%;width:200px;z-index:2}
+      .sticky-left li{list-style-type:none;background-color:none;color:#efefef;height:43px;padding:0;margin:0 0 1px;-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out;cursor:pointer}
+      .sticky-left li:hover{margin-right:-150px;background:#333;border-radius:25px 25px 25px 0}
+      .sticky-left li .fa{float:right;border-radius:50%;margin:5px 5px 5px 10px;}
+      .sticky-left li p{padding:0;float:right;margin:0;text-transform:uppercase;line-height:43px}
+
+      /* effect-shine */
+       /* header nav a.effect-shine:hover {
+            -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+            -webkit-mask-size: 200%;
+            animation: shine 2s infinite;
+        }
+        
+        @-webkit-keyframes shine {
+            from {
+            -webkit-mask-position: 150%;
+            }
+            
+            to {
+            -webkit-mask-position: -50%;
+            }
+        } */

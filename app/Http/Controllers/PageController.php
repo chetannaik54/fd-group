@@ -12,6 +12,10 @@ class PageController extends Controller
         return view('pages.gallery');
     }
 
+    public function pressRelease(){
+        return view('pages.press-release');
+    }
+
     public function home1(){
         return view('home1');
     }

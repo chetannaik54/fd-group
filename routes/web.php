@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\CommunityController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,7 +27,7 @@ Route::get('home2', [PageController::class, 'home2']);
 Route::get('home3', [PageController::class, 'home3']);
 Route::get('home4', [PageController::class, 'home4']);
 Route::get('home5', [PageController::class, 'home5']);
-Route::get('home6', [PageController::class, 'home6']);
+Route::get('get-free-demo', [PageController::class, 'home6'])->name('get-free-demo');
 
 Route::get('joblanding', [PageController::class, 'jobslanding']);
 
@@ -106,6 +107,7 @@ Route::prefix('corporate')->group(function () {
 });
 
 Route::get('gallery', [PageController::class, 'gallery'])->name('');
+Route::get('press-release', [PageController::class, 'pressRelease'])->name('');
 
 Route::prefix('products')->group(function () {
     Route::get('fidelis-noc', [PageController::class, 'noc'])->name('fidelis-noc');
@@ -131,6 +133,18 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+// Community
+Route::prefix('community')->group(function () {
+    Route::get('/', [CommunityController::class , 'index'])->name('community');
+    Route::get('showpost/{categoryid}/{topicid}',  [CommunityController::class, 'showpost'] )->name('community_posts');
+    Route::get('postdetails/{categoryid}/{topicid}/{id}', [CommunityController::class, 'postdetails'] )->name('community_posts_details');
+    Route::post('posts', [CommunityController::class, 'store'])->name('posts');
+    Route::post('filterPosts', [CommunityController::class, 'create'])->name('filterPosts');
+    Route::post('addComment', [CommunityController::class, 'addcomment'])->name('addComment');
+    Route::post('addChildComment', [CommunityController::class, 'addchildcomment'])->name('addChildComment');
+    Route::get('communityUsers', [CommunityController::class, 'communityuser'])->name('communityUsers');
+});
 
 Route::prefix('canvas-ui')->group(function () {
     Route::prefix('api')->group(function () {

@@ -59,8 +59,7 @@
                         <label for="UserEmail" class="sr-only"> Email </label>
 
                         <div class="p-2 border border-gray-100 focus-within:ring sm:flex sm:items-center sm:gap-4">
-                            <input type="email" id="UserEmail" placeholder="john@rhcp.com"
-                                class="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm" />
+                            <input type="email" id="UserEmail" placeholder="john@doe.com" class="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm" />
 
                             <button
                                 class="w-full px-6 py-3 mt-1 text-sm font-bold tracking-wide text-white uppercase transition-none bg-teal-500 hover:bg-teal-600 sm:mt-0 sm:w-auto sm:flex-shrink-0">
@@ -121,8 +120,8 @@
                     <nav aria-label="Footer Navigation - Company" class="mt-6">
                         <ul class="space-y-4 text-sm">
                             <li>
-                                <a href="#" class="text-white transition hover:opacity-75">
-                                    Mission, Vision And Values
+                                <a href="{{ route('about-us') }}" class="text-white transition hover:opacity-75">
+                                    About us
                                 </a>
                             </li>
 
@@ -147,14 +146,20 @@
                     <nav aria-label="Footer Navigation - Company" class="mt-6">
                         <ul class="space-y-4 text-sm">
                             <li>
-                                <a href="#" class="text-white transition hover:opacity-75">
+                                <a href="{{ route('contact-us') }}" class="text-white transition hover:opacity-75">
                                     Contact
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-white transition hover:opacity-75">
+                                <a href="{{ route('faq') }}" class="text-white transition hover:opacity-75">
                                     FAQs
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="{{ route('community') }}" class="text-white transition hover:opacity-75">
+                                    Community
                                 </a>
                             </li>
 
@@ -319,4 +324,4 @@
     </div>
 </footer>
 
-<a href="#" onclick="topFunction()" id="back-to-top" class="fixed text-lg rounded-full z-10 bottom-5 right-5 bg-indigo-600 transition ease-in-out duration-300 hover:scale-125 hover:bg-orange-600"><lord-icon src="https://cdn.lordicon.com/xsdtfyne.json" trigger="loop"    delay="2000" colors="primary:#ffffff"  style="width:32px;height:32px"></lord-icon></a>
+<a href="#" onclick="topFunction()" id="back-to-top" class="fixed text-lg rounded-full z-10 bottom-5 bg-indigo-600 transition ease-in-out duration-300 hover:scale-125 hover:bg-orange-600 right-[100px]"><lord-icon src="https://cdn.lordicon.com/xsdtfyne.json" trigger="loop"    delay="2000" colors="primary:#ffffff"  style="width:32px;height:32px"></lord-icon></a>
